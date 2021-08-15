@@ -1,5 +1,6 @@
 # Vite Typescript + PrimeVue Starter
 
+[![CI](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml)
 
 ## Features
 
