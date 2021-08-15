@@ -10,6 +10,7 @@ dist-ssr
 .nyc_output
 
 .yarn
+yarn.lock
 
 # local env files
 .env
