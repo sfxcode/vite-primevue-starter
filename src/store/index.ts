@@ -1,0 +1,2 @@
+export { useMainStore } from './main';
+
