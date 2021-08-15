@@ -2,13 +2,14 @@
 node_modules
 dist
 dist-ssr
-.yarnrc
 
 /tests/e2e/videos/
 /tests/e2e/screenshots/
 /instrumented
 /coverage
 .nyc_output
+
+.yarn
 
 # local env files
 .env
