@@ -33,7 +33,13 @@ yarn dev
 Open Cypress test runner:
 
 ```
-yarn test
+yarn test:e2e
+```
+
+Jest test runner:
+
+```
+yarn test:unit
 ```
 
 Run Cypress tests in headless mode:
