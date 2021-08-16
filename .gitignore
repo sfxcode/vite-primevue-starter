@@ -11,6 +11,7 @@ dist-ssr
 
 .yarn
 yarn.lock
+.yarnrc.yml
 
 # local env files
 .env
