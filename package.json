@@ -48,7 +48,7 @@
     "@vuedx/typecheck": "~0.7",
     "@vuedx/typescript-plugin-vue": "~0.7",
     "autoprefixer": "~10.3",
-    "babel-jest": "^26.0.0",
+    "babel-jest": "^27.1.0",
     "cypress": "~8.2",
     "eslint": "~7",
     "eslint-plugin-import": "^2.24.0",
