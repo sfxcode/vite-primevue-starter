@@ -34,7 +34,7 @@
     "@fullcalendar/timegrid": "^5.9.0",
     "@fullcalendar/vue3": "^5.9.0",
     "@intlify/vite-plugin-vue-i18n": "^2.4.0",
-    "@jest/create-cache-key-function": "^26.0.0",
+    "@jest/create-cache-key-function": "^27.1.0",
     "@types/jest": "^26.0.0",
     "@typescript-eslint/eslint-plugin": "~4",
     "@typescript-eslint/parser": "~4",
