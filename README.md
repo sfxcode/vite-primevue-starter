@@ -8,6 +8,7 @@
 - Routing using [vue-router 4](https://next.router.vuejs.org/)
 - TypeScript 4.3
 - PostCSS 8 w/ `postcss-nesting` plugin
+- Tailwind support with tw- prefix because pf primeflex
 - Eslint
 - Prettier
 - Testing with cypress and Jest

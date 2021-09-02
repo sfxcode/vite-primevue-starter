@@ -3,11 +3,10 @@
   <div class="surface-0 text-center">
     <div class="mb-3 font-bold text-4xl">
       <span class="text-green-600">PrimeVue </span>
-      <img src="assets/logo.png" alt="Logo" width="25" height="25">
       <span class="text-blue-400"> & TypeScript</span>
       <span class="text-blue-600"> & Vite</span>
     </div>
-    <h2>Starter for Vue.js Development.</h2>
+    <h2 class="text-2xl pb-2">Starter for Vue.js Development.</h2>
     <div class="grid">
       <AdvertiseBox header="VUE 3.2.x" icon="pi-check-circle">
 
@@ -27,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import AdvertiseBox from '@/widgets/AdvertiseBox.vue';
+import AdvertiseBox from '../widgets/AdvertiseBox.vue';
 
 </script>
 
