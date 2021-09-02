@@ -1,6 +1,6 @@
 <template>
   <h5 class="font-bold text-2xl mb-4 text-blue-600">Pinia Store</h5>
-  <p>Example of Pinia Store !</p>
+  <p class="tw-text-xl tw-pb-4">Example of Pinia Store !</p>
   <div>Mainstore: {{ mainStore }}</div>
   <div>myRef Value: {{ myRef }}</div>
   <div>Pinia State counter: {{ counter }}</div>

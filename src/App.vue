@@ -1,6 +1,7 @@
 <template>
   <div>
     <TabMenu :model="tabs"/>
+
   </div>
   <div class="p-2">
     <router-view/>
