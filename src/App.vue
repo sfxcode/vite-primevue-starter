@@ -15,8 +15,8 @@ const tabs = computed(() => [
   {label: 'Home', icon: 'pi pi-fw pi-home', to: '/'},
   {label: 'Blocks', icon: 'pi pi-fw pi-pencil', to: '/blocks'},
   {label: 'Store', icon: 'pi pi-fw pi-calendar', to: '/store'},
+  {label: 'Tailwind', icon: 'pi pi-fw pi-calendar', to: '/tailwind'},
   {label: 'Blueprint', icon: 'pi pi-fw pi-cog', to: '/blueprint'},
-  {label: 'Documentation', icon: 'pi pi-fw pi-file', to: '/tabmenu/documentation'}
 ]);
 
 </script>

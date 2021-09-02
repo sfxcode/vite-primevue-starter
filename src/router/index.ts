@@ -17,6 +17,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../components/Store.vue'),
     },
     {
+        path: '/tailwind',
+        name: 'tailwind',
+        component: () => import('../components/Tailwind.vue'),
+    },
+    {
         path: '/blueprint',
         name: 'blueprint',
         component: () => import('../components/Blueprint.vue'),

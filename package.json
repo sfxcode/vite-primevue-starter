@@ -12,6 +12,7 @@
     "test:ci": "yarn dev & wait-on tcp:3000 -v & cypress run --headless"
   },
   "dependencies": {
+    "@heroicons/vue": "^1.0.4",
     "@vueuse/core": "^6.0.0",
     "@vueuse/head": "~0.6",
     "chart.js": "^3.5.0",

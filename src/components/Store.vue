@@ -1,12 +1,17 @@
 <template>
   <h5 class="font-bold text-2xl mb-4 text-blue-600">Pinia Store</h5>
   <p class="tw-text-xl tw-pb-4">Example of Pinia Store !</p>
-  <div>Mainstore: {{ mainStore }}</div>
-  <div>myRef Value: {{ myRef }}</div>
-  <div>Pinia State counter: {{ counter }}</div>
-  <div>Pinia getter doubleCount  {{ doubleCount }}</div>
-  <div>counter * myRef: {{ counter * myRef }}</div>
-
+  <div class="tw-grid tw-grid-cols-2  tw-gap-4">
+  <div class="tw-col-span-2">Mainstore: {{ mainStore }}</div>
+  <div>myRef Value</div>
+  <div>{{ myRef }}</div>
+  <div>Pinia State counter</div>
+  <div>{{ counter }}</div>
+  <div>Pinia getter doubleCount</div>
+  <div>{{ doubleCount }}</div>
+  <div>counter * myRef</div>
+  <div>{{ counter * myRef }}</div>
+  </div>
 </template>
 
 <script setup lang="ts">
