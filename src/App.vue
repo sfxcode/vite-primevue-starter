@@ -4,12 +4,23 @@
 
   </div>
   <div class="p-2">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script setup lang="ts">
 import {computed} from 'vue';
+import { useHead } from "@vueuse/head"
+
+useHead({
+  title: "Vite PrimeVue Starter",
+  meta: [
+    {
+      name: "description",
+      content: "PrimeVue Starter starter for vue and vite",
+    },
+  ],
+})
 
 const tabs = computed(() => [
   {label: 'Home', icon: 'pi pi-fw pi-home', to: '/'},
