@@ -1,10 +1,10 @@
 {
   "name": "vite-primevue-starter",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "build": "vite-ssg build",
+    "build": "cross-env NODE_ENV=production vite-ssg build",
     "preview": "vite build && vite preview",
     "preview-https": "serve dist",
     "start": "yarn dev & wait-on tcp:3000 -v",

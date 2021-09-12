@@ -2,7 +2,7 @@
   <h5 class="font-bold text-2xl mb-4 text-blue-600">Pinia Store</h5>
   <p class="tw-text-xl tw-pb-4">Example of Pinia Store !</p>
   <div class="tw-grid tw-grid-cols-2  tw-gap-4">
-  <div class="tw-col-span-2">Mainstore: {{ mainStore }}</div>
+  <div class="tw-col-span-2">Mainstore</div>
   <div>myRef Value</div>
   <div>{{ myRef }}</div>
   <div>Pinia State counter</div>
