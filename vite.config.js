@@ -1,14 +1,20 @@
 import * as path from 'path'
 import {defineConfig} from 'vite'
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
 import pkg from './package.json'
-import vueI18n from '@intlify/vite-plugin-vue-i18n'
-import {resolve} from "path";
+import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Pages from "vite-plugin-pages"
-import ViteIcons from "vite-plugin-icons"
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 import PurgeIcons from "vite-plugin-purge-icons"
 import Markdown from 'vite-plugin-md'
 import Restart from 'vite-plugin-restart'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Layouts from 'vite-plugin-vue-layouts'
+import AutoImport from 'unplugin-auto-import/vite'
+import Inspect from 'vite-plugin-inspect'
+
 
 process.env.VITE_APP_BUILD_EPOCH = new Date().getTime()
 process.env.VITE_APP_VERSION = pkg.version
@@ -23,12 +29,54 @@ export default defineConfig({
       path: '/ws'
     }
   },
+  // https://github.com/antfu/vite-ssg
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+  },
+
+  optimizeDeps: {
+    include: [
+      'vue',
+      'vue-router',
+      '@vueuse/core',
+    ],
+    exclude: [
+      'vue-demi',
+    ],
+  },
   plugins: [
-    vue(),
-    vueI18n({
-      include: path.resolve(__dirname, './src/locales/**'),
+    Vue({
+      include: [/\.vue$/, /\.md$/],
     }),
-    // https://github.com/hannoeru/vite-plugin-pages
+    Components({
+      dts: true,
+      resolvers: [
+        IconsResolver(),
+        ElementPlusResolver()
+      ],
+    }),
+    Icons({
+      compiler: 'vue3',
+    }),
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      include: [path.resolve(__dirname, 'locales/**')],
+    }),
+    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
+    Layouts(),
+    // https://github.com/antfu/unplugin-auto-import
+    AutoImport({
+      imports: [
+        'vue',
+        'vue-router',
+        'vue-i18n',
+        '@vueuse/head',
+        '@vueuse/core',
+      ],
+      dts: true,
+    }),
     Pages({
       // pagesDir: ['src/pages', 'src/pages2'],
       pagesDir: [
@@ -56,11 +104,15 @@ export default defineConfig({
     Restart({
       restart: ['../../dist/*.js'],
     }),
-    // https://github.com/antfu/vite-plugin-icons
-    ViteIcons(),
 
     // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
     PurgeIcons(),
+
+    // https://github.com/antfu/vite-plugin-inspect
+    Inspect({
+      // change this to enable inspect for debugging
+      enabled: false,
+    }),
   ],
   resolve: {
     alias: {
@@ -68,4 +120,5 @@ export default defineConfig({
       '~': path.resolve(__dirname, 'node_modules/'),
     },
   },
+
 })
