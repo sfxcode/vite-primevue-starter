@@ -1,6 +1,6 @@
 import { createApp, h } from 'vue';
-
-import router from './router'
+import {createRouter, createWebHistory} from "vue-router";
+import routes from 'virtual:generated-pages'
 import {createPinia} from "pinia";
 
 import App from './App.vue';
@@ -95,32 +95,21 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 
-import NotFound from '@/pages/NotFound.vue';
-import Access from '@/pages/Access.vue';
-import Error from '@/pages/Error.vue';
 
-router.beforeEach(function(to, from, next) {
-    window.scrollTo(0, 0);
-    next();
-});
 
-const app = createApp({
-    computed: {
-        ViewComponent () {
-            switch (this.$route.path) {
-                case '/error':
-                    return Error;
-                case '/access':
-                    return Access;
-                case '/notfound':
-                    return NotFound;
-                default:
-                    return App;
-            }
-        }
-    },
-    render () { return h(this.ViewComponent) }
+// eslint-disable-next-line no-console
+console.log(routes)
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
 })
+
+const app = createApp(App)
+
+app.use(router)
+
+
 
 app.directive('tooltip', Tooltip);
 app.directive('ripple', Ripple);
@@ -211,9 +200,6 @@ app.use(head)
 app.use(PrimeVue, { ripple: true });
 app.use(ConfirmationService);
 app.use(ToastService);
-app.use(router)
-
-
 
 
 app.mount('#app')
