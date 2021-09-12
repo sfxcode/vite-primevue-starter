@@ -5,7 +5,7 @@
 ## Features
 
 - Vue 3.2 (with script setup)
-- Routing using [vue-router 4](https://next.router.vuejs.org/)
+- Routing VitePages / ViteLayout
 - TypeScript 4.3
 - PostCSS 8 w/ `postcss-nesting` plugin
 - Tailwind support with tw- prefix because pf primeflex
@@ -38,48 +38,48 @@ $gutter: 1rem;
 
 ## Project setup and usage
 
-Install YARN:
+Install pnpm:
 
 
 
 Install dependencies:
 
 ```
-yarn
+pnpm install
 ```
 
 Run development server:
 
 ```
-yarn dev
+pnpm dev
 ```
 
 Open Cypress test runner:
 
 ```
-yarn test:e2e
+pnpm test:e2e
 ```
 
 Jest test runner:
 
 ```
-yarn test:unit
+pnpm test:unit
 ```
 
 Run Cypress tests in headless mode:
 
 ```
-yarn test:ci
+pnpm test:ci
 ```
 
 Build and preview built site locally:
 
 ```
-yarn preview
+pnpm preview
 ```
 
 Build:
 
 ```
-yarn build
+pnpm build
 ```
