@@ -17,7 +17,6 @@
 <script setup lang="ts">
 
 import {useMainStore} from "../store";
-import {computed, ref} from "vue";
 
 const mainStore = useMainStore();
 

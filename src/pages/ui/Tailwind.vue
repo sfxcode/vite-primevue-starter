@@ -59,11 +59,11 @@
             <ul role="list" class="tw-border tw-border-gray-200 tw-rounded-md tw-divide-y tw-divide-gray-200">
               <li class="tw-pl-3 tw-pr-4 tw-py-3 tw-flex tw-items-center tw-justify-between tw-text-sm">
                 <div class="tw-w-0 tw-flex-1 tw-flex tw-items-center">
-                  <PaperClipIcon class="tw-flex-shrink-0 tw-h-5 tw-w-5 tw-text-gray-400" aria-hidden="true">
+                  <i-heroicons-solid-paper-clip class="tw-flex-shrink-0 tw-h-5 tw-w-5 tw-text-gray-400" aria-hidden="true"/>
                   <span class="tw-ml-2 tw-flex-1 tw-w-0 tw-truncate">
                     resume_back_end_developer.pdf
                   </span>
-                  </PaperClipIcon></div>
+                 </div>
                 <div class="tw-ml-4 tw-flex-shrink-0">
                   <a href="#" class="tw-font-medium tw-text-indigo-600 hover:tw-text-indigo-500">
                     Download
@@ -72,11 +72,11 @@
               </li>
               <li class="tw-pl-3 tw-pr-4 tw-py-3 tw-flex tw-items-center tw-justify-between tw-text-sm">
                 <div class="tw-w-0 tw-flex-1 tw-flex tw-items-center">
-                  <PaperClipIcon class="tw-flex-shrink-0 tw-h-5 tw-w-5 tw-text-gray-400" aria-hidden="true">
-                  <span class="tw-ml-2 tw-flex-1 tw-w-0 tw-truncate">
+                  <i-heroicons-solid-paper-clip class="tw-flex-shrink-0 tw-h-5 tw-w-5 tw-text-gray-400" aria-hidden="true"/>
+                  <span class="tw-ml-2 tw-flex-1 tw-w-0 tw-truncate  tw-text-gray-800">
                     coverletter_back_end_developer.pdf
                   </span>
-                  </PaperClipIcon></div>
+                </div>
                 <div class="tw-ml-4 tw-flex-shrink-0">
                   <a href="#" class="tw-font-medium tw-text-indigo-600 hover:tw-text-indigo-500">
                     Download
@@ -93,7 +93,6 @@
 </template>
 
 <script setup lang="ts">
-import { PaperClipIcon } from '@heroicons/vue/solid'
 
 </script>
 

@@ -33,7 +33,7 @@
         PrimeBlocks Example available (PrimeIcons 2 included)
       </AdvertiseBox>
       <AdvertiseBox header="Tailwind CSS" icon="pi-check-circle" color="blue-500">
-        Hero Icons included
+        Hero Icons included (ViteIcons)
       </AdvertiseBox>
     </div>
   </div>
@@ -43,6 +43,5 @@
 import AdvertiseBox from '../components/AdvertiseBox.vue';
 
 </script>
-
 
 <style scoped></style>

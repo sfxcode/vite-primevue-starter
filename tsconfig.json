@@ -8,7 +8,13 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "lib": ["esnext", "dom"],
-    "types": ["vite/client", "vite-plugin-pages/client", "@types/jest", "@intlify/vite-plugin-vue-i18n/client"],
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client",
+      "@types/jest",
+      "@intlify/vite-plugin-vue-i18n/client"
+    ],
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "importHelpers": true,
@@ -16,7 +22,8 @@
     "allowSyntheticDefaultImports": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["dist", "node_modules"]

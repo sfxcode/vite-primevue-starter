@@ -36,3 +36,7 @@ pnpm-debug.log*
 
 *.local
 LOCAL_NOTES.md
+
+*.log
+components.d.ts
+auto-imports.d.ts
