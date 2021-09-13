@@ -15,7 +15,8 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - Tailwind support with tw- prefix because pf primeflex
 - Eslint
 - Prettier
-- Testing with cypress and Jest
+- Testing with cypress
+- SSR
 
 ## IDE
 
@@ -34,7 +35,7 @@ $gutter: 1rem;
 ## Project setup and usage
 
 Install pnpm:
-
+[https://pnpm.io/installation](https://pnpm.io/installation)
 
 
 Install dependencies:
