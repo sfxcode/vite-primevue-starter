@@ -9,8 +9,7 @@ $gutter: 1rem;
 
 @import "sass/layout";
 @import "sass/theme";
+@import "sass/nprogress";
+@import "src/sass/default";
+@import "src/sass/main";
 
-a {
-  color: #3788d8;
-  cursor: pointer;
-}
