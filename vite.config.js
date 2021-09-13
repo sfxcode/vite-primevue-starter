@@ -15,6 +15,9 @@ import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import Inspect from 'vite-plugin-inspect'
 
+import Prism from 'markdown-it-prism'
+import LinkAttributes from 'markdown-it-link-attributes'
+const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 process.env.VITE_APP_BUILD_EPOCH = new Date().getTime()
 process.env.VITE_APP_VERSION = pkg.version
@@ -100,8 +103,21 @@ export default defineConfig({
         }
       },
     }),
-    Markdown(),
-    Restart({
+    Markdown({
+      wrapperClasses: markdownWrapperClasses,
+      headEnabled: true,
+      markdownItSetup(md) {
+        // https://prismjs.com/
+        md.use(Prism)
+        md.use(LinkAttributes, {
+          pattern: /^https?:\/\//,
+          attrs: {
+            target: '_blank',
+            rel: 'noopener',
+          },
+        })
+      },
+    }),    Restart({
       restart: ['../../dist/*.js'],
     }),
 

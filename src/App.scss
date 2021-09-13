@@ -4,7 +4,8 @@
 
 $gutter: 1rem;
 
-@import "node_modules/primeflex/primeflex.scss";
+@import "primeflex/primeflex.scss";
+@import "sass/markdown";
 
 @import "sass/layout";
 @import "sass/theme";

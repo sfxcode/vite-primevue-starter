@@ -1,5 +1,5 @@
 {
-    "baseUrl": "http://localhost:3000",
+    "baseUrl": "http://localhost:3333",
     "fixturesFolder": "tests/e2e/fixtures",
     "integrationFolder": "tests/e2e/integration",
     "pluginsFile": "tests/e2e/plugins/index.ts",
