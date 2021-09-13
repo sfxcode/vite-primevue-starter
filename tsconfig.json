@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
     "strict": true,
-    "jsx": "preserve",
-    "sourceMap": true,
+    "esModuleInterop": true,
+    "incremental": false,
     "skipLibCheck": true,
-    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
       "vite-plugin-pages/client",
@@ -15,11 +20,6 @@
       "@types/jest",
       "@intlify/vite-plugin-vue-i18n/client"
     ],
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "importHelpers": true,
-    "noImplicitAny": false,
-    "allowSyntheticDefaultImports": true,
     "paths": {
       "@/*": ["./src/*"]
     },
