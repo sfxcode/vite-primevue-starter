@@ -2,8 +2,9 @@
 
 [![CI](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml)
 
-## Features
+THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 
+## Features
  
 - PrimeVue fully supported as Module
 - Vue 3.2 (with script setup)

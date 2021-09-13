@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=production vite-ssg build",
     "preview": "vite build && vite preview",
     "preview-https": "serve dist",
-    "start": "yarn dev & wait-on tcp:3000 -v",
+    "start": "yarn dev & wait-on tcp:3333 -v",
     "test:e2e": "yarn dev & wait-on tcp:3333 -v & cypress open",
     "test:ci": "yarn dev & wait-on tcp:3333 -v & cypress run --headless"
   },
