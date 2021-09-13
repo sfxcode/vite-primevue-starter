@@ -1,4 +1,5 @@
 <template>
+  <div id="bar"/>
     <router-view />
 </template>
 
