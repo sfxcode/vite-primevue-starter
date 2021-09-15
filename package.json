@@ -7,9 +7,9 @@
     "build": "cross-env NODE_ENV=production vite-ssg build",
     "preview": "vite build && vite preview",
     "preview-https": "serve dist",
-    "start": "yarn dev & wait-on tcp:3333 -v",
-    "test:e2e": "yarn dev & wait-on tcp:3333 -v & cypress open",
-    "test:ci": "yarn dev & wait-on tcp:3333 -v & cypress run --headless"
+    "start": "pnpm dev & wait-on tcp:3333 -v",
+    "test:e2e": "pnpm dev & wait-on tcp:3333 -v & cypress open",
+    "test:ci": "pnpm dev & wait-on tcp:3333 -v & cypress run --headless"
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.2",
