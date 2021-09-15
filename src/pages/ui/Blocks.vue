@@ -1,7 +1,7 @@
 <template>
   <h5 class="font-bold text-2xl mb-4 text-blue-600">Blocks</h5>
   <div class="mb-4">
-    <p>Usage of sample frome <a href="https://www.primefaces.org/primeblocks-ng/#/free" target="_new">PrimeBlocks free</a> !</p>
+    <p>Usage of sample frome <a href="https://www.primefaces.org/primeblocks-vue/#/free" target="_new">PrimeBlocks free</a> !</p>
   </div>
   <div class="grid">
     <div class="col-12 md:col-6 lg:col-3">
