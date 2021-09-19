@@ -1,6 +1,6 @@
 
 <template>
-  <main class="px-4 py-10 text-center text-teal-700">
+  <main class="px-4 py-10 text-center text-teal-700 text-8xl">
     <div>
       <p class="text-4xl">
         <carbon-warning class="inline-block" />
