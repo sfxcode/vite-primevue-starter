@@ -90,6 +90,7 @@ export const install: UserModule = ({ app, router, isClient }) => {
     app.directive('ripple', Ripple);
     app.directive('badge', BadgeDirective);
 
+    // have to use custom import because of vue components primevue ssr problem // otherwise using PrimeVueResolver from vue components is a lot easier
     app.component('Accordion', Accordion);
     app.component('AccordionTab', AccordionTab);
     app.component('AutoComplete', AutoComplete);

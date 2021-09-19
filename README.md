@@ -12,7 +12,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - Markdown Support
 - TypeScript 4.3
 - PostCSS 8 w/ `postcss-nesting` plugin
-- Tailwind support with tw- prefix because pf primeflex
+- Tailwind support with tw- prefix because of primeflex
 - Eslint
 - Prettier
 - Testing with cypress
