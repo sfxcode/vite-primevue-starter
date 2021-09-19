@@ -4,23 +4,20 @@
 	</div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import AppSubmenu from './AppSubmenu.vue';
 
-export default {
-	props: {
-		model: Array
-	},
-    methods: {
-        onMenuItemClick(event) {
-            this.$emit('menuitem-click', event);
-        }
-    },
-	components: {
-		'AppSubmenu': AppSubmenu
-	}
+const props = defineProps<{
+  model: Array
+}>()
+
+const emit = defineEmits(['menuitem-click']);
+
+function onMenuItemClick(event) {
+  emit('menuitem-click', event);
 }
 </script>
+
 
 <style scoped>
 

@@ -7,6 +7,11 @@
       <i class="pi pi-bars"></i>
     </button>
 
+    <button class="p-link layout-topbar-menu-button layout-topbar-button"
+            v-styleclass="{ selector: '@next', enterActiveClass: 'scalein',
+			toggleClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true}">
+      <i class="pi pi-ellipsis-v"></i>
+    </button>
 
     <ul class="layout-topbar-menu hidden lg:flex origin-top">
       <li>
@@ -64,12 +69,14 @@ function toggle(event) {
   op.value.toggle(event);
 }
 
+const emit = defineEmits(['menu-toggle', 'topbar-menu-toggle']);
+
 function onMenuToggle(event) {
-  this.$emit('menu-toggle', event);
+  emit('menu-toggle', event);
 }
 
 function onTopbarMenuToggle(event) {
-  this.$emit('topbar-menu-toggle', event);
+  emit('topbar-menu-toggle', event);
 }
 
 </script>
