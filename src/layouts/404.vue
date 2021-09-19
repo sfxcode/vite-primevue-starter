@@ -1,5 +1,3 @@
-<script setup lang="ts">
-</script>
 
 <template>
   <main class="px-4 py-10 text-center text-teal-700">
@@ -9,8 +7,10 @@
       </p>
     </div>
     <router-view />
-    <div class="mt-5 mx-auto text-center opacity-25 text-sm">
-      [404 Layout]
-    </div>
   </main>
+  <Footer footer-text="[404 Layout]"/>
 </template>
+
+<script setup lang="ts">
+import Footer from "@/components/Footer.vue";
+</script>

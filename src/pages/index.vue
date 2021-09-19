@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import AdvertiseBox from '../components/AdvertiseBox.vue';
+import AdvertiseBox from "@/components/AdvertiseBox.vue";
 
 </script>
 

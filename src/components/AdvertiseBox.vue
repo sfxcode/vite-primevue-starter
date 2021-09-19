@@ -12,15 +12,11 @@
 
 <script setup lang="ts">
 
-interface Props {
+const props = defineProps<{
   header: String,
   icon:String,
-  color:String
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  color: 'blue-500'
-})
+  color?:String
+}>()
 
 </script>
 

@@ -3,22 +3,23 @@
     "baseUrl": ".",
     "module": "ESNext",
     "target": "es2016",
+    "moduleResolution": "node",
     "lib": ["DOM", "ESNext"],
     "strict": true,
     "esModuleInterop": true,
     "incremental": false,
     "skipLibCheck": true,
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
-      "@types/jest",
-      "@intlify/vite-plugin-vue-i18n/client"
+      "@intlify/vite-plugin-vue-i18n/client",
     ],
     "paths": {
       "@/*": ["./src/*"]
