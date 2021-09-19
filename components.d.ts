@@ -5,6 +5,12 @@
 declare module 'vue' {
   export interface GlobalComponents {
     AdvertiseBox: typeof import('./src/components/AdvertiseBox.vue')['default']
+    AppConfig: typeof import('./src/components/app/AppConfig.vue')['default']
+    AppFooter: typeof import('./src/components/app/AppFooter.vue')['default']
+    AppMenu: typeof import('./src/components/app/AppMenu.vue')['default']
+    AppProfile: typeof import('./src/components/app/AppProfile.vue')['default']
+    AppSubmenu: typeof import('./src/components/app/AppSubmenu.vue')['default']
+    AppTopbar: typeof import('./src/components/app/AppTopbar.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     IHeroiconsSolidPaperClip: typeof import('~icons/heroicons-solid/paper-clip')['default']
     ILogosVue: typeof import('~icons/logos/vue')['default']
