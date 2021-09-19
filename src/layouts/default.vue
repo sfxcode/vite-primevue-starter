@@ -48,6 +48,12 @@ export default {
             {label: 'Icons', icon: 'pi pi-fw pi-calendar', to: '/ui/icons'},
           ]
         },
+        {
+          label: 'Markdown',
+          items: [{
+            label: 'Sample Page', icon: 'pi pi-fw pi-home', to: '/markdown/hello'
+          }]
+        },
       ]
     }
   },
@@ -139,7 +145,7 @@ export default {
         'layout-mobile-sidebar-active': this.mobileMenuActive,
         'p-input-filled': this.$primevue.config.inputStyle === 'filled',
         'p-ripple-disabled': this.$primevue.config.ripple === false,
-        'layout-theme-light': true
+        'layout-theme-light': false
       }];
     },
     logo() {

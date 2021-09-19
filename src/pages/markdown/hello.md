@@ -2,7 +2,7 @@
 name: My Cool App
 ---
 
-# Hello World
+# Hello Markdown
 
 This is {{frontmatter.name}}
 
@@ -10,10 +10,21 @@ This is {{frontmatter.name}}
 * Part 2
 * Part 3
 
-```js
-import { useDark, useToggle } from '@vueuse/core'
+## Code
 
-export const isDark = useDark()
-export const toggleDark = useToggle(isDark)
+```markdown
+
+---
+name: My Cool App
+---
+
+# Hello Markdown
+
+This is {{frontmatter.name}}
+
+* Part 1
+* Part 2
+* Part 3
+
 ```
 

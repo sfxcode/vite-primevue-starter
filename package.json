@@ -19,7 +19,6 @@
     "nprogress": "^0.2.0",
     "pinia": "~2.0.0-rc.4",
     "postcss": "^8.3.6",
-    "primeflex": "^3.0.1",
     "primeicons": "^4.1.0",
     "primevue": "^3.7.0",
     "prism-theme-vars": "^0.2.2",
@@ -81,11 +80,5 @@
     "vite-ssg": "^0.15.2",
     "vue-tsc": "^0.3.0",
     "wait-on": "~6.0"
-  },
-  "dependenciesMeta": {
-    "primeflex": {
-      "unplugged": true
-    }
-  },
-  "packageManager": "yarn@3.0.1"
+  }
 }
