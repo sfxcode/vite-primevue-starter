@@ -44,6 +44,7 @@ export default {
         {
           label: 'UI / UX', icon: 'pi pi-fw pi-clone',
           items: [
+            {label: 'PrimeVue', icon: 'pi pi-fw pi-user-edit', to: '/elements/input'},
             {label: 'Tailwind', icon: 'pi pi-fw pi-user-edit', to: '/ui/tailwind'},
             {label: 'Icons', icon: 'pi pi-fw pi-calendar', to: '/ui/icons'},
           ]
