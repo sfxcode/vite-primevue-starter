@@ -42,7 +42,7 @@
         height: 3rem;
         cursor: pointer;
         transition: background-color $transitionDuration;
-        
+
         &:hover {
             color: var(--text-color);
             background-color: var(--surface-hover);
@@ -78,8 +78,8 @@
         margin: 0 0 0 auto;
         padding: 0;
         list-style: none;
-        display: flex;
-        
+        // display: flex;
+
         .layout-topbar-button {
             margin-left: 1rem;
         }
@@ -94,7 +94,7 @@
             width: auto;
             order: 2;
         }
-    
+
         .layout-menu-button {
             margin-left: 0;
             order: 1;

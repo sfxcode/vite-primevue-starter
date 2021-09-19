@@ -85,10 +85,13 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
+import StyleClass from "primevue/styleclass";
 export const install: UserModule = ({ app, router, isClient }) => {
     app.directive('tooltip', Tooltip);
     app.directive('ripple', Ripple);
     app.directive('badge', BadgeDirective);
+    app.directive('styleclass', StyleClass);
+
 
     // have to use custom import because of vue components primevue ssr problem // otherwise using PrimeVueResolver from vue components is a lot easier
     app.component('Accordion', Accordion);
