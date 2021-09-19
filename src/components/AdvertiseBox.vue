@@ -4,7 +4,7 @@
                 <i :class="'pi ' + icon + ' text-3xl text-' + color"></i>
             </span>
     <div :class="'header-text mb-3 font-medium text-' + color">{{ header }}</div>
-    <div class="text-xs text-gray-600">
+    <div class="text-xs ">
       <slot/>
     </div>
   </div>

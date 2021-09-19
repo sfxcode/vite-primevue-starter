@@ -12,25 +12,12 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - Markdown Support
 - TypeScript 4.3
 - PostCSS 8 w/ `postcss-nesting` plugin
-- Tailwind support with tw- prefix because of primeflex
+- Tailwind support
 - Eslint
 - Prettier
 - Testing with cypress
 - SSR
 
-## IDE
-
-to use primeflex scss from you need to point to corresponding path (here: node_modules) in App.scss:
-
-```scss
-$gutter: 1rem;
-
-@import "primeflex/primeflex.scss";
-
-@import "sass/layout";
-@import "sass/theme";
-
-```
 
 ## Project setup and usage
 
