@@ -23,7 +23,7 @@
       <AdvertiseBox header="Vite Pages" icon="pi-check-circle" color="blue-600">
         Routing by File/Folder & Vite Markdown included
       </AdvertiseBox>
-      <AdvertiseBox header="Pinia Store 2" icon="pi-check-circle"  color="yellow-400">
+      <AdvertiseBox header="Pinia Store 2" icon="pi-check-circle" color="yellow-400">
         Replacement for VUEX Store
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue 3.7" icon="pi-check-circle" color="green-600">
@@ -40,8 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import AdvertiseBox from "@/components/AdvertiseBox.vue";
-
-</script>
+import AdvertiseBox from "@/components/AdvertiseBox.vue";</script>
 
 <style scoped></style>

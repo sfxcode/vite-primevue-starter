@@ -32,8 +32,8 @@
 <script setup lang="ts">
 
 interface Props {
-  items: Array,
-  root?:Boolean,
+  items?: Array<Object>,
+  root?:boolean,
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -43,7 +43,7 @@ const props = withDefaults(defineProps<Props>(), {
 const activeIndex = ref(null)
 const emit = defineEmits(['menuitem-click']);
 
-function onMenuItemClick(event, item, index) {
+function onMenuItemClick(event: { preventDefault: () => void; }, item: { disabled: any; to: any; url: any; command: (arg0: { originalEvent: any; item: any; }) => void; }, index: any) {
   if (item.disabled) {
     event.preventDefault();
     return;

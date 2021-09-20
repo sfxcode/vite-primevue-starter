@@ -28,8 +28,8 @@
 
 const expanded = ref(false);
 
-function onClick(event) {
-  this.expanded = !this.expanded;
+function onClick(event: any) {
+  expanded.value = !expanded.value;
   event.preventDefault();
 }
 

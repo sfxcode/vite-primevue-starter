@@ -1,4 +1,4 @@
-import { UserModule } from '../types'
+import {UserModule} from '@/types'
 
 import PrimeVue from 'primevue/config';
 import AutoComplete from 'primevue/autocomplete';
@@ -86,7 +86,8 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 import StyleClass from "primevue/styleclass";
-export const install: UserModule = ({ app, router, isClient }) => {
+
+export const install: UserModule = ({app, router, isClient}) => {
     app.directive('tooltip', Tooltip);
     app.directive('ripple', Ripple);
     app.directive('badge', BadgeDirective);
@@ -171,7 +172,7 @@ export const install: UserModule = ({ app, router, isClient }) => {
     app.component('TreeTable', TreeTable);
     app.component('TriStateCheckbox', TriStateCheckbox);
 
-    app.use(PrimeVue, { ripple: true });
+    app.use(PrimeVue, {ripple: true});
     app.use(ConfirmationService);
     app.use(ToastService);
 

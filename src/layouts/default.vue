@@ -1,15 +1,15 @@
 <template>
   <div :class="containerClass" @click="onWrapperClick">
-    <AppTopBar @menu-toggle="onMenuToggle" />
+    <AppTopBar @menu-toggle="onMenuToggle"/>
     <div class="layout-sidebar" @click="onSidebarClick">
-      <AppMenu :model="menu" @menuitem-click="onMenuItemClick" />
+      <AppMenu :model="menu" @menuitem-click="onMenuItemClick"/>
     </div>
 
     <div class="layout-main-container">
       <div class="layout-main">
-        <router-view />
+        <router-view/>
       </div>
-      <AppFooter />
+      <AppFooter/>
     </div>
 
   </div>
@@ -29,7 +29,7 @@ export default {
       staticMenuInactive: false,
       overlayMenuActive: false,
       mobileMenuActive: false,
-      menu:navigationMenu
+      menu: navigationMenu
     }
   },
 
@@ -53,18 +53,16 @@ export default {
 
       if (this.isDesktop()) {
         if (this.layoutMode === 'overlay') {
-          if(this.mobileMenuActive === true) {
+          if (this.mobileMenuActive === true) {
             this.overlayMenuActive = true;
           }
 
           this.overlayMenuActive = !this.overlayMenuActive;
           this.mobileMenuActive = false;
-        }
-        else if (this.layoutMode === 'static') {
+        } else if (this.layoutMode === 'static') {
           this.staticMenuInactive = !this.staticMenuInactive;
         }
-      }
-      else {
+      } else {
         this.mobileMenuActive = !this.mobileMenuActive;
       }
 

@@ -4,7 +4,6 @@ export function updateTheme(themeName: string, themeColor: string) {
     const themeElement = document.getElementById('theme-link');
     if (themeElement)
         themeElement.setAttribute('href', 'https://unpkg.com/primevue/resources/themes/' + themeName + '-' + themeColor + '/theme.css');
-    console.log('updated')
 }
 
 // main is the name of the store. It is unique across your application
