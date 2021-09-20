@@ -22,6 +22,9 @@ const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 process.env.VITE_APP_BUILD_EPOCH = new Date().getTime()
 process.env.VITE_APP_VERSION = pkg.version
 
+const pathSrc = path.resolve(__dirname, "./src");
+
+
 /**
  * @type {import('vite').UserConfig}
  */

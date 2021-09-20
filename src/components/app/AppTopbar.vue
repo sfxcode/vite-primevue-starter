@@ -64,18 +64,18 @@ const themeStore = useThemeStore();
 const op = ref(null)
 
 
-function toggle(event) {
+function toggle(event:any) {
   console.log(op.value);
   op.value.toggle(event);
 }
 
 const emit = defineEmits(['menu-toggle', 'topbar-menu-toggle']);
 
-function onMenuToggle(event) {
+function onMenuToggle(event:any) {
   emit('menu-toggle', event);
 }
 
-function onTopbarMenuToggle(event) {
+function onTopbarMenuToggle(event:any) {
   emit('topbar-menu-toggle', event);
 }
 

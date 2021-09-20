@@ -1,5 +1,7 @@
 # Vite Typescript + PrimeVue Starter
 
+![vite-prime-vue-starter](vite-prime-vue-starter.png)
+
 [![CI](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml)
 
 THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code

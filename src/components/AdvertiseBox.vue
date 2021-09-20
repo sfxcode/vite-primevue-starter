@@ -14,8 +14,8 @@
 
 const props = defineProps<{
   header: String,
-  icon:String,
-  color?:String
+  icon: String,
+  color?: String
 }>()
 
 </script>

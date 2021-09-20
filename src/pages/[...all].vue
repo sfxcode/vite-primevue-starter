@@ -1,4 +1,3 @@
-
 <template>
   <div>
     {{ t('not_found') }}
@@ -6,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const {t} = useI18n()
 </script>
 
 <route lang="yaml">
