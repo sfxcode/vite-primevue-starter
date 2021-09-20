@@ -32,7 +32,7 @@
 <script setup lang="ts">
 
 interface Props {
-  items?: Array<Object>,
+  items?: Array<any>,
   root?:boolean,
 }
 
@@ -58,7 +58,7 @@ function onMenuItemClick(event: { preventDefault: () => void; }, item: { disable
     item.command({originalEvent: event, item: item});
   }
 
-  this.activeIndex = index === this.activeIndex ? null : index;
+  activeIndex.value = index === activeIndex.value ? null : index;
 
 
   emit('menuitem-click', {
@@ -67,7 +67,7 @@ function onMenuItemClick(event: { preventDefault: () => void; }, item: { disable
   });
 }
 
-function visible(item) {
+function visible(item:any) {
   return (typeof item.visible === 'function' ? item.visible() : item.visible !== false);
 }
 
