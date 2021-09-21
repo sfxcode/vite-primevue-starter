@@ -1,15 +1,8 @@
 kind: pipeline
-name: Vite PrimeVue Starter Pipeline
+name: test-ci
 type: docker
 
 steps:
-    - name: build
-      image: node:latest
-      commands:
-        - curl -sL https://unpkg.com/@pnpm/self-installer | node
-        - pnpm install
-        - pnpm build
-
   - name: docker
     image: plugins/docker
     settings:
