@@ -1,13 +1,23 @@
 kind: pipeline
-name: test-ci
+name: Vite PrimeVue Starter Pipeline
 type: docker
 
 steps:
+    - build:
+      image: node:latest
+      commands:
+        - curl -sL https://unpkg.com/@pnpm/self-installer | node
+        - pnpm install
+        - pnpm build
+      when:
+        event: push
+        branch: master
+
   - name: docker
     image: plugins/docker
     settings:
-      registry: core-harbor.my.com:30443
-      repo: core-harbor.my.com:30443/test-ci/one
+      registry: registry.sfxcode.com
+      repo: sfxcode/vite-primevue-starter
       no_cache: true
       username:
         from_secret: docker_username
@@ -15,3 +25,6 @@ steps:
         from_secret: docker_password
       tags:
         - latest
+      when:
+        event: push
+        branch: main
