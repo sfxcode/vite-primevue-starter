@@ -2,6 +2,7 @@ kind: pipeline
 name: test-ci
 type: docker
 
+
 steps:
   - name: docker
     image: plugins/docker
