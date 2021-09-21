@@ -1,0 +1,7 @@
+pipeline:
+  build:
+    image: node:latest
+    commands:
+      - curl -sL https://unpkg.com/@pnpm/self-installer | node
+      - pnpm install
+      - pnpm build
