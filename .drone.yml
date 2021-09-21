@@ -6,7 +6,7 @@ steps:
   - name: docker
     image: plugins/docker
     settings:
-      registry: registry.sfxcode.com
+      registry: https://registry.sfxcode.com
       repo: sfxcode/vite-primevue-starter
       no_cache: true
       username:
