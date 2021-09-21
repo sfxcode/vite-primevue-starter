@@ -1,7 +1,30 @@
-pipeline:
-  build:
-    image: node:latest
-    commands:
-      - curl -sL https://unpkg.com/@pnpm/self-installer | node
-      - pnpm install
-      - pnpm build
+kind: pipeline
+name: test-ci
+type: docker
+
+steps:
+#  - build:
+#    image: node:latest
+#    commands:
+#      - curl -sL https://unpkg.com/@pnpm/self-installer | node
+#      - pnpm install
+#      - pnpm build
+#    when:
+#      event: push
+#      branch: master
+
+  - name: docker
+    image: plugins/docker
+    settings:
+      registry: registry.sfxcode.com
+      repo: sfxcode/vite-primevue-starter
+      no_cache: true
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      tags:
+        - latest
+    when:
+      event: push
+      branch: master
