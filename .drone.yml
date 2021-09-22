@@ -17,4 +17,4 @@ steps:
         - 0.9.6
       when:
         event: push
-        branch: main
+        branch: release
