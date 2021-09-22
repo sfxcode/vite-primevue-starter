@@ -2,7 +2,7 @@
   <div :class="containerClass" @click="onWrapperClick">
     <AppTopBar @menu-toggle="onMenuToggle"/>
     <div class="layout-sidebar" @click="onSidebarClick">
-      <AppMenu :model="menu" @menuitem-click="onMenuItemClick"/>
+      <AppMenu :model="navigationMenu" @menuitem-click="onMenuItemClick"/>
     </div>
 
     <div class="layout-main-container">
@@ -15,128 +15,137 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import AppTopBar from '../components/app/AppTopbar.vue';
 import AppMenu from '../components/app/AppMenu.vue';
 import AppFooter from '../components/app/AppFooter.vue';
 import {navigationMenu} from "@/logic";
+import {useToast} from "primevue/usetoast";
+import {usePrimeVue} from "primevue/config";
 
-export default {
-  data() {
-    return {
-      layoutMode: 'static',
-      layoutColorMode: 'light',
-      staticMenuInactive: false,
-      overlayMenuActive: false,
-      mobileMenuActive: false,
-      menu: navigationMenu
-    }
-  },
+const layoutMode = ref('static')
+const layoutColorMode = ref('light')
+const staticMenuInactive = ref(false)
+const overlayMenuActive = ref(false)
+const mobileMenuActive = ref(false)
+const menuClick = ref(false)
+const menuActive = ref(false)
 
-  watch: {
-    $route() {
-      this.menuActive = false;
-      this.$toast.removeAllGroups();
+const toast = useToast();
+const primeVue = usePrimeVue();
+const route = useRoute()
+
+watch(() => route,
+    async => {
+      menuActive.value = false;
+      toast.removeAllGroups();
     }
-  },
-  methods: {
-    onWrapperClick() {
-      if (!this.menuClick) {
-        this.overlayMenuActive = false;
-        this.mobileMenuActive = false;
+)
+
+
+function onWrapperClick() {
+  if (!menuClick.value) {
+    overlayMenuActive.value = false;
+    mobileMenuActive.value = false;
+  }
+  menuClick.value = false;
+}
+
+
+function onMenuToggle() {
+  menuClick.value = true;
+
+  if (isDesktop()) {
+    if (layoutMode.value === 'overlay') {
+      if (mobileMenuActive.value === true) {
+        overlayMenuActive.value = true;
       }
 
-      this.menuClick = false;
-    },
-    onMenuToggle() {
-      this.menuClick = true;
-
-      if (this.isDesktop()) {
-        if (this.layoutMode === 'overlay') {
-          if (this.mobileMenuActive === true) {
-            this.overlayMenuActive = true;
-          }
-
-          this.overlayMenuActive = !this.overlayMenuActive;
-          this.mobileMenuActive = false;
-        } else if (this.layoutMode === 'static') {
-          this.staticMenuInactive = !this.staticMenuInactive;
-        }
-      } else {
-        this.mobileMenuActive = !this.mobileMenuActive;
-      }
-
-      event.preventDefault();
-    },
-    onSidebarClick() {
-      this.menuClick = true;
-    },
-    onMenuItemClick(event) {
-      if (event.item && !event.item.items) {
-        this.overlayMenuActive = false;
-        this.mobileMenuActive = false;
-      }
-    },
-    onLayoutChange(layoutMode) {
-      this.layoutMode = layoutMode;
-    },
-    onLayoutColorChange(layoutColorMode) {
-      this.layoutColorMode = layoutColorMode;
-    },
-    addClass(element, className) {
-      if (element.classList)
-        element.classList.add(className);
-      else
-        element.className += ' ' + className;
-    },
-    removeClass(element, className) {
-      if (element.classList)
-        element.classList.remove(className);
-      else
-        element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-    },
-    isDesktop() {
-      return window.innerWidth >= 992;
-    },
-    isSidebarVisible() {
-      if (this.isDesktop()) {
-        if (this.layoutMode === 'static')
-          return !this.staticMenuInactive;
-        else if (this.layoutMode === 'overlay')
-          return this.overlayMenuActive;
-      }
-
-      return true;
+      overlayMenuActive.value = !overlayMenuActive.value;
+      mobileMenuActive.value = false;
+    } else if (layoutMode.value === 'static') {
+      staticMenuInactive.value = !staticMenuInactive.value;
     }
-  },
-  computed: {
-    containerClass() {
-      return ['layout-wrapper', {
-        'layout-overlay': this.layoutMode === 'overlay',
-        'layout-static': this.layoutMode === 'static',
-        'layout-static-sidebar-inactive': this.staticMenuInactive && this.layoutMode === 'static',
-        'layout-overlay-sidebar-active': this.overlayMenuActive && this.layoutMode === 'overlay',
-        'layout-mobile-sidebar-active': this.mobileMenuActive,
-        'p-input-filled': this.$primevue.config.inputStyle === 'filled',
-        'p-ripple-disabled': this.$primevue.config.ripple === false,
-        'layout-theme-light': false
-      }];
-    },
-    logo() {
-      return (this.layoutColorMode === 'dark') ? "images/logo-white.svg" : "images/logo.svg";
-    }
-  },
-  beforeUpdate() {
-    if (this.mobileMenuActive)
-      this.addClass(document.body, 'body-overflow-hidden');
-    else
-      this.removeClass(document.body, 'body-overflow-hidden');
-  },
-  components: {
-    'AppTopBar': AppTopBar,
-    'AppMenu': AppMenu,
-    'AppFooter': AppFooter,
+  } else {
+    mobileMenuActive.value = !mobileMenuActive.value;
+  }
+
+}
+
+function onSidebarClick() {
+  menuClick.value = true;
+}
+
+function onMenuItemClick(event: any) {
+  if (event.item && !event.item.items) {
+    overlayMenuActive.value = false;
+    mobileMenuActive.value = false;
   }
 }
+
+
+function onLayoutChange(mode: string) {
+  layoutMode.value = mode;
+}
+
+function onLayoutColorChange(mode: string) {
+  layoutColorMode.value = mode;
+}
+
+function addClass(element: HTMLElement, className: string) {
+  if (element.classList)
+    element.classList.add(className);
+  else
+    element.className += ' ' + className;
+}
+
+
+function removeClass(element: HTMLElement, className: string) {
+  if (element.classList)
+    element.classList.remove(className);
+  else
+    element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+}
+
+function isDesktop() {
+  return window.innerWidth >= 992;
+}
+
+
+function isSidebarVisible() {
+  if (isDesktop()) {
+    if (layoutMode.value === 'static')
+      return !staticMenuInactive.value;
+    else if (layoutMode.value === 'overlay')
+      return overlayMenuActive.value;
+  }
+
+  return true;
+}
+
+const containerClass = computed(() => ['layout-wrapper', {
+  'layout-overlay': layoutMode.value === 'overlay',
+  'layout-static': layoutMode.value === 'static',
+  'layout-static-sidebar-inactive': staticMenuInactive.value && layoutMode.value === 'static',
+  'layout-overlay-sidebar-active': overlayMenuActive.value && layoutMode.value === 'overlay',
+  'layout-mobile-sidebar-active': mobileMenuActive.value,
+  'p-input-filled': primeVue.config.inputStyle === 'filled',
+  'p-ripple-disabled': primeVue.config.ripple === false,
+  'layout-theme-light': false
+}])
+
+function logo() {
+  return layoutColorMode.value === 'dark' ? "images/logo-white.svg" : "images/logo.svg"
+}
+
+onBeforeUpdate(() => {
+      if (mobileMenuActive.value)
+        addClass(document.body, 'body-overflow-hidden');
+      else
+        removeClass(document.body, 'body-overflow-hidden');
+    }
+)
+
+
 </script>
 
