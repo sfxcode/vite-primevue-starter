@@ -57,7 +57,7 @@ specifiers:
   vite-plugin-purge-icons: ^0.7.0
   vite-plugin-pwa: ^0.11.2
   vite-plugin-restart: ^0.0.2
-  vite-plugin-vue-layouts: ^0.4.1
+  vite-plugin-vue-layouts: ^0.5.0
   vite-ssg: ^0.15.2
   vue: ^3.2.11
   vue-demi: ^0.11.4
@@ -131,7 +131,7 @@ devDependencies:
   vite-plugin-purge-icons: 0.7.0_vite@2.5.10
   vite-plugin-pwa: 0.11.2_vite@2.5.10
   vite-plugin-restart: 0.0.2_vite@2.5.10
-  vite-plugin-vue-layouts: 0.4.1_vite@2.5.10
+  vite-plugin-vue-layouts: 0.5.0_f5e1e96816ec024264116ac908720639
   vite-ssg: 0.15.3_2a0d95203684ec02779ccc0ec3c15f4e
   vue-tsc: 0.3.0_typescript@4.4.3
   wait-on: 6.0.0
@@ -2444,6 +2444,7 @@ packages:
 
   /@vue/devtools-api/6.0.0-beta.15:
     resolution: {integrity: sha512-quBx4Jjpexo6KDiNUGFr/zF/2A4srKM9S9v2uHgMXSU//hjgq1eGzqkIFql8T9gfX5ZaVOUzYBP3jIdIR3PKIA==}
+    dev: false
 
   /@vue/eslint-config-standard/6.1.0_c3e8f09ba18cdd3bccefb56b0b57c68b:
     resolution: {integrity: sha512-9+hrEyflDzsGdlBDl9jPV5DIYUx1TOU5OSQqRDKCrNumrxRj5HRWKuk+ocXWnha6uoNRtLC24mY7d/MwqvBCNw==}
@@ -2508,6 +2509,7 @@ packages:
     dependencies:
       '@vue/reactivity': 3.2.11
       '@vue/shared': 3.2.11
+    dev: false
 
   /@vue/runtime-dom/3.2.11:
     resolution: {integrity: sha512-cOK1g0INdiCbds2xrrJKrrN+pDHuLz6esUs/crdEiupDuX7IeiMbdqrAQCkYHp5P1KLWcbGlkmwfVD7HQGii0Q==}
@@ -2515,6 +2517,7 @@ packages:
       '@vue/runtime-core': 3.2.11
       '@vue/shared': 3.2.11
       csstype: 2.6.17
+    dev: false
 
   /@vue/server-renderer/3.2.13_vue@3.2.11:
     resolution: {integrity: sha512-KI+JFV+vRb95+Jb6IwRRm4Vhvj8wrJTNs+OlATfqwwIRpBGAyxn/4knDJYzlnUf/mrKAkrbw751mHhi+pEwILQ==}
@@ -3521,6 +3524,7 @@ packages:
 
   /csstype/2.6.17:
     resolution: {integrity: sha512-u1wmTI1jJGzCJzWndZo8mk4wnPTZd1eOIYTYvuEyOQGfmDl3TrabCCfKnOC86FZwW/9djqTl933UF/cS425i9A==}
+    dev: false
 
   /cypress/8.4.1:
     resolution: {integrity: sha512-itJXq0Vx3sXCUrDyBi2IUrkxVu/gTTp1VhjB5tzGgkeCR8Ae+/T8WV63rsZ7fS8Tpq7LPPXiyoM/sEdOX7cR6A==}
@@ -7736,10 +7740,12 @@ packages:
       vite: 2.5.10
     dev: true
 
-  /vite-plugin-vue-layouts/0.4.1_vite@2.5.10:
-    resolution: {integrity: sha512-N4mrjqisD3Ys0F+3Rytq3F8LcIo3a0o+7tpkr/ck8UGLpHBJVb1Ce09cBPO28Mi8ZKAyxMuoqDuZant8QdBnag==}
+  /vite-plugin-vue-layouts/0.5.0_f5e1e96816ec024264116ac908720639:
+    resolution: {integrity: sha512-KN03GMSGNrWxeHJo5OO9fvdZh44PfievNAoLeMbf20UQPBBO6kpIMVTYB6sFPMWmiTbqZmq3we4z/ocJkxAEiA==}
     peerDependencies:
       vite: ^2.5.0
+      vue: ^2.6.12 || ^3.2.4
+      vue-router: ^3.5.1 || ^ 4.0.11
     dependencies:
       '@vue/compiler-sfc': 3.2.13
       debug: 4.3.2
@@ -7984,6 +7990,7 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.0.0-beta.15
       vue: 3.2.11
+    dev: false
 
   /vue-tsc/0.3.0_typescript@4.4.3:
     resolution: {integrity: sha512-zaDRZBxwRIz1XjhNP92FqugG71st6BUMnA2EwPeXrAyzbEYVRz6TezNFceYl3QYqqN8CtaxbqUhaQEDj/ntoCA==}
@@ -8001,6 +8008,7 @@ packages:
       '@vue/compiler-dom': 3.2.11
       '@vue/runtime-dom': 3.2.11
       '@vue/shared': 3.2.11
+    dev: false
 
   /w3c-hr-time/1.0.2:
     resolution: {integrity: sha512-z8P5DvDNjKDoFIHK7q8r8lackT6l+jo/Ye3HOle7l9nICP9lf1Ci25fy9vHd0JOWewkIFzXIEig3TdKT7JQ5fQ==}
