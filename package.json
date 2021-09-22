@@ -1,6 +1,6 @@
 {
   "name": "vite-primevue-starter",
-  "version": "0.9.3",
+  "version": "0.9.6",
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 3333 --open",
@@ -75,7 +75,7 @@
     "vite-plugin-purge-icons": "^0.7.0",
     "vite-plugin-pwa": "^0.11.2",
     "vite-plugin-restart": "^0.0.2",
-    "vite-plugin-vue-layouts": "^0.4.1",
+    "vite-plugin-vue-layouts": "^0.5.0",
     "vite-ssg": "^0.15.2",
     "vue-tsc": "^0.3.0",
     "wait-on": "~6.0"
