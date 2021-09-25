@@ -60,8 +60,7 @@ export default defineConfig({
             dts: true,
             resolvers: [
                 IconsResolver(),
-                ElementPlusResolver(),
-                PrimeVueResolver()
+                ElementPlusResolver()
             ],
         }),
         Icons({
