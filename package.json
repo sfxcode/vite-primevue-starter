@@ -35,7 +35,7 @@
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "4.31.2",
-    "@typescript-eslint/parser": "4.31.2",
+    "@typescript-eslint/parser": "4.32.0",
     "@vitejs/plugin-vue": "^1.9.0",
     "@vue/babel-preset-app": "^4.5.13",
     "@vue/compiler-sfc": "^3.2.13",
