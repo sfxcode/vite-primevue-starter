@@ -39,3 +39,5 @@ LOCAL_NOTES.md
 
 *.log
 
+.gitconfig
+
