@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 3333 --open",
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "build": "cross-env NODE_ENV=production vite-ssg build",
     "preview": "vite build && vite preview",
     "preview-https": "serve dist",
