@@ -1,9 +1,11 @@
 {
-    "baseUrl": "http://localhost:3333",
-    "fixturesFolder": "tests/e2e/fixtures",
-    "integrationFolder": "tests/e2e/integration",
-    "pluginsFile": "tests/e2e/plugins/index.ts",
-    "screenshotsFolder": "tests/e2e/screenshots",
-    "supportFile": "tests/e2e/support/index.ts",
-    "videosFolder": "tests/e2e/videos"
+    "e2e": {
+        "baseUrl": "http://localhost:3333"
+    },
+    "component": {
+        "componentFolder": "cypress/component/",
+        "testFiles": "**/*spec.{js,jsx,ts,tsx}",
+        "viewportHeight": 500,
+        "viewportWidth": 700
+    }
 }
