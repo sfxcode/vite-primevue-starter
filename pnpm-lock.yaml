@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antfu/eslint-config': ^0.9.0
-  '@cypress/vite-dev-server': ^1.2.5
+  '@cypress/vite-dev-server': ^2.1.1
   '@cypress/vue': ^3.0.1
   '@iconify/iconify': ^2.0.4
   '@iconify/json': ^1.1.412
@@ -88,7 +88,7 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.9.0_eslint@8.0.0+typescript@4.4.3
-  '@cypress/vite-dev-server': 1.2.7_vite@2.6.5
+  '@cypress/vite-dev-server': 2.1.1_vite@2.6.5
   '@cypress/vue': 3.0.3_cypress@8.5.0+vue@3.2.19
   '@iconify/json': 1.1.412
   '@intlify/vite-plugin-vue-i18n': 2.4.0_30026928d087d896948cc78c2f441d5f
@@ -1484,8 +1484,8 @@ packages:
       uuid: 8.3.2
     dev: true
 
-  /@cypress/vite-dev-server/1.2.7_vite@2.6.5:
-    resolution: {integrity: sha512-OnFqzZZn+UQEjx2sf4JnmbfxbNPBh2vRNnfqQ42CP1XXCEhQIrM+cFb+ahHxDlTisd9zXP/45US72RnsqshIaw==}
+  /@cypress/vite-dev-server/2.1.1_vite@2.6.5:
+    resolution: {integrity: sha512-/1joEKftc2CxMeuNPpU4eYkcEsNTKdvXifNgy3ukgX9z5xEDtSwQ4GryQDic9coq8vlw2xbaUpAh435wkJL9Vw==}
     peerDependencies:
       vite: '>= 2.1.3'
     dependencies:
