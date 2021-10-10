@@ -69,4 +69,4 @@ jobs:
         if: failure()
         with:
           name: videos
-          path: tests/e2e/videos/
+          path: cypress/videos/
