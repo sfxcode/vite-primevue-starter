@@ -56,7 +56,7 @@ Open Cypress test runner:
 pnpm test:e2e
 ```
 
-Jest test runner:
+Component test runner:
 
 ```
 pnpm test:unit
