@@ -26,4 +26,10 @@ export const navigationMenu = [
             label: 'Sample Page', icon: 'pi pi-fw pi-home', to: '/markdown/hello'
         }]
     },
+    {
+        label: 'Admin',
+        items: [{
+            label: 'Admin Page', icon: 'pi pi-fw pi-home', to: '/admin'
+        }]
+    },
 ]
