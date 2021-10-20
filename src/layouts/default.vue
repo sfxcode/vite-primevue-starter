@@ -1,46 +1,46 @@
 <template>
-  <div :class="containerClass" @click="onWrapperClick">
-    <AppTopBar @menu-toggle="onMenuToggle"/>
-    <div class="layout-sidebar" @click="onSidebarClick">
-      <AppMenu :model="navigationMenu" @menuitem-click="onMenuItemClick"/>
+  <div :class='containerClass' @click='onWrapperClick'>
+    <AppTopBar @menu-toggle='onMenuToggle' />
+    <div class='layout-sidebar' @click='onSidebarClick'>
+      <AppMenu :model='navigationMenu' @menuitem-click='onMenuItemClick' />
     </div>
 
-    <div class="layout-main-container">
-      <div class="layout-main">
-        <router-view/>
+    <div class='layout-main-container'>
+      <div class='layout-main'>
+        <router-view />
       </div>
-      <AppFooter/>
+      <AppFooter />
     </div>
 
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang='ts'>
 import AppTopBar from '../components/app/AppTopbar.vue';
 import AppMenu from '../components/app/AppMenu.vue';
 import AppFooter from '../components/app/AppFooter.vue';
-import {navigationMenu} from "@/logic";
-import {useToast} from "primevue/usetoast";
-import {usePrimeVue} from "primevue/config";
+import { navigationMenu } from '@/logic';
+import { useToast } from 'primevue/usetoast';
+import { usePrimeVue } from 'primevue/config';
 
-const layoutMode = ref('static')
-const layoutColorMode = ref('light')
-const staticMenuInactive = ref(false)
-const overlayMenuActive = ref(false)
-const mobileMenuActive = ref(false)
-const menuClick = ref(false)
-const menuActive = ref(false)
+const layoutMode = ref('static');
+const layoutColorMode = ref('light');
+const staticMenuInactive = ref(false);
+const overlayMenuActive = ref(false);
+const mobileMenuActive = ref(false);
+const menuClick = ref(false);
+const menuActive = ref(false);
 
 const toast = useToast();
 const primeVue = usePrimeVue();
-const route = useRoute()
+const route = useRoute();
 
 watch(() => route,
-    async => {
-      menuActive.value = false;
-      toast.removeAllGroups();
-    }
-)
+  async => {
+    menuActive.value = false;
+    toast.removeAllGroups();
+  },
+);
 
 
 function onWrapperClick() {
@@ -131,20 +131,20 @@ const containerClass = computed(() => ['layout-wrapper', {
   'layout-mobile-sidebar-active': mobileMenuActive.value,
   'p-input-filled': primeVue.config.inputStyle === 'filled',
   'p-ripple-disabled': primeVue.config.ripple === false,
-  'layout-theme-light': false
-}])
+  'layout-theme-light': false,
+}]);
 
 function logo() {
-  return layoutColorMode.value === 'dark' ? "images/logo-white.svg" : "images/logo.svg"
+  return layoutColorMode.value === 'dark' ? 'images/logo-white.svg' : 'images/logo.svg';
 }
 
 onBeforeUpdate(() => {
-      if (mobileMenuActive.value)
-        addClass(document.body, 'body-overflow-hidden');
-      else
-        removeClass(document.body, 'body-overflow-hidden');
-    }
-)
+    if (mobileMenuActive.value)
+      addClass(document.body, 'body-overflow-hidden');
+    else
+      removeClass(document.body, 'body-overflow-hidden');
+  },
+);
 
 
 </script>

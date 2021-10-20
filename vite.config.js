@@ -10,7 +10,6 @@ import PurgeIcons from "vite-plugin-purge-icons"
 import Markdown from 'vite-plugin-md'
 import Restart from 'vite-plugin-restart'
 import Components from 'unplugin-vue-components/vite'
-import {ElementPlusResolver, PrimeVueResolver} from 'unplugin-vue-components/resolvers'
 import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import Inspect from 'vite-plugin-inspect'
@@ -59,8 +58,7 @@ export default defineConfig({
         Components({
             dts: true,
             resolvers: [
-                IconsResolver(),
-                ElementPlusResolver()
+                IconsResolver()
             ],
         }),
         Icons({
