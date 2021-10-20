@@ -4,11 +4,11 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const {t} = useI18n()
+<script setup lang='ts'>
+const { t } = useI18n();
 </script>
 
-<route lang="yaml">
+<route lang='yaml'>
 meta:
-  layout: 404
+layout: 404
 </route>

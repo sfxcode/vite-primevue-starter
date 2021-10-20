@@ -1,12 +1,12 @@
 <template>
   <p>Oops. Something went wrong ! !</p>
 </template>
-<script setup lang="ts">
+<script setup lang='ts'>
 
 </script>
 
-<route lang="yaml">
+<route lang='yaml'>
 meta:
-  layout: error
+layout: error
 </route>
 
