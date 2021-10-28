@@ -1,101 +1,78 @@
 <template>
-  <div class='p-4'>
-    <div class='bg-white shadow overflow-hidden sm:rounded-lg'>
-      <div class='px-4 py-5 sm:px-6'>
-        <h3 class='text-lg leading-6 font-medium text-gray-900'>
-          Applicant Information
-        </h3>
-        <p class='mt-1 max-w-2xl text-sm text-gray-500'>
-          Personal details and application.
-        </p>
-      </div>
-      <div class='border-t border-gray-200'>
-        <dl>
-          <div class='bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-            <dt class='text-sm font-medium text-gray-500'>
-              Full name
-            </dt>
-            <dd class='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2'>
-              Margot Foster
-            </dd>
+  <div class="tw-flex">
+    <div class="tw-w-full">
+      <section class="tw-max-w-6xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-4 tw-py-12">
+        <div class="tw-text-center tw-pb-12">
+          <h1 class="tw-font-bold tw-text-3xl md:tw-text-4xl lg:tw-text-5xl font-heading">
+            Check our awesome team ...
+          </h1>
+          <h3>Tailwind classes use tw- prefix</h3>
+        </div>
+        <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-6">
+          <div class="tw-w-full tw-bg-gray-900 tw-rounded-lg sahdow-lg tw-p-12 tw-flex tw-flex-col tw-justify-center tw-items-center">
+            <div class="tw-mb-8">
+              <img class="tw-object-center tw-object-cover tw-rounded-full tw-h-36 tw-w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+            </div>
+            <div class="tw-text-center">
+              <p class="tw-text-xl tw-text-white tw-font-bold tw-mb-2">Dany Bailey</p>
+              <p class="tw-text-base tw-text-gray-400 tw-font-normal">Software Engineer</p>
+            </div>
           </div>
-          <div class='bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-            <dt class='text-sm font-medium text-gray-500'>
-              Application for
-            </dt>
-            <dd class='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2'>
-              Backend Developer
-            </dd>
+          <div class="tw-w-full tw-bg-gray-900 tw-rounded-lg sahdow-lg tw-p-12 tw-flex tw-flex-col tw-justify-center tw-items-center">
+            <div class="tw-mb-8">
+              <img class="tw-object-center tw-object-cover tw-rounded-full tw-h-36 tw-w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+            </div>
+            <div class="tw-text-center">
+              <p class="tw-text-xl tw-text-white tw-font-bold tw-mb-2">Lucy Carter</p>
+              <p class="tw-text-base tw-text-gray-400 tw-font-normal">Graphic Designer</p>
+            </div>
           </div>
-          <div class='bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-            <dt class='text-sm font-medium text-gray-500'>
-              Email address
-            </dt>
-            <dd class='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2'>
-              margotfoster@example.com
-            </dd>
+          <div class="tw-w-full tw-bg-gray-900 tw-rounded-lg sahdow-lg tw-p-12 tw-flex tw-flex-col tw-justify-center tw-items-center">
+            <div class="tw-mb-8">
+              <img class="tw-object-center tw-object-cover tw-rounded-full tw-h-36 tw-w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
+            </div>
+            <div class="tw-text-center">
+              <p class="tw-text-xl tw-text-white tw-font-bold tw-mb-2">Jade Bradley</p>
+              <p class="tw-text-base tw-text-gray-400 tw-font-normal">Dev Ops</p>
+            </div>
           </div>
-          <div class='bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-            <dt class='text-sm font-medium text-gray-500'>
-              Salary expectation
-            </dt>
-            <dd class='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2'>
-              $120,000
-            </dd>
+
+          <div class="tw-w-full tw-bg-gray-900 tw-rounded-lg sahdow-lg tw-p-12 tw-flex tw-flex-col tw-justify-center tw-items-center">
+            <div class="tw-mb-8">
+              <img class="tw-object-center tw-object-cover tw-rounded-full tw-h-36 tw-w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
+            </div>
+            <div class="tw-text-center">
+              <p class="tw-text-xl tw-text-white tw-font-bold tw-mb-2">Jade Bradley</p>
+              <p class="tw-text-base tw-text-gray-400 tw-font-normal">Dev Ops</p>
+            </div>
           </div>
-          <div class='bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-            <dt class='text-sm font-medium text-gray-500'>
-              About
-            </dt>
-            <dd class='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2'>
-              Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-              qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-              pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
-            </dd>
+          <div class="tw-w-full tw-bg-gray-900 tw-rounded-lg sahdow-lg tw-p-12 tw-flex tw-flex-col tw-justify-center tw-items-center">
+            <div class="tw-mb-8">
+              <img class="tw-object-center tw-object-cover tw-rounded-full tw-h-36 tw-w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+            </div>
+            <div class="tw-text-center">
+              <p class="tw-text-xl tw-text-white tw-font-bold tw-mb-2">Dany Bailey</p>
+              <p class="tw-text-base tw-text-gray-400 tw-font-normal">Software Engineer</p>
+            </div>
           </div>
-          <div class='bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-            <dt class='text-sm font-medium text-gray-500'>
-              Attachments
-            </dt>
-            <dd class='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2'>
-              <ul role='list' class='border border-gray-200 rounded-md divide-y divide-gray-200'>
-                <li class='pl-3 pr-4 py-3 flex items-center justify-between text-sm'>
-                  <div class='w-0 flex-1 flex items-center'>
-                    <i-heroicons-solid-paper-clip class='flex-shrink-0 h-5 w-5 text-gray-400' aria-hidden='true' />
-                    <span class='ml-2 flex-1 w-0 truncate'>
-                    resume_back_end_developer.pdf
-                  </span>
-                  </div>
-                  <div class='ml-4 flex-shrink-0'>
-                    <a href='#' class='font-medium text-indigo-600 hover:text-indigo-500'>
-                      Download
-                    </a>
-                  </div>
-                </li>
-                <li class='pl-3 pr-4 py-3 flex items-center justify-between text-sm'>
-                  <div class='w-0 flex-1 flex items-center'>
-                    <i-heroicons-solid-paper-clip class='flex-shrink-0 h-5 w-5 text-gray-400' aria-hidden='true' />
-                    <span class='ml-2 flex-1 w-0 truncate  text-gray-800'>
-                    coverletter_back_end_developer.pdf
-                  </span>
-                  </div>
-                  <div class='ml-4 flex-shrink-0'>
-                    <a href='#' class='font-medium text-indigo-600 hover:text-indigo-500'>
-                      Download
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </dd>
+          <div class="tw-w-full tw-bg-gray-900 tw-rounded-lg sahdow-lg tw-p-12 tw-flex tw-flex-col tw-justify-center tw-items-center">
+            <div class="tw-mb-8">
+              <img class="tw-object-center tw-object-cover tw-rounded-full tw-h-36 tw-w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
+            </div>
+            <div class="tw-text-center">
+              <p class="tw-text-xl tw-text-white tw-font-bold tw-mb-2">Lucy Carter</p>
+              <p class="tw-text-base tw-text-gray-400 tw-font-normal">Graphic Designer</p>
+            </div>
           </div>
-        </dl>
-      </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 
 </script>
 
 <style scoped></style>
+
