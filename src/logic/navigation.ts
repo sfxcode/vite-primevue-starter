@@ -16,8 +16,8 @@ export const navigationMenu = [
   {
     label: 'Pinia Store',
     items: [
-      { label: 'Counter Demo', icon: 'pi pi-fw pi-home', to: '/store/store' },
       { label: 'Theme Settings', icon: 'pi pi-fw pi-home', to: '/store/theme' },
+      { label: 'Counter Demo', icon: 'pi pi-fw pi-home', to: '/store/store' },
     ],
   },
   {

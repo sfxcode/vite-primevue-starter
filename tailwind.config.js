@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
     mode: 'jit',
+    prefix: 'tw-',
     purge: {
         enabled: process.env.NODE_ENV === 'production',
         // classes that are generated dynamically, e.g. `rounded-${size}` and must
