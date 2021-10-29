@@ -1,9 +1,13 @@
 import { defineStore } from 'pinia';
 
 export function updateTheme(themeName: string, themeColor: string) {
-  const themeElement = document.getElementById('theme-link');
-  if (themeElement)
-    themeElement.setAttribute('href', '/themes/' + themeName + '-' + themeColor + '/theme.css');
+  const newValue = '/themes/' + themeName + '-' + themeColor + '/theme.css'
+  const relElements = Array.prototype.slice.call(document.getElementsByTagName('link'));
+  relElements.forEach( (element:HTMLElement) => {
+    if (element.getAttribute("href") && element.getAttribute("href").indexOf("/themes/") > -1)  {
+      element.setAttribute('href', newValue);
+    }
+  });
 }
 
 // main is the name of the store. It is unique across your application
