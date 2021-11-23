@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.3 (2021-11-23)
+- dependency updates
+
 ## 1.0.1 (2021-10-20)
 - dependency updates
 - reformat with prettier
