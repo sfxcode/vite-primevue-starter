@@ -78,7 +78,6 @@ export default defineConfig({
                 'vue-router',
                 'vue-i18n',
                 '@vueuse/head',
-                '@vueuse/core',
             ],
             dts: true,
         }),
