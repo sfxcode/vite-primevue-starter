@@ -27,7 +27,7 @@
         Layouts like nuxt layout templates
       </AdvertiseBox>
 
-      <AdvertiseBox header='PrimeVue 3.7' icon='pi-check-circle' color='green-600'>
+      <AdvertiseBox header='PrimeVue 3.9' icon='pi-check-circle' color='green-600'>
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header='PrimeVue Theme and Layout' icon='pi-check-circle' color='green-600'>
