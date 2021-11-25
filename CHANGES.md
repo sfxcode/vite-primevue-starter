@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.3 (2021-11-25)
+- PrimeVUE 3.9.1
+
 ## 1.0.3 (2021-11-23)
 - dependency updates
 
