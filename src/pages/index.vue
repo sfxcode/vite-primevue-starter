@@ -14,7 +14,7 @@
       <AdvertiseBox header='Script Setup' icon='pi-check-circle' color='green-600'>
         Reduce a lot of boilerplate code
       </AdvertiseBox>
-      <AdvertiseBox header='Typescript 4.3' icon='pi-check-circle' color='blue-400'>
+      <AdvertiseBox header='Typescript 4.5' icon='pi-check-circle' color='blue-400'>
         Typesafe by default
       </AdvertiseBox>
       <AdvertiseBox header='Vite 2' icon='pi-check-circle' color='blue-600'>
