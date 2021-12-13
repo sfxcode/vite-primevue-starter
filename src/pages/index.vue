@@ -27,7 +27,7 @@
         Layouts like nuxt layout templates
       </AdvertiseBox>
 
-      <AdvertiseBox header='PrimeVue 3.9' icon='pi-check-circle' color='green-600'>
+      <AdvertiseBox header='PrimeVue 3.10' icon='pi-check-circle' color='green-600'>
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header='PrimeVue Theme and Layout' icon='pi-check-circle' color='green-600'>
@@ -39,7 +39,7 @@
       <AdvertiseBox header='Pinia Store 2' icon='pi-check-circle' color='yellow-400'>
         Replacement / Alternative for VUEX Store
       </AdvertiseBox>
-      <AdvertiseBox header='Tailwind CSS' icon='pi-check-circle' color='blue-400'>
+      <AdvertiseBox header='Tailwind CSS 3' icon='pi-check-circle' color='blue-400'>
         Hero Icons included (ViteIcons)
       </AdvertiseBox>
     </div>
