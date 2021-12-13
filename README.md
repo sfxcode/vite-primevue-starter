@@ -16,7 +16,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - Pina as Store
 - PrimeVue with Theme: Sakai (Free Admin Template)
 - Markdown Support (VitePages)
-- TypeScript 4.4
+- TypeScript 4.5
 - Tailwind support
 - SSG Support
 - Eslint
