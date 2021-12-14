@@ -4,6 +4,8 @@
     <div class='tw-col-span-2'>Primevue Theme Store</div>
     <div>Theme Name</div>
     <div>{{ themeStore.themeName }}</div>
+    <div>Theme Color</div>
+    <div>{{ themeStore.themeColor }}</div>
 
   </div>
 </template>
