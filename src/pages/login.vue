@@ -17,15 +17,15 @@
       <form class='tw-mt-8 tw-space-y-6' action='#' method='POST'>
         <input type='hidden' name='remember' value='true' />
         <div class='tw-rounded-md tw-shadow-sm tw--space-y-px'>
-          <div>
+          <div class='mb-2'>
             <label for='email-address' class='tw-sr-only'>Email address</label>
-            <input id='email-address' v-model='auth.email' name='email' type='email' autocomplete='email' required=''
+            <InputText id='email-address' v-model='auth.email' name='email' type='email' autocomplete='email' required=''
                    class='tw-appearance-none tw-rounded-none tw-relative tw-block tw-w-full tw-px-3 tw-py-2 tw-border tw-border-gray-300 tw-placeholder-gray-500 tw-text-gray-900 tw-rounded-t-md tw-focus:outline-none tw-focus:ring-indigo-500 tw-focus:border-indigo-500 tw-focus:z-10 tw-sm:text-sm'
                    placeholder='Email address' />
           </div>
           <div>
             <label for='password' class='tw-sr-only'>Password</label>
-            <input id='password' v-model='password' name='password' type='password' autocomplete='current-password'
+            <InputText id='password' v-model='password' name='password' type='password' autocomplete='current-password'
                    required=''
                    class='tw-appearance-none tw-rounded-none tw-relative tw-block tw-w-full tw-px-3 tw-py-2tw-border tw-border-gray-300 tw-placeholder-gray-500 tw-text-gray-900 tw-rounded-b-md tw-focus:outline-none tw-focus:ring-indigo-500 tw-focus:border-indigo-500 tw-focus:z-10 tw-sm:text-sm'
                    placeholder='Password' />
@@ -65,6 +65,7 @@
 <script setup lang='ts'>
 import { useAuthStore } from '@/store';
 import { useRouter } from 'vue-router';
+import Input from '../../dist/elements/input.html';
 
 const auth = useAuthStore();
 
