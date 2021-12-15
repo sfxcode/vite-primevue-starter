@@ -2,8 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-$gutter: 1rem;
-@import 'primeflex/primeflex.scss';
+@import 'primeflex/primeflex.css';
 
 @import "sass/layout";
 @import "sass/markdown";
