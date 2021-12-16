@@ -11,9 +11,12 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 
 ## Features
  
-- Vue 3.2 (with script setup)
+- Vue 3.2 
+- Composition API
+- Script Setup
 - Routing VitePages / ViteLayout
 - Pina as Store
+- Validation with Vuelidate 2
 - PrimeVue with Theme: Sakai (Free Admin Template)
 - Markdown Support (VitePages)
 - TypeScript 4.5
