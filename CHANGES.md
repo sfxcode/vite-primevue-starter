@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.9 (2021-12-16)
+* add directiveTransforms
+
 ## 1.0.6 (2021-12-13)
 - Tailwind 3
 

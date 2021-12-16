@@ -54,6 +54,20 @@ export default defineConfig({
     plugins: [
         Vue({
             include: [/\.vue$/, /\.md$/],
+            template: {
+                compilerOptions: {
+                    directiveTransforms: {
+                        styleclass: () => ({
+                            props: [],
+                            needRuntime: true,
+                        }),
+                        ripple: () => ({
+                            props: [],
+                            needRuntime: true,
+                        }),
+                    }
+                }
+            }
         }),
         Components({
             dts: true,

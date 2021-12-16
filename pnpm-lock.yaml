@@ -36,12 +36,11 @@ specifiers:
   markdown-it-link-attributes: ^3.0.0
   markdown-it-prism: ^2.2.1
   nprogress: ^0.2.0
-  patch-vue-directive-ssr: ^0.0.1
   pinia: ~2.0.6
-  pnpm: ^6.24.0
+  pnpm: ^6.24.1
   postcss: ^8.4.5
   postcss-nesting: ^10.0.3
-  primeflex: ^3.1.1
+  primeflex: ^3.1.2
   primeicons: ^5.0.0
   primevue: ^3.10.0
   prism-theme-vars: ^0.2.2
@@ -59,7 +58,7 @@ specifiers:
   vite-plugin-md: ^0.11.6
   vite-plugin-pages: ^0.19.3
   vite-plugin-purge-icons: ^0.7.0
-  vite-plugin-pwa: ^0.11.11
+  vite-plugin-pwa: ^0.11.12
   vite-plugin-restart: ^0.0.2
   vite-plugin-vue-layouts: ^0.5.0
   vite-ssg: ^0.17.0
@@ -77,7 +76,7 @@ dependencies:
   chart.js: 3.6.2
   nprogress: 0.2.0
   pinia: 2.0.6_typescript@4.5.4+vue@3.2.19
-  primeflex: 3.1.1
+  primeflex: 3.1.2
   primeicons: 5.0.0
   primevue: 3.10.0_primeicons@5.0.0+vue@3.2.19
   prism-theme-vars: 0.2.2
@@ -118,8 +117,7 @@ devDependencies:
   https-localhost: 4.7.0
   markdown-it-link-attributes: 3.0.0
   markdown-it-prism: 2.2.1
-  patch-vue-directive-ssr: 0.0.1
-  pnpm: 6.24.0
+  pnpm: 6.24.1
   postcss: 8.4.5
   postcss-nesting: 10.0.3_postcss@8.4.5
   rxjs: 7.4.0
@@ -135,7 +133,7 @@ devDependencies:
   vite-plugin-md: 0.11.6_vite@2.7.2
   vite-plugin-pages: 0.19.3_2982c8b5f0a68312d444a28fb8ccb121
   vite-plugin-purge-icons: 0.7.0_vite@2.7.2
-  vite-plugin-pwa: 0.11.11_vite@2.7.2
+  vite-plugin-pwa: 0.11.12_vite@2.7.2
   vite-plugin-restart: 0.0.2_vite@2.7.2
   vite-plugin-vue-layouts: 0.5.0_1addcc7989d14e3b4b99a761944ad3df
   vite-ssg: 0.17.0_f9fbc92b6600c70632f36474c3fb1ce7
@@ -1641,8 +1639,8 @@ packages:
       '@iconify/types': 1.0.12
     dev: true
 
-  /@intlify/bundle-utils/2.1.0_vue-i18n@9.2.0-beta.11:
-    resolution: {integrity: sha512-ogvmAjbSq0su4ijQbwqRfb0yimizZSK+HHV0SF3XCHSCtL+PDdRIDkkeNpNdPxNmdahORHXknC06Umehz4nTnQ==}
+  /@intlify/bundle-utils/2.2.0_vue-i18n@9.2.0-beta.11:
+    resolution: {integrity: sha512-qVuN7+c84UB6rlLHSued2J9R86LG1rHg6ZibCghGMyPXnW0nOuIfkUFf1F7tXIqfMXjIPeJzlbpmzjWTI2z9Kw==}
     engines: {node: '>= 12'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -1771,7 +1769,7 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/bundle-utils': 2.1.0_vue-i18n@9.2.0-beta.11
+      '@intlify/bundle-utils': 2.2.0_vue-i18n@9.2.0-beta.11
       '@intlify/shared': 9.2.0-beta.23
       '@rollup/pluginutils': 4.1.1
       debug: 4.3.2
@@ -6516,11 +6514,6 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /patch-vue-directive-ssr/0.0.1:
-    resolution: {integrity: sha512-n84llktHah+EXUGo+RvmTJcAQJQVW0kHHHiJ34ZSLijzhHi32zCMjCc5VAFv4jmdC91bpaYGPk0cDW1D8hQ3GQ==}
-    requiresBuild: true
-    dev: true
-
   /path-exists/3.0.0:
     resolution: {integrity: sha1-zg6+ql94yxiSXqfYENe1mwEP1RU=}
     engines: {node: '>=4'}
@@ -6601,8 +6594,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/6.24.0:
-    resolution: {integrity: sha512-5JJk+25bRHmD9H1tMElIyh01hYTOZ8/khIY5VnFnj4mKsRyAJO34t6xekKts1loD21f465V0/UpAlhaEVAE9Ow==}
+  /pnpm/6.24.1:
+    resolution: {integrity: sha512-gvXXhgSfdq27ASRSd9121GtRXqnZ5RMeaj/HDlsRjV5XTBWCMJZvLIdz6SiSeDQas/+6w9PNz73vFR0l9j+XYA==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: true
@@ -6694,8 +6687,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /primeflex/3.1.1:
-    resolution: {integrity: sha512-Jxi7qsyjqOFNX0383Ryk55cUtY55XUj8sfREqcVxsz1kUbfGZU4GQajP3NAwpuZyLil2l0ns2qW5CJ8Pl/0V0w==}
+  /primeflex/3.1.2:
+    resolution: {integrity: sha512-q63sFNk3KPHSoM4EEEgo0MFTJSQhz4PZpJoQnVa8bcju/N7D8koloF9fniXV8UBlKFQzh0DLr5iFZ4c6FFXO4g==}
     dev: false
 
   /primeicons/5.0.0:
@@ -8132,8 +8125,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-pwa/0.11.11_vite@2.7.2:
-    resolution: {integrity: sha512-/nSLS7VfGN5UrL4a1ALGEQAyga/H0hYZjEkwPehiEFW1PM1DTi1A8GkPCsmevKwR6vt10P+5wS1wrvSgwQemzw==}
+  /vite-plugin-pwa/0.11.12_vite@2.7.2:
+    resolution: {integrity: sha512-XqFmA4y9C4RBb5osSsa26GVwOSwbzf2GNVcT5+06KYYdguqLpuI9FW7iV/akZqg0OUNUpH4tHfme8SnHA4PIXA==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
