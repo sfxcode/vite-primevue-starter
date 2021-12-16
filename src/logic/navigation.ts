@@ -14,7 +14,8 @@ export const navigationMenu = [
   {
     label: 'UI / UX', icon: 'pi pi-fw pi-clone',
     items: [
-      { label: 'Tailwind', icon: 'pi pi-fw pi-box', to: '/ui/tailwind' },
+      { label: 'UnoCSS', icon: 'pi pi-fw pi-box', to: '/ui/uno' },
+      { label: 'Tailwind (UnoCSS)', icon: 'pi pi-fw pi-box', to: '/ui/tailwind' },
       { label: 'Icons', icon: 'pi pi-fw pi-calendar', to: '/ui/icons' },
     ],
   },

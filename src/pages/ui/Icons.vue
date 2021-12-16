@@ -1,12 +1,19 @@
 <template>
-  <h5 class='font-bold text-2xl mb-4 text-blue-600'>Vite Icons</h5>
-  <div class="grid grid-cols-4">
-    <i-logos-vue  text='3xl'/>
-    <i-twemoji-1st-place-medal class='text-4xl' />
-    <i-twemoji-2nd-place-medal class='text-4xl' />
-    <i-twemoji-3rd-place-medal class='text-4xl' />
+  <h1 class='text-blue-600'>Icons by UnoCSS</h1>
+  <div class="i-logos-vue text-6xl" />
+  <h3>Iconset: mdi</h3>
+  <div class="mt-6 grid grid-cols-3">
+    <div class="i-mdi-information text-4xl text-green-600-500-500" />
+    <div class="i-mdi-alarm text-4xl text-blue-500" />
+    <div class="i-mdi-github-circle text-4xl text-purple-500" />
   </div>
-  <div class='text-2xl text-blue-500 pt-4'>Icons from ViteIcons</div>
+  <h3>Iconset: twemoji</h3>
+  <div class="mt-6 grid grid-cols-3">
+    <div class="i-twemoji-1st-place-medal text-4xl" />
+    <div class="i-twemoji-2nd-place-medal text-4xl" />
+    <div class="i-twemoji-3rd-place-medal text-4xl" />
+
+  </div>
 </template>
 
 <script setup lang='ts'>
