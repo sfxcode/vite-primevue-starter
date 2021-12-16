@@ -2,32 +2,55 @@
 
   <ConfirmPopup class="shadow"></ConfirmPopup>
   <Toast/>
-  <h5 class='font-bold text-2xl mb-4 text-blue-600'>Input Text</h5>
-  <InputText v-model='textValue' />
-  <Button label='Clear' v-on:click='clear($event)' class='ml-2' />
+  <h5 class='font-bold text-2xl mb-4 text-blue-600'>Input Text (with Vuelidate ...)</h5>
+  <InputText v-model='v$.contact.email.$model' />
 
-  <h5 class='font-bold text-2xl text-green-600 mt-4'>{{ textValue }}</h5>
+  <Button label='Reset' v-on:click='reset($event)' class='ml-2' />
+  <div class='mt-4' v-if="v$.contact.email.$error">
+    <span class='p-error text-xl' id="name-error" v-for="(error, index) of v$.contact.email.$errors" :key="index">
+                {{error.$message}}
+            </span>
+  </div>
+  <h5 class='font-bold text-2xl text-green-600 mt-4'>{{ state.contact.email }}</h5>
 
 </template>
 
 <script setup lang='ts'>
 import {useToast} from "primevue/usetoast";
 import {useConfirm} from "primevue/useconfirm";
-
 const toast = useToast();
 const confirm = useConfirm();
 
-const textValue = ref('Some Text');
+import useVuelidate from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
 
-function clear (event: any) {
+const state = reactive({
+  firstName: 'Tim',
+  lastName: 'Sample',
+  contact: {
+    email: 'tim@sfxcode.com'
+  }
+})
+
+const rules = {
+  firstName: { required }, // Matches state.firstName
+  lastName: { required }, // Matches state.lastName
+  contact: {
+    email: { required, email } // Matches state.contact.email
+  }
+}
+const v$ = useVuelidate(rules, state)
+
+
+function reset (event: any) {
   confirm.require({
     target: event.currentTarget,
     message: 'Delete Text ?',
     icon: 'pi pi-info-circle',
     acceptClass: 'p-button-danger',
     accept: () => {
-      textValue.value = '';
-      toast.add({severity: 'info', summary: 'Success', detail: 'Everything is deleted ...', life: 3000});
+      state.contact.email = 'tim@sfxcode.com';
+      toast.add({severity: 'info', summary: 'Success', detail: 'Reset finished ...', life: 3000});
 
     },
     reject: () => {

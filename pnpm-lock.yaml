@@ -20,6 +20,8 @@ specifiers:
   '@vue/test-utils': next
   '@vuedx/typecheck': ~0.7
   '@vuedx/typescript-plugin-vue': ~0.7
+  '@vuelidate/core': ^2.0.0-alpha.32
+  '@vuelidate/validators': ^2.0.0-alpha.25
   '@vueuse/core': ^7.3.0
   '@vueuse/head': ~0.7.4
   autoprefixer: ^10.4.0
@@ -71,6 +73,8 @@ specifiers:
 
 dependencies:
   '@iconify/iconify': 2.1.0
+  '@vuelidate/core': 2.0.0-alpha.32_vue@3.2.19
+  '@vuelidate/validators': 2.0.0-alpha.25_vue@3.2.19
   '@vueuse/core': 7.3.0_vue@3.2.19
   '@vueuse/head': 0.7.4_vue@3.2.19
   chart.js: 3.6.2
@@ -2786,6 +2790,24 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@vuelidate/core/2.0.0-alpha.32_vue@3.2.19:
+    resolution: {integrity: sha512-bB5YJzorKZyRm+R4d3svGChwpHjPw+ECOLwlKfvKJIuyC+y25Wf7NGbr/9odZggoGTi/rKPUYXhpbp5RXb4ssw==}
+    dependencies:
+      vue-demi: 0.12.1_vue@3.2.19
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
+
+  /@vuelidate/validators/2.0.0-alpha.25_vue@3.2.19:
+    resolution: {integrity: sha512-+Cz9itIlPbloXE8hWmTWCS/EXYdgZ0y/mH76v9Ou0ILirVUjErTtgEx/jCfkijbFJAttBTdwJmxaWakwQuA0qA==}
+    dependencies:
+      vue-demi: 0.12.1_vue@3.2.19
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   /@vueuse/core/7.3.0_vue@3.2.19:
     resolution: {integrity: sha512-gPJyMMAquva9Qwqz63qGQT122m5hWI8Kuy8kfPV/JLQU7m01CXooyv8FIrX9TV8OxVcHBTPXPJHY0oyUiFoNgw==}
@@ -8354,6 +8376,21 @@ packages:
 
   /vue-demi/0.11.4_vue@3.2.19:
     resolution: {integrity: sha512-/3xFwzSykLW2HiiLie43a+FFgNOcokbBJ+fzvFXd0r2T8MYohqvphUyDQ8lbAwzQ3Dlcrb1c9ykifGkhSIAk6A==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.2.19
+    dev: false
+
+  /vue-demi/0.12.1_vue@3.2.19:
+    resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
