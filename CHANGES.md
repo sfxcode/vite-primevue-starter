@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 (2021-12-16)
+- added UnoCSS
+- removed tailwind
+- removed primeflex
+
 ## 1.1.0 (2021-12-16)
 * Validation With Vuelidate 2
 

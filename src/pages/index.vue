@@ -1,6 +1,4 @@
 <template>
-  <div class="i-logos-vue text-3xl" />
-
   <div class='surface-0 text-center'>
     <div class='mb-3 font-bold text-4xl'>
       <span class='text-green-600'>PrimeVue </span>

@@ -12,6 +12,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 ## Features
  
 - Vue 3.2 
+- Vite
 - Composition API
 - Script Setup
 - Routing VitePages / ViteLayout
@@ -20,7 +21,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - PrimeVue with Theme: Sakai (Free Admin Template)
 - Markdown Support (VitePages)
 - TypeScript 4.5
-- Tailwind support
+- UnoCSS
 - SSG Support
 - Eslint
 - Prettier
@@ -33,16 +34,12 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - pinia
 - primevue
 
-### PrimeFlex
-If you want to use PrimeFlex + Tailwind, you have to use a tailwind prefix because of style class name clashing.
-
 ## Project setup and usage
 
 Install node:
 
-Latest node LTS version is required (16)
-Use node manager like nvm to install.
-
+**Latest node LTS version required (16)**
+Use node manager like **nvm** to install.
 
 Install pnpm:
 [https://pnpm.io/installation](https://pnpm.io/installation)
@@ -91,7 +88,7 @@ pnpm build
 
 ## Tools
 
-I use IntelliJ with VUE.js, Tailwind and Prettier plugin.
+I use IntelliJ with VUE.js and Prettier plugin.
 
 ## Supporters
 

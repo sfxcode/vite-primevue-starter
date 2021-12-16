@@ -3,11 +3,8 @@ import {defineConfig} from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import pkg from './package.json'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import Pages from "vite-plugin-pages"
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
-import PurgeIcons from "vite-plugin-purge-icons"
 import Markdown from 'vite-plugin-md'
+import Pages from "vite-plugin-pages"
 import Restart from 'vite-plugin-restart'
 import Components from 'unplugin-vue-components/vite'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -74,11 +71,7 @@ export default defineConfig({
         Components({
             dts: true,
             resolvers: [
-                IconsResolver()
             ],
-        }),
-        Icons({
-            compiler: 'vue3',
         }),
         VueI18n({
             runtimeOnly: true,
@@ -137,9 +130,6 @@ export default defineConfig({
         }), Restart({
             restart: ['../../dist/*.js'],
         }),
-
-        // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
-        PurgeIcons(),
 
         // https://github.com/antfu/vite-plugin-inspect
         Inspect({
