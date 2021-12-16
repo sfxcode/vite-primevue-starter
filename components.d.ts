@@ -11,6 +11,11 @@ declare module 'vue' {
     AppSubmenu: typeof import('./src/components/app/AppSubmenu.vue')['default']
     AppTopbar: typeof import('./src/components/app/AppTopbar.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    ICodiconError: typeof import('~icons/codicon/error')['default']
+    ILogosVue: typeof import('~icons/logos/vue')['default']
+    ITwemoji1stPlaceMedal: typeof import('~icons/twemoji/1st-place-medal')['default']
+    ITwemoji2ndPlaceMedal: typeof import('~icons/twemoji/2nd-place-medal')['default']
+    ITwemoji3rdPlaceMedal: typeof import('~icons/twemoji/3rd-place-medal')['default']
   }
 }
 
