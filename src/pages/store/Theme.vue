@@ -1,7 +1,7 @@
 <template>
-  <h5 class='tw-font-bold tw-text-2xl tw-mb-4 tw-text-blue-600'>Pinia Store</h5>
-  <div class='tw-grid tw-grid-cols-2  tw-gap-4'>
-    <div class='tw-col-span-2'>Primevue Theme Store</div>
+  <h5 class='font-bold text-2xl mb-4 text-blue-600'>Pinia Store</h5>
+  <div class='grid grid-cols-2  gap-4'>
+    <div class='col-span-2'>Primevue Theme Store</div>
     <div>Theme Name</div>
     <div>{{ themeStore.themeName }}</div>
     <div>Theme Color</div>

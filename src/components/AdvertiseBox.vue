@@ -1,5 +1,5 @@
 <template>
-  <div class='col-12 md:col-4 mb-4 px-5'>
+  <div class=''>
             <span class='p-3 shadow-2 mb-3 inline-block' style='border-radius: 10px'>
                 <i :class="'pi ' + icon + ' text-3xl text-' + color"></i>
             </span>
