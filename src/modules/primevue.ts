@@ -1,4 +1,4 @@
-import { UserModule } from '@/types';
+import type { UserModule } from '@/types';
 
 import PrimeVue from 'primevue/config';
 import AutoComplete from 'primevue/autocomplete';
