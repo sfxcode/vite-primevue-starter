@@ -1,6 +1,6 @@
 import { createPinia } from 'pinia';
-import { UserModule } from '@/types';
 import { useAuthStore } from '@/store';
+import type { UserModule } from '@/types';
 
 // Setup Pinia
 // https://pinia.esm.dev/

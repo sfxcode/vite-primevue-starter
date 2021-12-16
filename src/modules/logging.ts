@@ -1,5 +1,5 @@
-import { UserModule } from '@/types';
-import { createLogger } from 'vue-logger-plugin';
+import type { UserModule } from '@/types';
+import  { createLogger } from 'vue-logger-plugin';
 
 const logger = createLogger({
   enabled: true,
