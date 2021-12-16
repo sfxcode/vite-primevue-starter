@@ -42,6 +42,9 @@
       <AdvertiseBox header='Tailwind CSS 3' icon='pi-check-circle' color='blue-400'>
         Hero Icons included (ViteIcons)
       </AdvertiseBox>
+      <AdvertiseBox header='Vuelidate 2' icon='pi-check-circle' color='green-600'>
+        Validation Example included
+      </AdvertiseBox>
     </div>
   </div>
 </template>

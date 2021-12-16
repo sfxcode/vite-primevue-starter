@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0 (2021-12-16)
+* Validation With Vuelidate 2
+
 ## 1.0.9 (2021-12-16)
 * add directiveTransforms
 
