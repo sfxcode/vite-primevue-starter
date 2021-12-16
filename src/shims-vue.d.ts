@@ -3,10 +3,8 @@ declare interface Window {
 }
 
 declare module '*.vue' {
-  // eslint-disable-next-line import/no-duplicates
-  import type { ComponentOptions } from 'vue';
-  const Component: ComponentOptions;
-  export default Component;
+  import Vue from 'vue'
+  export default Vue
 }
 
 declare module '*.md' {
