@@ -26,6 +26,12 @@
           <span>Profile</span>
         </button>
       </li>
+      <li>
+        <button class='p-link layout-topbar-button'>
+
+          <a href='https://github.com/sfxcode/vite-primevue-starter' target='_blank'> <i class='pi pi-github'></i></a>
+        </button>
+      </li>
     </ul>
     <OverlayPanel ref='op' appendTo='body' id='overlay_panel' style='width: 200px'>
       <div class='field-radiobutton'>
