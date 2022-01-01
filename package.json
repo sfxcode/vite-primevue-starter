@@ -42,7 +42,7 @@
     "@vue/babel-preset-app": "^4.5.15",
     "@vue/compiler-sfc": "^3.2.26",
     "@vue/eslint-config-standard": "~6.1",
-    "@vue/eslint-config-typescript": "^9.1.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
     "@vue/server-renderer": "^3.2.26",
     "@vue/test-utils": "next",
     "@vuedx/typecheck": "~0.7",
