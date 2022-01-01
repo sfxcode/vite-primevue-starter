@@ -57,7 +57,7 @@
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-vue": "^8.2.0",
     "https-localhost": "^4.7.0",
-    "markdown-it-link-attributes": "^3.0.0",
+    "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.1",
     "pnpm": "^6.24.1",
     "postcss": "^8.4.5",
