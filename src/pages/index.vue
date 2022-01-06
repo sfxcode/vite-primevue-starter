@@ -17,7 +17,7 @@
         Replacement / Alternative for VUEX Store
       </AdvertiseBox>
       <AdvertiseBox header='Vite 2' icon='pi-check-circle' color='blue-600'>
-        Vite Plugins like ViteIcons, PurgeIcons, ...
+        Vite Plugins like ViteIcons, PurgeIcons, ... and Vitest
       </AdvertiseBox>
       <AdvertiseBox header='Vite Pages' icon='pi-check-circle' color='blue-600'>
         Routing by File/Folder & Vite Markdown included
