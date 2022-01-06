@@ -10,7 +10,6 @@ declare module 'vue' {
     AppProfile: typeof import('./src/components/app/AppProfile.vue')['default']
     AppSubmenu: typeof import('./src/components/app/AppSubmenu.vue')['default']
     AppTopbar: typeof import('./src/components/app/AppTopbar.vue')['default']
-    Hello: typeof import('./src/components/Hello.vue')['default']
   }
 }
 
