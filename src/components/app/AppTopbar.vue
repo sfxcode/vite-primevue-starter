@@ -8,7 +8,7 @@
     </button>
 
     <button class='p-link layout-topbar-menu-button layout-topbar-button'
-            v-styleclass="{ selector: '@next', enterActiveClass: 'scalein',
+            v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein',
 			toggleClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true}">
       <i class='pi pi-ellipsis-v'></i>
     </button>
@@ -27,9 +27,9 @@
         </button>
       </li>
       <li>
-        <button class='p-link layout-topbar-button'>
-
-          <a href='https://github.com/sfxcode/vite-primevue-starter' target='_blank'> <i class='pi pi-github'></i></a>
+        <button class='p-link layout-topbar-button' @click='redirectToGithub'>
+          <i class='pi pi-github'> </i>
+          <span>Github</span>
         </button>
       </li>
     </ul>
@@ -79,6 +79,10 @@ function toggle(event: any) {
   op.value.toggle(event);
 }
 
+function redirectToGithub(event: any) {
+  window.open('https://github.com/sfxcode/vite-primevue-starter', '_blank');
+}
+
 const emit = defineEmits(['menu-toggle', 'topbar-menu-toggle']);
 
 function onMenuToggle(event: any) {
@@ -90,3 +94,16 @@ function onTopbarMenuToggle(event: any) {
 }
 
 </script>
+
+
+<style scoped>
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex !important;
+  }
+}
+</style>
