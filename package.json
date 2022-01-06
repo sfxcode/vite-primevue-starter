@@ -10,7 +10,7 @@
     "start": "pnpm dev & wait-on tcp:3333 -v",
     "test:e2e": "pnpm dev & wait-on tcp:3333 -v & cypress open",
     "test:ci": "pnpm dev & wait-on tcp:3333 -v & cypress run --headless",
-    "test:unit": "cypress run-ct"
+    "test:unit": "vitest --run"
   },
   "dependencies": {
     "@vuelidate/core": "^2.0.0-alpha.33",
@@ -31,7 +31,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.14.2",
     "@cypress/vite-dev-server": "^2.2.2",
-    "@cypress/vue": "^3.1.0",
     "@iconify/json": "^1.1.453",
     "@intlify/vite-plugin-vue-i18n": "3.2.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
@@ -50,6 +49,7 @@
     "@vuedx/typecheck": "~0.7.4",
     "@vuedx/typescript-plugin-vue": "~0.7.4",
     "autoprefixer": "^10.4.1",
+    "c8": "^7.11.0",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
     "cypress": "^9.2.0",
@@ -58,6 +58,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^8.2.0",
+    "happy-dom": "*",
     "https-localhost": "^4.7.0",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.1",
@@ -81,6 +82,7 @@
     "vite-plugin-restart": "^0.1.0",
     "vite-plugin-vue-layouts": "^0.5.0",
     "vite-ssg": "^0.17.5",
+    "vitest": "^0.0.135",
     "vue-tsc": "^0.30.2",
     "wait-on": "~6.0.0"
   }
