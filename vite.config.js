@@ -1,3 +1,6 @@
+/// <reference types="vitest" />
+
+
 import * as path from 'path'
 import {defineConfig} from 'vite'
 import Vue from '@vitejs/plugin-vue'
@@ -35,10 +38,15 @@ export default defineConfig({
             path: '/ws'
         }
     },
+
     // https://github.com/antfu/vite-ssg
     ssgOptions: {
         script: 'async',
         formatting: 'minify',
+    },
+    test: {
+        global: true,
+        environment: 'happy-dom',
     },
 
     optimizeDeps: {
