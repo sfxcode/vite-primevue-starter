@@ -10,7 +10,7 @@ import { useDataStore } from '@/store/data';
 const dataStore = useDataStore();
 
 onMounted(async () => {
-  await dataStore.$load({name:'app-data' });
+  await dataStore.$load({name:'app-data' }).catch((error: any) => console.log(error));
 });
 
 useHead({
