@@ -5,6 +5,14 @@
 
 <script setup lang='ts'>
 
+import { useDataStore } from '@/store/data';
+
+const dataStore = useDataStore();
+
+onMounted(async () => {
+  await dataStore.$load({name:'app-data' });
+});
+
 useHead({
   title: 'Vite PrimeVue Starter',
   meta: [

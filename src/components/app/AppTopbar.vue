@@ -75,7 +75,6 @@ const op = ref<any>(null);
 
 
 function toggle(event: any) {
-  console.log(op.value);
   op.value.toggle(event);
 }
 

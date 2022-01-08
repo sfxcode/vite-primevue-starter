@@ -3,6 +3,8 @@
 Build your VUE.js App with the latest and fastest VITE Plugins (nuxt.js like).
 First Class PrimeVUE support.
 
+
+
 ![vite-prime-vue-starter](vite-prime-vue-starter.png)
 
 [![CI](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml)
@@ -13,10 +15,11 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
  
 - Vue 3.2 
 - Vite
+- Vitest (Testing Framework)
 - Composition API
 - Script Setup
 - Routing VitePages / ViteLayout
-- Pina as Store
+- Pina as Store / CachedPiniaStore for effective data caching
 - Validation with Vuelidate 2
 - PrimeVue with Theme: Sakai (Free Admin Template)
 - Markdown Support (VitePages)

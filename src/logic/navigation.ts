@@ -22,8 +22,8 @@ export const navigationMenu = [
   {
     label: 'Pinia Store',
     items: [
-      { label: 'Theme Settings', icon: 'pi pi-fw pi-th-large', to: '/store/theme' },
-      { label: 'Counter Demo', icon: 'pi pi-fw pi-sort-numeric-up', to: '/store/store' },
+      { label: 'Store Settings', icon: 'pi pi-fw pi-th-large', to: '/store/store' },
+      { label: 'Store Demo', icon: 'pi pi-fw pi-sort-numeric-up', to: '/store/demo' },
     ],
   },
   {
