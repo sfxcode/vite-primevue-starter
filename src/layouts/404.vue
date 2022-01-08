@@ -7,11 +7,11 @@
     </div>
     <router-view />
   </main>
-  <Footer footer-text='[404 Layout]' />
+  <AppFooter/>
 </template>
 
 <script setup lang='ts'>
-import Footer from '@/components/Footer.vue';
+import AppFooter from '../components/app/AppFooter.vue';
 import { useLogger } from 'vue-logger-plugin';
 
 const log = useLogger();
