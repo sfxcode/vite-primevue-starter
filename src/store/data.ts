@@ -16,17 +16,21 @@ export const useDataStore = defineCachedStore({
 
       await fetch('/data/customers-medium.json').then(res => res.json()).then(d => {
         this.customers = d.data;
-      });
+      })
+        .catch((error) => console.log(error));
+
 
       await fetch('/data/products.json').then(res => res.json()).then(d => {
         this.products = d.data;
-      });
+      })
+        .catch((error) => console.log(error));
+      ;
 
     },
 
     caching: {
       // force reload on new version
-      checkValidity: (state) => ((state.appVersion ?? '') === import.meta.env.VITE_APP_VERSION)
+      checkValidity: (state) => ((state.appVersion ?? '') === import.meta.env.VITE_APP_VERSION),
     },
   },
 );
