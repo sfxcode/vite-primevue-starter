@@ -43,7 +43,7 @@ specifiers:
   nprogress: ^0.2.0
   pinia: ~2.0.9
   pinia-cached-store: ^0.4.0
-  pnpm: ^6.25.0
+  pnpm: ^6.25.1
   postcss: ^8.4.5
   postcss-nesting: ^10.1.1
   primeicons: ^5.0.0
@@ -128,7 +128,7 @@ devDependencies:
   https-localhost: 4.7.0
   markdown-it-link-attributes: 4.0.0
   markdown-it-prism: 2.2.2
-  pnpm: 6.25.0
+  pnpm: 6.25.1
   postcss: 8.4.5
   postcss-nesting: 10.1.1_postcss@8.4.5
   rxjs: 7.5.1
@@ -3467,7 +3467,7 @@ packages:
       object-assign: 4.1.1
       string-width: 4.2.3
     optionalDependencies:
-      colors: 1.4.0
+      colors: 1.4.1
     dev: true
 
   /cli-truncate/2.1.0:
@@ -3511,8 +3511,8 @@ packages:
     resolution: {integrity: sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==}
     dev: true
 
-  /colors/1.4.0:
-    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
+  /colors/1.4.1:
+    resolution: {integrity: sha512-urbBmMVnD1vk0mUwCpnWv06P3f16EF+RMTtIXTkylJk5mAdfrMepu9B3hhSnL8DGkc1Ra6pENJHrXTKvcAZ0wA==}
     engines: {node: '>=0.1.90'}
     requiresBuild: true
     dev: true
@@ -6145,8 +6145,8 @@ packages:
       prismjs: 1.26.0
     dev: true
 
-  /markdown-it/12.3.1:
-    resolution: {integrity: sha512-xu6ZyQc/W1mWRwBOZT5ePVVn77MhHYkWwiAMgy/oBwUwSD2fS5xND3oIN44RCqVMgpNbhKtzZs9B75mC7FHwTQ==}
+  /markdown-it/12.3.2:
+    resolution: {integrity: sha512-TchMembfxfNVpHkbtriWltGWc+m3xszaRD0CZup7GFFhzIgQqxIfn3eGj1yZpfuflzPvfkt611B2Q/Bsk1YnGg==}
     hasBin: true
     dependencies:
       argparse: 2.0.1
@@ -6672,8 +6672,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/6.25.0:
-    resolution: {integrity: sha512-Hlck6S8j7obFkkfQCnDJXIEBRNK4wIanMzDfpRE5TNbLsJnxbWXGbMV5ZhDf8Q8xy6RkBWdoKAmliL0nLmzxHQ==}
+  /pnpm/6.25.1:
+    resolution: {integrity: sha512-/jvwDU8XJ3ntw1fJ5pYGN+nMqxHuXoarajc/95CrAB9+lVfjTJooiOc5BmxT7GrZzcEwdpJKMCdN3yR1ItGFMw==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: true
@@ -8180,7 +8180,7 @@ packages:
       '@rollup/pluginutils': 4.1.2
       '@types/markdown-it': 12.2.3
       gray-matter: 4.0.3
-      markdown-it: 12.3.1
+      markdown-it: 12.3.2
       vite: 2.7.10_sass@1.47.0
     dev: true
 
