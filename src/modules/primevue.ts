@@ -1,13 +1,11 @@
 import type { UserModule } from '@/types';
 
-import PrimeVue from 'primevue/config';
 import AutoComplete from 'primevue/autocomplete';
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 import Avatar from 'primevue/avatar';
 import AvatarGroup from 'primevue/avatargroup';
 import Badge from 'primevue/badge';
-import BadgeDirective from 'primevue/badgedirective';
 import Button from 'primevue/button';
 import Breadcrumb from 'primevue/breadcrumb';
 import Calendar from 'primevue/calendar';
@@ -21,7 +19,6 @@ import ColorPicker from 'primevue/colorpicker';
 import Column from 'primevue/column';
 import ConfirmDialog from 'primevue/confirmdialog';
 import ConfirmPopup from 'primevue/confirmpopup';
-import ConfirmationService from 'primevue/confirmationservice';
 import ContextMenu from 'primevue/contextmenu';
 import DataTable from 'primevue/datatable';
 import DataView from 'primevue/dataview';
@@ -56,7 +53,6 @@ import PickList from 'primevue/picklist';
 import ProgressBar from 'primevue/progressbar';
 import Rating from 'primevue/rating';
 import RadioButton from 'primevue/radiobutton';
-import Ripple from 'primevue/ripple';
 import SelectButton from 'primevue/selectbutton';
 import ScrollPanel from 'primevue/scrollpanel';
 import ScrollTop from 'primevue/scrolltop';
@@ -73,11 +69,9 @@ import TieredMenu from 'primevue/tieredmenu';
 import Textarea from 'primevue/textarea';
 import Timeline from 'primevue/timeline';
 import Toast from 'primevue/toast';
-import ToastService from 'primevue/toastservice';
 import Toolbar from 'primevue/toolbar';
 import TabView from 'primevue/tabview';
 import TabPanel from 'primevue/tabpanel';
-import Tooltip from 'primevue/tooltip';
 import ToggleButton from 'primevue/togglebutton';
 import Tree from 'primevue/tree';
 import TreeTable from 'primevue/treetable';
@@ -85,16 +79,30 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
+
+
+import PrimeVue from 'primevue/config';
+
+// directives
+import BadgeDirective from 'primevue/badgedirective';
+import Ripple from 'primevue/ripple';
 import StyleClass from 'primevue/styleclass';
+import Tooltip from 'primevue/tooltip';
+
+// services
+import ConfirmationService from 'primevue/confirmationservice';
+import ToastService from 'primevue/toastservice';
+
 
 export const install: UserModule = ({ app, router, isClient }) => {
-  app.directive('tooltip', Tooltip);
-  app.directive('ripple', Ripple);
+  // directives
+
   app.directive('badge', BadgeDirective);
+  app.directive('ripple', Ripple);
+  app.directive('tooltip', Tooltip);
   app.directive('styleclass', StyleClass);
 
-
-  // have to use custom import because of vue components primevue ssr problem // otherwise using PrimeVueResolver from vue components is a lot easier
+  // components
   app.component('Accordion', Accordion);
   app.component('AccordionTab', AccordionTab);
   app.component('AutoComplete', AutoComplete);
@@ -173,6 +181,8 @@ export const install: UserModule = ({ app, router, isClient }) => {
   app.component('TriStateCheckbox', TriStateCheckbox);
 
   app.use(PrimeVue, { ripple: true });
+
+  // services
   app.use(ConfirmationService);
   app.use(ToastService);
 
