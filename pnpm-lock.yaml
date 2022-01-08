@@ -24,6 +24,7 @@ specifiers:
   '@vuelidate/validators': ^2.0.0-alpha.26
   '@vueuse/core': ^7.5.3
   '@vueuse/head': ~0.7.4
+  add: ^2.0.6
   autoprefixer: ^10.4.2
   c8: ^7.11.0
   chart.js: ^3.7.0
@@ -41,6 +42,7 @@ specifiers:
   markdown-it-prism: ^2.2.2
   nprogress: ^0.2.0
   pinia: ~2.0.9
+  pinia-cached-store: ^0.4.0
   pnpm: ^6.25.0
   postcss: ^8.4.5
   postcss-nesting: ^10.1.1
@@ -66,6 +68,7 @@ specifiers:
   vite-ssg: ^0.17.5
   vitest: ^0.0.139
   vue: ^3.2.26
+  vue-demi: ^0.12.1
   vue-i18n: ^9.2.0-beta.26
   vue-logger-plugin: ^2.1.3
   vue-router: ^4.0.12
@@ -77,13 +80,16 @@ dependencies:
   '@vuelidate/validators': 2.0.0-alpha.26_vue@3.2.26
   '@vueuse/core': 7.5.3_vue@3.2.26
   '@vueuse/head': 0.7.4_vue@3.2.26
+  add: 2.0.6
   chart.js: 3.7.0
   nprogress: 0.2.0
   pinia: 2.0.9_typescript@4.5.4+vue@3.2.26
+  pinia-cached-store: 0.4.0_74f2173effe7bfb6fbb5daa7cb4a9480
   primeicons: 5.0.0
   primevue: 3.10.0_primeicons@5.0.0+vue@3.2.26
   prism-theme-vars: 0.2.2
   vue: 3.2.26
+  vue-demi: 0.12.1_vue@3.2.26
   vue-i18n: 9.2.0-beta.26_vue@3.2.26
   vue-logger-plugin: 2.1.3
   vue-router: 4.0.12_vue@3.2.26
@@ -2896,6 +2902,10 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /add/2.0.6:
+    resolution: {integrity: sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=}
+    dev: false
 
   /agent-base/6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -6623,6 +6633,21 @@ packages:
     resolution: {integrity: sha1-7RQaasBDqEnqWISY59yosVMw6Qw=}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /pinia-cached-store/0.4.0_74f2173effe7bfb6fbb5daa7cb4a9480:
+    resolution: {integrity: sha512-gfW1Oud3QJNXUbzJPXyNYHh2dPeQUeION7un+67hrzUSHGk2hJ08EcgiVpLu8CFgEB6kTY9T0Ivj17lAL5DglA==}
+    peerDependencies:
+      pinia: ^2.0.0-rc.4
+      typescript: ^4.3.5
+      vue: ^2.6.14 || ^3.2.0
+    dependencies:
+      pinia: 2.0.9_typescript@4.5.4+vue@3.2.26
+      typescript: 4.5.4
+      vue: 3.2.26
+      vue-demi: 0.12.1_vue@3.2.26
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
 
   /pinia/2.0.9_typescript@4.5.4+vue@3.2.26:
     resolution: {integrity: sha512-iuYdxLJKQ07YPyOHYH05wNG9eKWqkP/4y4GE8+RqEYtz5fwHgPA5kr6zQbg/DoEJGnR2XCm1w1vdt6ppzL9ATg==}

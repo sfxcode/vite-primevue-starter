@@ -124,7 +124,7 @@ export default defineConfig({
                         ...route,
                         beforeEnter: (route) => {
                             // eslint-disable-next-line no-console
-                            console.log(route)
+                            // console.log(route)
                         },
                     }
                 }

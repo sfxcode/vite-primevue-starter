@@ -1,31 +1,37 @@
 <template>
-  <div class="card">
-    <h5>Counter Demo</h5>
-  <h5 class='font-bold text-2xl mb-4 text-blue-600'>Pinia Store</h5>
-  <p class='text-xl pb-4'>Example of Pinia Store !</p>
-  <div class='grid grid-cols-2 gap-4'>
-    <div class='col-span-2'>demoStore</div>
-    <div>myRef Value</div>
-    <div>{{ myRef }}</div>
-    <div>Pinia State counter</div>
-    <div>{{ demoStore.counter }}</div>
-    <div>Pinia getter doubleCount</div>
-    <div>{{ doubleCount }}</div>
-    <div>counter * myRef</div>
-    <div>{{ counter * myRef }}</div>
-  </div>
+  <div class='card'>
+    <h5>Store Settings</h5>
+    <h5 class='font-bold text-2xl mb-4 text-blue-600'>Primevue Theme Store</h5>
+    <div class='grid grid-cols-2  gap-4'>
+      <div>Theme Name</div>
+      <div>{{ themeStore.themeName }}</div>
+      <div>Theme Color</div>
+      <div>{{ themeStore.themeColor }}</div>
+    </div>
+    <h5 class='font-bold text-2xl mb-4 text-blue-600'>Demo Store</h5>
+    <div class='grid grid-cols-2  gap-4'>
+      <div>Name</div>
+      <div>{{ demoStore.name }}</div>
+      <div>Counter</div>
+      <div>{{ demoStore.counter }}</div>
+    </div>
+
+    <h5 class='font-bold text-2xl mb-4 text-blue-600'>Data Store</h5>
+    <span class='text-xs'>Example of a Cached Pinia Store, data is cached in local storage ...</span>
+    <div class='grid grid-cols-2 mt-6 gap-4'>
+      <div>Products</div>
+      <div>{{ dataStore.products.length }}</div>
+    </div>
+
   </div>
 </template>
 
 <script setup lang='ts'>
 
-import { useDemoStore } from '@/store';
-
+import { useDataStore, useDemoStore, useThemeStore } from '@/store';
+const themeStore = useThemeStore();
 const demoStore = useDemoStore();
-
-const myRef = ref(3);
-const doubleCount = computed(() => demoStore.doubleCount);
-const counter = demoStore.counter;
+const dataStore = useDataStore();
 
 </script>
 
