@@ -1,9 +1,7 @@
 <template>
 
   <div class='card'>
-    <h5>Input</h5>
-    <h1>UnoCSS</h1>
-    <h4>Playground Sample</h4>
+    <h5>UnoCSS</h5>
     <div h-full text-center flex select-none all:transition-400>
       <div ma>
         <div text-5xl fw100 animate-bounce-alt animate-count-infinite animate-5s>
