@@ -1,6 +1,8 @@
 <template>
 
   <div class='card'>
+    <h5>DataTable Example</h5>
+
     <DataTable :value='tableData' ref='dataTableRef' dataKey='name'
                v-model:filters='filters' :globalFilterFields="['name','code','inventoryStatus']"
                stripedRows

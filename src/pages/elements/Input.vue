@@ -1,9 +1,8 @@
 <template>
   <div class="card">
-    <h5>Input</h5>
+    <h5>InputText Example (with Vuelidate ...)</h5>
     <ConfirmPopup class="shadow"></ConfirmPopup>
     <Toast/>
-    <h5 class='font-bold text-2xl mb-4 text-blue-600'>Input Text (with Vuelidate ...)</h5>
     <InputText v-model='v$.contact.email.$model' />
 
     <Button label='Reset' v-on:click='reset($event)' class='ml-2' />
@@ -49,7 +48,7 @@ const v$ = useVuelidate(rules, state)
 function reset (event: any) {
   confirm.require({
     target: event.currentTarget,
-    message: 'Delete Text ?',
+    message: 'Reset Text ?',
     icon: 'pi pi-info-circle',
     acceptClass: 'p-button-danger',
     accept: () => {
