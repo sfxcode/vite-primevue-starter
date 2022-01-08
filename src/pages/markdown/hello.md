@@ -10,7 +10,14 @@ This is {{frontmatter.name}}
 * Part 2
 * Part 3
 
-## Code
+
+<div class="card">
+    <h5>HTML</h5>
+<span>Some HTML Code ...</span>
+</div>
+
+## Source Code
+
 
 ```markdown
 
@@ -25,6 +32,11 @@ This is {{frontmatter.name}}
 * Part 1
 * Part 2
 * Part 3
+
+<div class="card">
+    <h5>HTML</h5>
+<span>Some HTML Code ...</span>
+</div>
 
 ```
 

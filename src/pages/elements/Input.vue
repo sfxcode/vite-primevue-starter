@@ -1,17 +1,21 @@
 <template>
+  <div class="card">
+    <h5>Input</h5>
+    <ConfirmPopup class="shadow"></ConfirmPopup>
+    <Toast/>
+    <h5 class='font-bold text-2xl mb-4 text-blue-600'>Input Text (with Vuelidate ...)</h5>
+    <InputText v-model='v$.contact.email.$model' />
 
-  <ConfirmPopup class="shadow"></ConfirmPopup>
-  <Toast/>
-  <h5 class='font-bold text-2xl mb-4 text-blue-600'>Input Text (with Vuelidate ...)</h5>
-  <InputText v-model='v$.contact.email.$model' />
-
-  <Button label='Reset' v-on:click='reset($event)' class='ml-2' />
-  <div class='mt-4' v-if="v$.contact.email.$error">
+    <Button label='Reset' v-on:click='reset($event)' class='ml-2' />
+    <div class='mt-4' v-if="v$.contact.email.$error">
     <span class='p-error text-xl' id="name-error" v-for="(error, index) of v$.contact.email.$errors" :key="index">
                 {{error.$message}}
             </span>
+    </div>
+    <h5 class='font-bold text-2xl text-green-600 mt-4'>{{ state.contact.email }}</h5>
   </div>
-  <h5 class='font-bold text-2xl text-green-600 mt-4'>{{ state.contact.email }}</h5>
+
+
 
 </template>
 

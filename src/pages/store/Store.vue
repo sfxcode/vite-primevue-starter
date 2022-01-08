@@ -1,5 +1,6 @@
 <template>
-
+  <div class="card">
+    <h5>Counter Demo</h5>
   <h5 class='font-bold text-2xl mb-4 text-blue-600'>Pinia Store</h5>
   <p class='text-xl pb-4'>Example of Pinia Store !</p>
   <div class='grid grid-cols-2 gap-4'>
@@ -12,6 +13,7 @@
     <div>{{ doubleCount }}</div>
     <div>counter * myRef</div>
     <div>{{ counter * myRef }}</div>
+  </div>
   </div>
 </template>
 
