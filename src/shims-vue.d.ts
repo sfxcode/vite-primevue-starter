@@ -3,13 +3,14 @@ declare interface Window {
 }
 
 declare module '*.vue' {
-  import Vue from 'vue'
-  export default Vue
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent<{}, {}, any>
+  export default component
 }
 
 declare module '*.md' {
   // eslint-disable-next-line import/no-duplicates
-  import type { ComponentOptions } from 'vue';
-  const Component: ComponentOptions;
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent<{}, {}, any>
   export default Component;
 }

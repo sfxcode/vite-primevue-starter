@@ -62,8 +62,8 @@ export default defineConfig({
     plugins: [
         Unocss({
             presets: [
-                presetAttributify({ /* preset options */}),
                 presetUno(),
+                presetAttributify({ /* preset options */}),
                 presetIcons({ /* options */ })
                 // ...custom presets
             ]
