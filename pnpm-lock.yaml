@@ -66,8 +66,8 @@ specifiers:
   vite-plugin-pwa: ^0.11.12
   vite-plugin-restart: ^0.1.0
   vite-plugin-vue-layouts: ^0.5.0
-  vite-ssg: ^0.17.5
-  vitest: ^0.0.140
+  vite-ssg: ^0.17.6
+  vitest: ^0.0.141
   vue: ^3.2.26
   vue-demi: ^0.12.1
   vue-i18n: ^9.2.0-beta.26
@@ -89,7 +89,6 @@ dependencies:
   primeicons: 5.0.0
   primevue: 3.10.0_primeicons@5.0.0+vue@3.2.26
   prism-theme-vars: 0.2.2
-  tslib: 2.3.1
   vue: 3.2.26
   vue-demi: 0.12.1_vue@3.2.26
   vue-i18n: 9.2.0-beta.26_vue@3.2.26
@@ -135,6 +134,7 @@ devDependencies:
   postcss-nesting: 10.1.1_postcss@8.4.5
   rxjs: 7.5.2
   sass: 1.47.0
+  tslib: 2.3.1
   typescript: 4.5.4
   unocss: 0.22.0
   unocss-preset-typography: 0.3.0_unocss@0.22.0
@@ -149,8 +149,8 @@ devDependencies:
   vite-plugin-pwa: 0.11.12_vite@2.7.10
   vite-plugin-restart: 0.1.0_vite@2.7.10
   vite-plugin-vue-layouts: 0.5.0_356ec39c15e6be83b5da8ae2fd7c7b8a
-  vite-ssg: 0.17.5_97bac1ad760e801e4df55702908e73e1
-  vitest: 0.0.140_69668438cdc6d44ee4b86ac6ca4d551c
+  vite-ssg: 0.17.6_97bac1ad760e801e4df55702908e73e1
+  vitest: 0.0.141_69668438cdc6d44ee4b86ac6ca4d551c
   vue-tsc: 0.30.2_typescript@4.5.4
   wait-on: 6.0.0
 
@@ -7848,6 +7848,7 @@ packages:
 
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
+    dev: true
 
   /tsutils/3.21.0_typescript@4.5.4:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
@@ -8333,8 +8334,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.17.5_97bac1ad760e801e4df55702908e73e1:
-    resolution: {integrity: sha512-cgdgU/CvxdnrA1XwxCShy66EkBaSRKfJkCRyS5DwQUXpDHBqyMw2KUsAAmSpDQYNGN9wBNFLULrDSW8lZIR6bg==}
+  /vite-ssg/0.17.6_97bac1ad760e801e4df55702908e73e1:
+    resolution: {integrity: sha512-ZOu67Y2bAH4g3IyBCfWIYPRbawEjGwrxcQX9jew9Iw20z92+Pic9ztcsbCLgnHRpQRWmQ2K//xiXoHxqCPhzHg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -8390,8 +8391,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.0.140_69668438cdc6d44ee4b86ac6ca4d551c:
-    resolution: {integrity: sha512-tBv9rMKUH7AA7Vg9X5FMNZ7zyjGLNtNCBcKc2NNjPHKO1+cPttjF+jVvGIOP0Bo0l6pkRZWvsd3nywvktqVvvQ==}
+  /vitest/0.0.141_69668438cdc6d44ee4b86ac6ca4d551c:
+    resolution: {integrity: sha512-CQwNWGbifAs5OrG1MXyiveeFT3KYpU/UZiZzNUR5ZHMUWKam9OeoDX0U3sFuyaERp/0b2vhoL0oaMccY2PJPSQ==}
     engines: {node: '>=14.14.0'}
     hasBin: true
     peerDependencies:
