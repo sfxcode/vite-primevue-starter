@@ -21,9 +21,11 @@
       "vite-plugin-vue-layouts/client",
       "@intlify/vite-plugin-vue-i18n/client",
       "cypress",
+      "vitest/global"
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "tslib" : ["./node_modules/tslib/tslib.d.ts"]
     }
 
   },
