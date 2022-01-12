@@ -3,8 +3,6 @@
 Build your VUE.js App with the latest and fastest VITE Plugins (nuxt.js like).
 First Class PrimeVUE support.
 
-
-
 ![vite-prime-vue-starter](vite-prime-vue-starter.png)
 
 [![CI](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/vite-primevue-starter/actions/workflows/main.yml)
