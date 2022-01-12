@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.5 (2022-01-12)
+* more vitest samples
+* vitest ui (component tests on ui fail - work on standard mode)
+* 
 ## 1.1.1 (2021-12-16)
 - added UnoCSS
 - removed tailwind

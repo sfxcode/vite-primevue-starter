@@ -1,5 +1,7 @@
 import { mount } from '@vue/test-utils'
-import AppFooter from '../src/components/app/AppFooter.vue'
+import { expect, test } from 'vitest'
+
+import AppFooter from '../../../src/components/app/AppFooter.vue'
 
 test('mount component', async() => {
   expect(AppFooter).toBeTruthy()
