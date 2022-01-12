@@ -21,7 +21,9 @@
       "vite-plugin-vue-layouts/client",
       "@intlify/vite-plugin-vue-i18n/client",
       "cypress",
-      "vitest/global"
+      "vitest",
+      "vitest/global",
+
     ],
     "paths": {
       "@/*": ["./src/*"],
