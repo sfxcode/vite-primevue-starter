@@ -4,7 +4,6 @@
     <ConfirmPopup class="shadow"></ConfirmPopup>
     <Toast/>
     <InputText v-model='v$.contact.email.$model' />
-
     <Button label='Reset' v-on:click='reset($event)' class='ml-2' />
     <div class='mt-4' v-if="v$.contact.email.$error">
     <span class='p-error text-xl' id="name-error" v-for="(error, index) of v$.contact.email.$errors" :key="index">
