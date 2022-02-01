@@ -40,7 +40,7 @@
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "5.10.1",
-    "@typescript-eslint/parser": "5.10.1",
+    "@typescript-eslint/parser": "5.10.2",
     "@unocss/preset-attributify": "^0.22.6",
     "@unocss/preset-icons": "^0.22.6",
     "@vitejs/plugin-vue": "^2.1.0",
