@@ -18,7 +18,7 @@ specifiers:
   '@vue/eslint-config-standard': ~6.1.0
   '@vue/eslint-config-typescript': ^10.0.0
   '@vue/server-renderer': ^3.2.29
-  '@vue/test-utils': ^2.0.0-rc.18
+  '@vue/test-utils': next
   '@vuedx/typecheck': ~0.7.4
   '@vuedx/typescript-plugin-vue': ~0.7.4
   '@vuelidate/core': ^2.0.0-alpha.34
