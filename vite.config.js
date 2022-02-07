@@ -45,8 +45,12 @@ export default defineConfig({
         formatting: 'minify',
     },
     test: {
-        global: true,
+        globals: true,
+        include: ['test/**/*.test.ts'],
         environment: 'happy-dom',
+        deps: {
+            inline: ['@vue', '@vueuse', 'vue-demi'],
+        },
     },
 
     optimizeDeps: {
