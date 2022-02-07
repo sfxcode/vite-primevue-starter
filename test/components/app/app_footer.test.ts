@@ -1,15 +1,13 @@
-import { mount } from '@vue/test-utils'
-import { expect, test } from 'vitest'
+import { mount } from '@vue/test-utils';
+import { expect, test } from 'vitest';
 
-import AppFooter from '../../../src/components/app/AppFooter.vue'
+import AppFooter from '../../../src/components/app/AppFooter.vue';
 
-test('mount component', async() => {
-  expect(AppFooter).toBeTruthy()
+test('mount component', async () => {
+  expect(AppFooter).toBeTruthy();
 
-  const wrapper = mount(AppFooter, {
+  const wrapper = mount(AppFooter, {});
 
-  })
+  expect(wrapper.text()).toContain('Vite PrimeVue Starter');
 
-  expect(wrapper.text()).toContain('Vite PrimeVue Starter')
-
-})
+});
