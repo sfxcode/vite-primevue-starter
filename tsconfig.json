@@ -20,7 +20,6 @@
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
       "@intlify/vite-plugin-vue-i18n/client",
-      "cypress",
       "vitest",
       "vitest/global",
 
@@ -40,5 +39,5 @@
     "auto-imports.d.ts",
     "components.d.ts"
   ],
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules", "cypress"]
 }

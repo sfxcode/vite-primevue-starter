@@ -48,9 +48,6 @@ export default defineConfig({
         globals: true,
         include: ['test/**/*.test.ts'],
         environment: 'happy-dom',
-        deps: {
-            inline: ['@vue', '@vueuse', 'vue-demi'],
-        },
     },
 
     optimizeDeps: {
@@ -90,7 +87,7 @@ export default defineConfig({
             }
         }),
         Components({
-            dts: true,
+            dts: 'src/components.d.ts',
             resolvers: [
             ],
         }),
@@ -109,7 +106,10 @@ export default defineConfig({
                 'vue-i18n',
                 '@vueuse/head',
             ],
-            dts: true,
+            exclude: [
+                '**/dist/**',
+            ],
+            dts: 'src/auto-import.d.ts',
         }),
         Pages({
             // pagesDir: ['src/pages', 'src/pages2'],

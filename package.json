@@ -11,8 +11,7 @@
     "test:e2e": "pnpm dev & wait-on tcp:3333 -v & cypress open",
     "test:ci": "pnpm dev & wait-on tcp:3333 -v & cypress run --headless",
     "test:unit": "vitest --run --reporter verbose",
-    "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui"
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@vuelidate/core": "^2.0.0-alpha.34",
