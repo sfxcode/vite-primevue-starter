@@ -6,6 +6,8 @@ name: My Cool App
 
 This is {{frontmatter.name}}
 
+[vite-primevue-starter](https://github.com/sfxcode/vite-primevue-starter)
+
 * Part 1
 * Part 2
 * Part 3
@@ -18,7 +20,6 @@ This is {{frontmatter.name}}
 
 ## Source Code
 
-
 ```markdown
 
 ---
@@ -28,6 +29,8 @@ name: My Cool App
 # Hello Markdown
 
 This is {{frontmatter.name}}
+
+[vite-primevue-starter](https://github.com/sfxcode/vite-primevue-starter)
 
 * Part 1
 * Part 2
