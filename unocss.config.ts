@@ -1,5 +1,5 @@
 import { defineConfig, presetAttributify, presetUno, presetIcons } from 'unocss'
-import { presetTypography } from 'unocss-preset-typography'
+import { presetTypography } from '@unocss/preset-typography'
 
 export function createConfig({ strict = true, dev = true } = {}) {
   return defineConfig({
