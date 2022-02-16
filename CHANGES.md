@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.8 (2022-02-17)
+- PrimeVUE 3.12.0
+
 ## 1.1.5 (2022-01-12)
 * more vitest samples
 * vitest ui (component tests on ui fail - work on standard mode)
