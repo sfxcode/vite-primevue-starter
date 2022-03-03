@@ -63,7 +63,6 @@ specifiers:
   vite-plugin-inspect: ^0.4.3
   vite-plugin-md: ^0.11.8
   vite-plugin-pages: ^0.21.2
-  vite-plugin-purge-icons: ^0.8.1
   vite-plugin-pwa: ^0.11.13
   vite-plugin-restart: ^0.1.1
   vite-plugin-vue-layouts: ^0.6.0
@@ -147,7 +146,6 @@ devDependencies:
   vite-plugin-inspect: 0.4.3_vite@2.8.6
   vite-plugin-md: 0.11.8_vite@2.8.6
   vite-plugin-pages: 0.21.2_5dbb0cc878f3ab9caa0bd7b169eded43
-  vite-plugin-purge-icons: 0.8.1_vite@2.8.6
   vite-plugin-pwa: 0.11.13_vite@2.8.6
   vite-plugin-restart: 0.1.1_vite@2.8.6
   vite-plugin-vue-layouts: 0.6.0_a4592832fd4441821c40bfaa7d2d3166
@@ -1635,14 +1633,6 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/iconify/2.1.2:
-    resolution: {integrity: sha512-QcUzFeEWkE/mW+BVtEGmcWATClcCOIJFiYUD/PiCWuTcdEA297o8D4oN6Ra44WrNOHu1wqNW4J0ioaDIiqaFOQ==}
-    dependencies:
-      cross-fetch: 3.1.5
-    transitivePeerDependencies:
-      - encoding
-    dev: true
-
   /@iconify/json/2.1.10:
     resolution: {integrity: sha512-wIOolj0F09GczMlItSAg6AluVyJIK9ruFPjGpeYxg3tV8kU04RGH8O/fQiR0mmdWbY92x/x3VkxfDD3VMeX00A==}
     dependencies:
@@ -1855,27 +1845,6 @@ packages:
 
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
-    dev: true
-
-  /@purge-icons/core/0.8.0:
-    resolution: {integrity: sha512-8L6hP1U9XQO5B7kvquVJ5N7jzFvO0LZLXhBCjUQzzJzi42i6MAUanVKROApqbBuh21o9tmPwvNUg0xPe/uftRA==}
-    dependencies:
-      '@iconify/iconify': 2.1.2
-      axios: 0.26.0_debug@4.3.3
-      debug: 4.3.3
-      fast-glob: 3.2.11
-      fs-extra: 10.0.1
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
-
-  /@purge-icons/generated/0.8.1:
-    resolution: {integrity: sha512-rIExGA33EGKEToqtc8WfpboaR7or1XRp+KV1Y5v/P0Rq7G5Me95DmP3ow/MpG7ql+XZ9xPzyS2naGRx5358+6Q==}
-    dependencies:
-      '@iconify/iconify': 2.1.2
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@rollup/plugin-babel/5.3.1_@babel+core@7.17.5+rollup@2.69.0:
@@ -3244,14 +3213,6 @@ packages:
       - debug
     dev: true
 
-  /axios/0.26.0_debug@4.3.3:
-    resolution: {integrity: sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==}
-    dependencies:
-      follow-redirects: 1.14.9
-    transitivePeerDependencies:
-      - debug
-    dev: true
-
   /babel-plugin-dynamic-import-node/2.3.3:
     resolution: {integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==}
     dependencies:
@@ -3786,14 +3747,6 @@ packages:
     hasBin: true
     dependencies:
       cross-spawn: 7.0.3
-    dev: true
-
-  /cross-fetch/3.1.5:
-    resolution: {integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==}
-    dependencies:
-      node-fetch: 2.6.7
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /cross-spawn/7.0.3:
@@ -7389,17 +7342,6 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-purge-icons/0.8.1:
-    resolution: {integrity: sha512-7ktMV+gWtXAdOIShE8EtTcnpGhozi5H2hKk1MQVGt+7FmlLkjR+XKu1Nyzjocwd6xJvKube2Lh+SfcJ8FYYySw==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@purge-icons/core': 0.8.0
-      '@purge-icons/generated': 0.8.1
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
-
   /rollup-plugin-terser/7.0.2_rollup@2.69.0:
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
     peerDependencies:
@@ -8454,21 +8396,6 @@ packages:
       vite: 2.8.6_sass@1.49.9
       yaml: 2.0.0-10
     transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /vite-plugin-purge-icons/0.8.1_vite@2.8.6:
-    resolution: {integrity: sha512-H77YDvECkdzwsgYTu6LR5Nx0wey5Hporw+3/hTYTZh7D7YcarS+RsOvpUEgd2XG5fChgCmMBtMfnr2JmrNanSg==}
-    engines: {node: '>= 12'}
-    peerDependencies:
-      vite: ^2.0.0-beta.3
-    dependencies:
-      '@purge-icons/core': 0.8.0
-      '@purge-icons/generated': 0.8.1
-      rollup-plugin-purge-icons: 0.8.1
-      vite: 2.8.6_sass@1.49.9
-    transitivePeerDependencies:
-      - encoding
       - supports-color
     dev: true
 
