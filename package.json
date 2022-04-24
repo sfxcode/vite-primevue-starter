@@ -55,7 +55,7 @@
     "@vue/test-utils": "^2.0.0-rc.21",
     "@vuedx/typecheck": "~0.7.4",
     "@vuedx/typescript-plugin-vue": "~0.7.4",
-    "autoprefixer": "^10.4.4",
+    "autoprefixer": "^10.4.5",
     "c8": "^7.11.2",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
@@ -82,14 +82,14 @@
     "vite": "^2.9.5",
     "vite-plugin-eslint": "^1.5.2",
     "vite-plugin-inspect": "^0.5.0",
-    "vite-plugin-md": "^0.12.4",
+    "vite-plugin-md": "^0.13.0",
     "vite-plugin-pages": "^0.23.0",
     "vite-plugin-pwa": "^0.12.0",
     "vite-plugin-restart": "^0.1.1",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-ssg": "^0.19.2",
     "vitest": "^0.9.4",
-    "vue-tsc": "^0.34.9",
+    "vue-tsc": "^0.34.10",
     "wait-on": "~6.0.1"
   }
 }
