@@ -1,17 +1,17 @@
-import {ref} from "vue";
+import { ref } from 'vue'
 
 export default () => {
-    // @ts-ignore
-    const tableData: Ref<any[]> = ref([]);
-    const filters = ref({});
-    const dataTableRef = ref<HTMLElement | null>(null)
+  // @ts-expect-error Need Error Masking
+  const tableData: Ref<any[]> = ref([])
+  const filters = ref({})
+  const dataTableRef = ref<HTMLElement | null>(null)
 
-    function exportCSV() {
-        // @ts-ignore
-        dataTableRef.value.exportCSV()
-    }
+  function exportCSV() {
+    // @ts-expect-error Need Error Masking
+    dataTableRef.value.exportCSV()
+  }
 
-    return {
-        tableData, filters, dataTableRef, exportCSV
-    }
+  return {
+    tableData, filters, dataTableRef, exportCSV,
+  }
 }

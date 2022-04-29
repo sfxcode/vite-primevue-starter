@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <div class="flex">
     <div class="w-full">
@@ -14,8 +18,12 @@
               <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
             </div>
             <div class="text-center">
-              <p class="text-xl text-white font-bold mb-2">Dany Bailey</p>
-              <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+              <p class="text-xl text-white font-bold mb-2">
+                Dany Bailey
+              </p>
+              <p class="text-base text-gray-400 font-normal">
+                Software Engineer
+              </p>
             </div>
           </div>
           <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
@@ -23,8 +31,12 @@
               <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
             </div>
             <div class="text-center">
-              <p class="text-xl text-white font-bold mb-2">Lucy Carter</p>
-              <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+              <p class="text-xl text-white font-bold mb-2">
+                Lucy Carter
+              </p>
+              <p class="text-base text-gray-400 font-normal">
+                Graphic Designer
+              </p>
             </div>
           </div>
           <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
@@ -32,8 +44,12 @@
               <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
             </div>
             <div class="text-center">
-              <p class="text-xl text-white font-bold mb-2">Jade Bradley</p>
-              <p class="text-base text-gray-400 font-normal">Dev Ops</p>
+              <p class="text-xl text-white font-bold mb-2">
+                Jade Bradley
+              </p>
+              <p class="text-base text-gray-400 font-normal">
+                Dev Ops
+              </p>
             </div>
           </div>
 
@@ -42,8 +58,12 @@
               <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
             </div>
             <div class="text-center">
-              <p class="text-xl text-white font-bold mb-2">Jade Bradley</p>
-              <p class="text-base text-gray-400 font-normal">Dev Ops</p>
+              <p class="text-xl text-white font-bold mb-2">
+                Jade Bradley
+              </p>
+              <p class="text-base text-gray-400 font-normal">
+                Dev Ops
+              </p>
             </div>
           </div>
           <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
@@ -51,8 +71,12 @@
               <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
             </div>
             <div class="text-center">
-              <p class="text-xl text-white font-bold mb-2">Dany Bailey</p>
-              <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+              <p class="text-xl text-white font-bold mb-2">
+                Dany Bailey
+              </p>
+              <p class="text-base text-gray-400 font-normal">
+                Software Engineer
+              </p>
             </div>
           </div>
           <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
@@ -60,8 +84,12 @@
               <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
             </div>
             <div class="text-center">
-              <p class="text-xl text-white font-bold mb-2">Lucy Carter</p>
-              <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+              <p class="text-xl text-white font-bold mb-2">
+                Lucy Carter
+              </p>
+              <p class="text-base text-gray-400 font-normal">
+                Graphic Designer
+              </p>
             </div>
           </div>
         </div>
@@ -69,10 +97,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style scoped></style>
 

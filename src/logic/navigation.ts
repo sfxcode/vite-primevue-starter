@@ -6,14 +6,16 @@ export const navigationMenu = [
     }],
   },
   {
-    label: 'PrimeVue', icon: 'pi pi-fw pi-clone',
+    label: 'PrimeVue',
+    icon: 'pi pi-fw pi-clone',
     items: [
       { label: 'Input', icon: 'pi pi-fw pi-user-edit', to: '/elements/input' },
       { label: 'Table', icon: 'pi pi-fw pi-user-edit', to: '/elements/table' },
     ],
   },
   {
-    label: 'UI / UX', icon: 'pi pi-fw pi-clone',
+    label: 'UI / UX',
+    icon: 'pi pi-fw pi-clone',
     items: [
       { label: 'UnoCSS', icon: 'pi pi-fw pi-box', to: '/ui/uno' },
       { label: 'Tailwind (UnoCSS)', icon: 'pi pi-fw pi-box', to: '/ui/tailwind' },
@@ -39,4 +41,4 @@ export const navigationMenu = [
       label: 'Admin Page', icon: 'pi pi-fw pi-sign-in', to: '/admin',
     }],
   },
-];
+]
