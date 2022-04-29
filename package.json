@@ -8,7 +8,7 @@
     "preview": "vite build && vite preview",
     "preview-https": "serve dist",
     "start": "pnpm dev & wait-on tcp:3333 -v",
-    "lint": "eslint --fix ./src",
+    "lint": "eslint ./src",
     "test:e2e": "pnpm dev & wait-on tcp:3333 -v & cypress open",
     "test:ci": "pnpm dev & wait-on tcp:3333 -v & cypress run --headless",
     "test:unit": "vitest --run --reporter verbose",
