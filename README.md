@@ -14,6 +14,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - Vue 3.2 
 - Vite
 - Vitest (Testing Framework)
+- Testing with cypress (e2e)
 - Composition API
 - Script Setup
 - Routing VitePages / ViteLayout
@@ -25,12 +26,9 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - UnoCSS
 - SSG Support
 - Eslint
-- Prettier
-- Testing with cypress (e2e, component)
 
 ### Modules
 - i18n
-- logging
 - nprogress
 - pinia
 - primevue
