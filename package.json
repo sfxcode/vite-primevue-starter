@@ -66,7 +66,7 @@
     "https-localhost": "^4.7.1",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.4",
-    "pnpm": "^6.32.11",
+    "pnpm": "^7.0.0",
     "postcss": "^8.4.12",
     "postcss-nesting": "^10.1.4",
     "rxjs": "^7.5.5",
