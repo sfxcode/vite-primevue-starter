@@ -45,7 +45,6 @@ function reset(event: any) {
     },
   })
 }
-
 </script>
 
 <template>

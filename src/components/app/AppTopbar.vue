@@ -1,6 +1,7 @@
 <script setup lang='ts'>
-
 import { useThemeStore } from '@/store'
+
+const emit = defineEmits(['menuToggle', 'topbarMenuToggle'])
 
 const themeStore = useThemeStore()
 const op = ref<any>(null)
@@ -13,16 +14,13 @@ function redirectToGithub(event: any) {
   window.open('https://github.com/sfxcode/vite-primevue-starter', '_blank')
 }
 
-const emit = defineEmits(['menu-toggle', 'topbar-menu-toggle'])
-
 function onMenuToggle(event: any) {
-  emit('menu-toggle', event)
+  emit('menuToggle', event)
 }
 
 function onTopbarMenuToggle(event: any) {
-  emit('topbar-menu-toggle', event)
+  emit('topbarMenuToggle', event)
 }
-
 </script>
 
 <template>
@@ -35,8 +33,14 @@ function onTopbarMenuToggle(event: any) {
     </button>
 
     <button
-      v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein',
-                      toggleClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true}"
+      v-styleclass="{
+        selector: '@next',
+        enterClass: 'hidden',
+        enterActiveClass: 'scalein',
+        toggleClass: 'hidden',
+        leaveActiveClass: 'fadeout',
+        hideOnOutsideClick: true,
+      }"
       class="p-link layout-topbar-menu-button layout-topbar-button"
     >
       <i class="pi pi-ellipsis-v" />

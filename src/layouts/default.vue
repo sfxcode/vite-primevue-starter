@@ -57,7 +57,7 @@ function onSidebarClick() {
   menuClick.value = true
 }
 
-function onMenuItemClick(event: any) {
+function onmenuItemClick(event: any) {
   if (event.item && !event.item.items) {
     overlayMenuActive.value = false
     mobileMenuActive.value = false
@@ -123,14 +123,13 @@ onBeforeUpdate(() => {
     removeClass(document.body, 'body-overflow-hidden')
 },
 )
-
 </script>
 
 <template>
   <div :class="containerClass" @click="onWrapperClick">
     <AppTopBar @menu-toggle="onMenuToggle" />
     <div class="layout-sidebar" @click="onSidebarClick">
-      <AppMenu :model="navigationMenu" @menuitem-click="onMenuItemClick" />
+      <AppMenu :model="navigationMenu" @menu-item-click="onmenuItemClick" />
     </div>
 
     <div class="layout-main-container">

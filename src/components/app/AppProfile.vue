@@ -1,12 +1,10 @@
 <script setup lang='ts'>
-
 const expanded = ref(false)
 
 function onClick(event: any) {
   expanded.value = !expanded.value
   event.preventDefault()
 }
-
 </script>
 
 <template>

@@ -9,7 +9,6 @@ function logout() {
   auth.logout()
   router.push('/')
 }
-
 </script>
 
 <template>

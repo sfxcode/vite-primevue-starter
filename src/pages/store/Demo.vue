@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-
 import { useDemoStore } from '@/store'
 
 const demoStore = useDemoStore()
@@ -7,7 +6,6 @@ const demoStore = useDemoStore()
 const myRef = ref(3)
 const doubleCount = computed(() => demoStore.doubleCount)
 const counter = demoStore.counter
-
 </script>
 
 <template>

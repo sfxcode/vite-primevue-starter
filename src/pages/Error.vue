@@ -1,6 +1,7 @@
 <script setup lang='ts'>
 
 </script>
+
 <template>
   <p>Oops. Something went wrong ! !</p>
 </template>
