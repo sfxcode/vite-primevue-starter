@@ -21,6 +21,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - Pina as Store / CachedPiniaStore for effective data caching
 - Validation with Vuelidate 2
 - PrimeVue with Theme: Sakai (Free Admin Template)
+- Validation, PrimeVue Form elements by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 - Markdown Support (VitePages)
 - TypeScript 4.5
 - UnoCSS
