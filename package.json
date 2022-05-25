@@ -16,6 +16,7 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
+    "@formkit/vue": "^1.0.0-beta.8",
     "@sfxcode/formkit-primevue": "^0.5.3",
     "@vuelidate/core": "^2.0.0-alpha.41",
     "@vuelidate/validators": "^2.0.0-alpha.29",
