@@ -22,7 +22,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Pinia Store 2" icon="pi-check-circle" color="green-600">
         Replacement / Alternative for VUEX Store
       </AdvertiseBox>
-      <AdvertiseBox header="Vite 2" icon="pi-check-circle" color="blue-600">
+      <AdvertiseBox header="Vite 3" icon="pi-check-circle" color="blue-600">
         Vite Plugins like ViteIcons, PurgeIcons, ... and Vitest
       </AdvertiseBox>
       <AdvertiseBox header="Vite Pages" icon="pi-check-circle" color="blue-600">
