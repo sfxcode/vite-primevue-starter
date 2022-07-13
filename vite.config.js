@@ -10,8 +10,6 @@ import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import Inspect from 'vite-plugin-inspect'
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetUno } from 'unocss'
-import presetIcons from '@unocss/preset-icons'
 
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
