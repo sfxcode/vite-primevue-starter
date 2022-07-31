@@ -9,7 +9,6 @@ export const navigationMenu = [
     label: 'PrimeVue',
     icon: 'pi pi-fw pi-clone',
     items: [
-      { label: 'Input', icon: 'pi pi-fw pi-user-edit', to: '/elements/input' },
       { label: 'Table', icon: 'pi pi-fw pi-user-edit', to: '/elements/table' },
       { label: 'Validation', icon: 'pi pi-fw pi-user-edit', to: '/elements/validation' },
     ],
