@@ -1,6 +1,6 @@
 {
   "name": "vite-primevue-starter",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 3333 --open",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@formkit/vue": "^1.0.0-beta.10",
-    "@sfxcode/formkit-primevue": "^0.6.0",
+    "@sfxcode/formkit-primevue": "^0.7.2",
     "@vueuse/core": "^9.0.2",
     "@vueuse/head": "~0.7.9",
     "add": "^2.0.6",
@@ -27,7 +27,7 @@
     "pinia": "~2.0.18",
     "pinia-cached-store": "^0.5.0",
     "primeicons": "^5.0.0",
-    "primevue": "^3.12.6",
+    "primevue": "^3.16.0",
     "prism-theme-vars": "^0.2.3",
     "vue": "^3.2.36",
     "vue-demi": "^0.13.7",
@@ -45,7 +45,7 @@
     "@unocss/preset-icons": "^0.45.6",
     "@unocss/preset-typography": "^0.45.6",
     "@vitejs/plugin-vue": "^3.0.3",
-    "@vitest/ui": "^0.21.1",
+    "@vitest/ui": "^0.22.0",
     "@vue/server-renderer": "^3.2.36",
     "@vue/test-utils": "^2.0.0",
     "@vuedx/typecheck": "~0.7.5",
@@ -80,7 +80,7 @@
     "vite-plugin-restart": "^0.2.0",
     "vite-plugin-vue-layouts": "^0.7.0",
     "vite-ssg": "^0.20.0",
-    "vitest": "^0.21.1",
+    "vitest": "^0.22.0",
     "vue-tsc": "^0.40.1",
     "wait-on": "~6.0.1"
   }
