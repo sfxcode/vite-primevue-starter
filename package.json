@@ -19,7 +19,7 @@
     "@formkit/vue": "next",
     "@sfxcode/formkit-primevue": "^0.8.0",
     "@vueuse/core": "^9.2.0",
-    "@vueuse/head": "~0.7.12",
+    "@vueuse/head": "~0.8.0",
     "add": "^2.0.6",
     "chart.js": "^3.9.1",
     "consola": "^2.15.3",
