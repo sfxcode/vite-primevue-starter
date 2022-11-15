@@ -60,7 +60,7 @@ const schema = reactive(
       validationLabel: 'password confirmation',
     },
     {
-      $formkit: 'primeCheckBox',
+      $formkit: 'primeCheckbox',
       name: 'eu_citizen',
       id: 'eu',
       label: 'Are you a european citizen?',
