@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import { FormKitSchema } from '@formkit/vue'
 import { ref } from 'vue'
 
 const options = [
@@ -11,12 +10,12 @@ const options = [
 const schema = reactive(
   [
     {
-      $el: 'h1',
-      children: ['Validation with FormKit'],
+      $el: 'h2',
+      children: ['Register ', '$email'],
     },
     {
       $el: 'h3',
-      children: ['Inputs from PrimeVue'],
+      children: 'Header Text H3',
     },
     {
       $formkit: 'primeInputText',
@@ -24,22 +23,19 @@ const schema = reactive(
       label: 'Email',
       help: 'This will be used for your account.',
       validation: 'required|email',
-
     },
     {
-      $formkit: 'primeInputTextArea',
+      $formkit: 'primeTextarea',
       name: 'myText',
       label: 'Text',
       validation: '',
-      rows: '5',
+      rows: '3',
     },
     {
-      $formkit: 'primeCalendar',
-      name: 'myCalendar',
-      label: 'Calendar',
-      validation: '',
-      showIcon: true,
-
+      $formkit: 'primeEditor',
+      name: 'myEditor',
+      label: 'Editor',
+      style: 'height: 160px;',
     },
     {
       $formkit: 'primeInputText',
@@ -47,15 +43,12 @@ const schema = reactive(
       label: 'Password',
       help: 'Enter your new password.',
       validation: 'required|length:5,16',
-      validationVisibility: 'live',
     },
     {
-      $formkit: 'primePassword',
+      $formkit: 'primeInputText',
       name: 'password_confirm',
       label: 'Confirm password',
-      toggleMask: true,
-      feedback: false,
-      help: 'Enter your new password again to confirm it.',
+      help: 'Enter your new password again.',
       validation: 'required|confirm',
       validationLabel: 'password confirmation',
     },
@@ -64,33 +57,19 @@ const schema = reactive(
       name: 'eu_citizen',
       id: 'eu',
       label: 'Are you a european citizen?',
-
     },
     {
       $formkit: 'primeDropdown',
-      if: '$eu_citizen', // 👀 Oooo, conditionals!
+      if: '$get(eu).value', // 👀 Oooo, conditionals!
       name: 'cookie_notice',
       label: 'Cookie notice frequency',
-      value: 'hourly',
-      showClear: false,
-      filter: false,
       options,
       help: 'How often should we display a cookie notice?',
-      class: 'test',
-
-    },
-    {
-      $formkit: 'primeSlider',
-      name: 'slider',
-      label: 'Max messages',
-      min: 5,
-      step: 5,
-      value: 10,
     },
   ],
 )
 
-const data = ref({})
+const data = ref({ email: 'tom@sfxcode.com' })
 
 const submitHandler = async () => {
   // Lets pretend this is an ajax request:

@@ -35,7 +35,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="PrimeVue 3.17" icon="pi-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 3.20" icon="pi-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme and Layout" icon="pi-check-circle" color="green-600">
