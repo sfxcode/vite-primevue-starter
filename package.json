@@ -45,6 +45,7 @@
     "cypress": "^12.2.0",
     "eslint": "^8.30.0",
     "eslint-plugin-cypress": "^2.12.1",
+    "happy-dom": "^8.1.1",
     "https-localhost": "^4.7.1",
     "markdown-it": "^13.0.1",
     "markdown-it-link-attributes": "^4.0.1",
