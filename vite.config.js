@@ -1,8 +1,7 @@
 import * as path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import Markdown from 'vite-plugin-md'
+import Markdown from 'vite-plugin-vue-markdown'
 import Pages from 'vite-plugin-pages'
 import Restart from 'vite-plugin-restart'
 import Components from 'unplugin-vue-components/vite'
@@ -10,9 +9,9 @@ import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import Inspect from 'vite-plugin-inspect'
 import Unocss from 'unocss/vite'
-
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
+import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import pkg from './package.json'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
@@ -71,15 +70,13 @@ export default defineConfig({
         },
       },
     }),
+    vueI18n({
+      include: path.resolve(__dirname, './src/locales/**'),
+    }),
     Components({
       dts: 'src/components.d.ts',
       resolvers: [
       ],
-    }),
-    VueI18n({
-      runtimeOnly: true,
-      compositionOnly: true,
-      include: [path.resolve(__dirname, 'locales/**')],
     }),
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
