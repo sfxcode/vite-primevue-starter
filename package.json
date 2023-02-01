@@ -55,7 +55,7 @@
     "pinia-cached-store": "^0.6.4",
     "pnpm": "^7.21.0",
     "postcss": "^8.4.20",
-    "postcss-nesting": "^10.2.0",
+    "postcss-nesting": "^11.1.0",
     "primeicons": "^6.0.1",
     "primevue": "^3.21.0",
     "prism-theme-vars": "^0.2.3",
