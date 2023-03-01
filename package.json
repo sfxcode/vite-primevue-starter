@@ -34,7 +34,7 @@
     "@vuedx/typecheck": "~0.7.6",
     "@vuedx/typescript-plugin-vue": "~0.7.6",
     "@vueuse/core": "^9.12.0",
-    "@vueuse/head": "~1.0.25",
+    "@vueuse/head": "~1.1.9",
     "add": "^2.0.6",
     "autoprefixer": "^10.4.13",
     "c8": "^7.11.3",
