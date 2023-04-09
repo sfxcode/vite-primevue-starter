@@ -31,11 +31,11 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Vite Layouts" icon="pi-check-circle" color="blue-600">
         Layouts like nuxt layout templates
       </AdvertiseBox>
-      <AdvertiseBox header="Typescript 4.8" icon="pi-check-circle" color="blue-400">
+      <AdvertiseBox header="Typescript 5" icon="pi-check-circle" color="blue-400">
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="PrimeVue 3.20" icon="pi-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 3.26" icon="pi-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme and Layout" icon="pi-check-circle" color="green-600">
