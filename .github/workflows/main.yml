@@ -1,5 +1,3 @@
-
-
 name: 'ci'
 on:
   push:
@@ -17,7 +15,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: latest
+          version: 8.2.0
 
       - name: Set node version to 18
         uses: actions/setup-node@v3
