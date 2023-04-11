@@ -1,5 +1,6 @@
 <script setup lang='ts'>
 import { useDataStore, useDemoStore, useThemeStore } from '@/store'
+
 const themeStore = useThemeStore()
 const demoStore = useDemoStore()
 const dataStore = useDataStore()

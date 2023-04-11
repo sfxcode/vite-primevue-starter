@@ -22,7 +22,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 - PrimeVue with Theme: Sakai (Free Admin Template)
 - Validation, PrimeVue Form elements by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 - Markdown Support (VitePages)
-- TypeScript 4.9
+- TypeScript 5
 - UnoCSS
 - SSG Support
 - Eslint
@@ -111,7 +111,7 @@ pnpm build
 
 ## Tools
 
-I use IntelliJ with VUE.js and Prettier plugin.
+I use IntelliJ with VUE.js plugin.
 
 ## Supporters
 

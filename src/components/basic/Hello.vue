@@ -13,4 +13,3 @@ defineExpose(props)
     </button>
   </Foo>
 </template>
-

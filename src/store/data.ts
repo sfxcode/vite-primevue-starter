@@ -10,24 +10,27 @@ export const useDataStore = defineCachedStore({
     products: [],
   }),
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async refresh({ name }: { name: string }) {
-    consola.debug('fetching data ...')
+    consola.debug(`${name} fetching data ...`)
 
-    await fetch('/data/customers-medium.json').then(res => res.json()).then((d) => {
-      this.customers = d.data
-    })
+    await fetch('/data/customers-medium.json')
+      .then(res => res.json())
+      .then((d) => {
+        this.customers = d.data
+      })
       .catch(error => consola.error(error))
 
-    await fetch('/data/products.json').then(res => res.json()).then((d) => {
-      this.products = d.data
-    })
+    await fetch('/data/products.json')
+      .then(res => res.json())
+      .then((d) => {
+        this.products = d.data
+      })
       .catch(error => consola.error(error))
   },
 
   caching: {
     // force reload on new version
-    checkValidity: state => ((state.appVersion ?? '') === import.meta.env.VITE_APP_VERSION),
+    checkValidity: state =>
+      (state.appVersion ?? '') === import.meta.env.VITE_APP_VERSION,
   },
-},
-)
+})
