@@ -11,7 +11,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 
 ## Features
  
-- Vue 3.2 
+- Vue 3.3 
 - Vite 4.3
 - Vitest (Testing Framework)
 - Testing with cypress (e2e)
@@ -48,7 +48,7 @@ Nuxt3 Primevue Starter Template
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
-- PrimeVue 3.27.x
+- PrimeVue 3.29.x
 - Logging
 
 ### vite-primevue-starter-lite
