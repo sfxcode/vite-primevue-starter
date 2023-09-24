@@ -12,7 +12,7 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 ## Features
  
 - Vue 3.3 
-- Vite 4.3
+- Vite 4.4
 - Vitest (Testing Framework)
 - Testing with cypress (e2e)
 - Composition API
@@ -43,12 +43,12 @@ Nuxt3 Primevue Starter Template
 
 [App on Netlify](https://nuxt3-primevue-starter.netlify.app/)
 
-- [Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+- [Nuxt 3](https://nuxt.com) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 - Vite - Instant HMR
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
-- PrimeVue 3.29.x
+- PrimeVue 3.34.x
 - Logging
 
 ### vite-primevue-starter-lite
