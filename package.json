@@ -1,6 +1,6 @@
 {
   "name": "vite-primevue-starter",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 3333 --open",
