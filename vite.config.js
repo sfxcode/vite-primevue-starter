@@ -1,7 +1,7 @@
 import * as path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import Markdown from 'vite-plugin-vue-markdown'
+import Markdown from 'unplugin-vue-markdown/vite'
 import Pages from 'vite-plugin-pages'
 import Restart from 'vite-plugin-restart'
 import Components from 'unplugin-vue-components/vite'
