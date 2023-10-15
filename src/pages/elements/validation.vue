@@ -78,7 +78,7 @@ async function submitHandler() {
 </script>
 
 <template>
-  <div>
+  <div class="max-w-xl">
     <div class="myFormkit">
       <FormKit
         id="form"

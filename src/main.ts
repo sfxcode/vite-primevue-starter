@@ -5,7 +5,6 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
 import 'uno.css'
 import '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
-import '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss'
 
 const routes = setupLayouts(generatedRoutes)
 
