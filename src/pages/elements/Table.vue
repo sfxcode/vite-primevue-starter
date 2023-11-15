@@ -44,8 +44,8 @@ onMounted(async () => {
       current-page-report-template="Showing {first} to {last} of {totalRecords}"
     >
       <template #header>
-        <div class="datatable-header">
-          <span>Products</span>
+        <div class="datatable-header h-10">
+          <span class='text-2xl'>Products</span>
           <span class="p-input-icon-left" float-right>
             <i class="pi pi-search" />
             <InputText v-model="filters.global.value" placeholder="Globale Suche" />
@@ -60,8 +60,10 @@ onMounted(async () => {
       <Column field="price" header="Price" :sortable="true" />
       <Column field="inventoryStatus" header="Status" :sortable="true" />
       <template #footer>
+        <div class='h-12'>
         <span>{{ tableData ? tableData.length : 0 }} Products</span>
         <Button class="float-right" icon="pi pi-external-link" label="Export" @click="exportCSV($event)" />
+        </div>
       </template>
       <template #paginatorRight />
     </DataTable>
