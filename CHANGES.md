@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.0 (2023-11-15)
+- Updade Design to Lara Theme
+- PrimeVUE 3.40
+- Update Stores
+- Update Login Demo Design
+
 ## 1.4.0 (2023-04-26)
 - PrimeVUE 3.27.0
 - Vite 4.3.3
