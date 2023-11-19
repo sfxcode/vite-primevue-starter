@@ -4,28 +4,33 @@ import AccordionTab from 'primevue/accordiontab'
 import Avatar from 'primevue/avatar'
 import AvatarGroup from 'primevue/avatargroup'
 import Badge from 'primevue/badge'
+import BlockUI from 'primevue/blockui'
 import Button from 'primevue/button'
 import Breadcrumb from 'primevue/breadcrumb'
 import Calendar from 'primevue/calendar'
 import Card from 'primevue/card'
 import Carousel from 'primevue/carousel'
+import CascadeSelect from 'primevue/cascadeselect'
 import Chart from 'primevue/chart'
 import Checkbox from 'primevue/checkbox'
 import Chip from 'primevue/chip'
 import Chips from 'primevue/chips'
 import ColorPicker from 'primevue/colorpicker'
 import Column from 'primevue/column'
+import ColumnGroup from 'primevue/columngroup'
 import ConfirmDialog from 'primevue/confirmdialog'
 import ConfirmPopup from 'primevue/confirmpopup'
 import ContextMenu from 'primevue/contextmenu'
 import DataTable from 'primevue/datatable'
 import DataView from 'primevue/dataview'
 import DataViewLayoutOptions from 'primevue/dataviewlayoutoptions'
+import DeferredContent from 'primevue/deferredcontent'
 import Dialog from 'primevue/dialog'
 import Divider from 'primevue/divider'
 import Dropdown from 'primevue/dropdown'
 import Fieldset from 'primevue/fieldset'
 import FileUpload from 'primevue/fileupload'
+import Image from 'primevue/image'
 import InlineMessage from 'primevue/inlinemessage'
 import Inplace from 'primevue/inplace'
 import InputMask from 'primevue/inputmask'
@@ -74,6 +79,7 @@ import ToggleButton from 'primevue/togglebutton'
 import Tree from 'primevue/tree'
 import TreeTable from 'primevue/treetable'
 import TriStateCheckbox from 'primevue/tristatecheckbox'
+import VirtualScroller from 'primevue/virtualscroller'
 
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
@@ -85,20 +91,21 @@ import BadgeDirective from 'primevue/badgedirective'
 import Ripple from 'primevue/ripple'
 import StyleClass from 'primevue/styleclass'
 import Tooltip from 'primevue/tooltip'
+import FocusTrap from 'primevue/focustrap'
 
 // services
 import ConfirmationService from 'primevue/confirmationservice'
 import ToastService from 'primevue/toastservice'
 import type { UserModule } from '@/types'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const install: UserModule = ({ app, router, isClient }) => {
+export const install: UserModule = ({ app }) => {
   // directives
 
   app.directive('badge', BadgeDirective)
   app.directive('ripple', Ripple)
   app.directive('tooltip', Tooltip)
   app.directive('styleclass', StyleClass)
+  app.directive('focustrap', FocusTrap)
 
   // components
   app.component('Accordion', Accordion)
@@ -107,28 +114,33 @@ export const install: UserModule = ({ app, router, isClient }) => {
   app.component('Avatar', Avatar)
   app.component('AvatarGroup', AvatarGroup)
   app.component('Badge', Badge)
+  app.component('BlockUI', BlockUI)
   app.component('Breadcrumb', Breadcrumb)
   app.component('Button', Button)
   app.component('Calendar', Calendar)
   app.component('Card', Card)
   app.component('Carousel', Carousel)
+  app.component('CascadeSelect', CascadeSelect)
   app.component('Chart', Chart)
   app.component('Checkbox', Checkbox)
   app.component('Chip', Chip)
   app.component('Chips', Chips)
   app.component('ColorPicker', ColorPicker)
   app.component('Column', Column)
+  app.component('ColumnGroup', ColumnGroup)
   app.component('ConfirmDialog', ConfirmDialog)
   app.component('ConfirmPopup', ConfirmPopup)
   app.component('ContextMenu', ContextMenu)
   app.component('DataTable', DataTable)
   app.component('DataView', DataView)
   app.component('DataViewLayoutOptions', DataViewLayoutOptions)
+  app.component('DeferredContent', DeferredContent)
   app.component('Dialog', Dialog)
   app.component('Divider', Divider)
   app.component('Dropdown', Dropdown)
   app.component('Fieldset', Fieldset)
   app.component('FileUpload', FileUpload)
+  app.component('Image', Image)
   app.component('InlineMessage', InlineMessage)
   app.component('Inplace', Inplace)
   app.component('InputMask', InputMask)
@@ -177,6 +189,7 @@ export const install: UserModule = ({ app, router, isClient }) => {
   app.component('Tree', Tree)
   app.component('TreeTable', TreeTable)
   app.component('TriStateCheckbox', TriStateCheckbox)
+  app.component('VirtualScroller', VirtualScroller)
 
   app.use(PrimeVue, { ripple: true })
 

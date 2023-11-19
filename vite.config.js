@@ -1,9 +1,10 @@
-import * as path from 'path'
+import * as path from 'node:path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Markdown from 'unplugin-vue-markdown/vite'
 import Pages from 'vite-plugin-pages'
 import Restart from 'vite-plugin-restart'
+import VueDevTools from 'vite-plugin-vue-devtools'
 import Components from 'unplugin-vue-components/vite'
 import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -80,6 +81,9 @@ export default defineConfig({
     }),
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
+    // https://github.com/webfansplz/vite-plugin-vue-devtools
+    VueDevTools(),
+
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
@@ -130,7 +134,8 @@ export default defineConfig({
           },
         })
       },
-    }), Restart({
+    }),
+    Restart({
       restart: ['../../dist/*.js'],
     }),
 

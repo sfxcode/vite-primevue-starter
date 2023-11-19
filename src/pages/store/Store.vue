@@ -1,29 +1,25 @@
 <script setup lang='ts'>
-import { useDataStore, useCounterStore, useThemeStore } from '@/store'
+import { useCounterStore, useDataStore, useThemeStore } from '@/store'
 
 const themeStore = useThemeStore()
 const dataStore = useDataStore()
 const counterStore = useCounterStore()
-
-onMounted(async () => {
-  await dataStore.initData()
-})
 </script>
 
 <template>
   <div class="card">
     <h5>Store Settings</h5>
-    <h5 class="font-bold text-2xl mb-4">
+    <h5 class="mb-4 text-2xl font-bold">
       Primevue Theme Store
     </h5>
-    <div class="grid grid-cols-2  gap-4">
+    <div class="grid grid-cols-2 gap-4">
       <div>Theme Name</div>
       <div>{{ themeStore.themeName }}</div>
       <div>Theme Color</div>
       <div>{{ themeStore.themeColor }}</div>
     </div>
 
-    <h5 class="font-bold text-2xl mb-4">
+    <h5 class="mb-4 text-2xl font-bold">
       Data Store (Option Store)
     </h5>
     <span class="text-xs">Example of a Data Store</span>
@@ -32,7 +28,7 @@ onMounted(async () => {
       <div>{{ dataStore.products.length }}</div>
     </div>
 
-    <h5 class="font-bold text-2xl mb-4">
+    <h5 class="mb-4 text-2xl font-bold">
       Counter Store (Setup Store)
     </h5>
     <span class="text-xs">Example of a Data Store</span>
@@ -51,9 +47,7 @@ onMounted(async () => {
 </template>
 
 <style lang='scss' scoped>
-
 h5 {
   color: var(--primary-color)
 }
-
 </style>
