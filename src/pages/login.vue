@@ -24,7 +24,7 @@ const schema = reactive(
     {
       $formkit: 'primeInputText',
       name: 'password',
-      label: 'Passwort',
+      label: 'Password',
       validation: 'required|length:3'
     }
   ])
@@ -54,7 +54,7 @@ function actionLogin() {
         v-model="data"
         type="form"
         :submit-attrs="{ inputClass: 'p-button p-component' }"
-        submit-label="Anmelden"
+        submit-label="Submit"
         @submit="actionLogin"
       >
         <FormKitSchema :schema="schema" :data="data" />
