@@ -63,6 +63,8 @@ const schema = reactive(
       if: '$get(eu).value', // 👀 Oooo, conditionals!
       name: 'cookie_notice',
       label: 'Cookie notice frequency',
+      optionLabel: 'label',
+      optionValue: 'value',
       options,
       help: 'How often should we display a cookie notice?',
     },
