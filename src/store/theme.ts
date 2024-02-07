@@ -14,20 +14,20 @@ export function updateTheme(themeName: string, themeColor: string) {
 export const useThemeStore = defineStore('theme', {
   // a function that returns a fresh state
   state: () => ({
-    themeName: 'lara-dark',
-    themeColor: 'teal',
+    themeName: 'aura-dark',
+    themeColor: 'green',
   }),
   // optional getters
   getters: {
     theme: (state) => {
       return `${state.themeName}-${state.themeColor}`
     },
-    isDarkMode: state => state.themeName === 'lara-dark'
+    isDarkMode: state => state.themeName === 'lara-dark',
   },
   // optional actions
   actions: {
 
-    setTheme (themeName:string) {
+    setTheme(themeName: string) {
       this.themeName = themeName
       updateTheme(this.themeName, this.themeColor)
     },
