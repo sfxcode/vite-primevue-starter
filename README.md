@@ -11,8 +11,8 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 
 ## Features
  
-- Vue 3.3 
-- Vite 4.4
+- Vue 3.4 
+- Vite 5
 - Vitest (Testing Framework)
 - Testing with cypress (e2e)
 - Composition API

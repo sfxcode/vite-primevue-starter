@@ -4,16 +4,16 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
 
 <template>
   <div class="surface-0 text-center">
-    <div class="mb-3 font-bold text-4xl">
+    <div class="mb-3 text-4xl font-bold">
       <span class="text-green-600">PrimeVue </span>
       <span class="text-blue-400"> & TypeScript</span>
       <span class="text-blue-600"> & Vite</span>
     </div>
-    <h2 class="text-2xl pb-6">
+    <h2 class="pb-6 text-2xl">
       Starter for Vue.js Development.
     </h2>
     <div class="grid grid-cols-3 gap-4">
-      <AdvertiseBox header="VUE 3.3" icon="pi-check-circle" color="green-600">
+      <AdvertiseBox header="VUE 3.4" icon="pi-check-circle" color="green-600">
         Composition Api
       </AdvertiseBox>
       <AdvertiseBox header="Script Setup" icon="pi-check-circle" color="green-600">
@@ -22,7 +22,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Pinia Store 2" icon="pi-check-circle" color="green-600">
         Replacement / Alternative for VUEX Store
       </AdvertiseBox>
-      <AdvertiseBox header="Vite 4" icon="pi-check-circle" color="blue-600">
+      <AdvertiseBox header="Vite 5" icon="pi-check-circle" color="blue-600">
         Vite Plugins like ViteIcons, PurgeIcons, ... and Vitest
       </AdvertiseBox>
       <AdvertiseBox header="Vite Pages" icon="pi-check-circle" color="blue-600">
@@ -35,7 +35,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="PrimeVue 3.40" icon="pi-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 3.49" icon="pi-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme and Layout" icon="pi-check-circle" color="green-600">
