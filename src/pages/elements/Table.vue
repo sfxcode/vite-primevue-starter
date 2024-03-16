@@ -33,7 +33,6 @@ onMounted(async () => {
 <template>
   <div class="card">
     <h5>DataTable Example</h5>
-
     <DataTable
       ref="dataTableRef" v-model:filters="filters" :value="tableData"
       data-key="name" :global-filter-fields="['name', 'code', 'inventoryStatus']"
@@ -45,11 +44,13 @@ onMounted(async () => {
     >
       <template #header>
         <div class="datatable-header h-10">
-          <span class='text-2xl'>Products</span>
-          <span class="p-input-icon-left" float-right>
-            <i class="pi pi-search" />
-            <InputText v-model="filters.global.value" placeholder="Globale Suche" />
-          </span>
+          <div class="flex justify-between">
+            <span class="text-xl">Products</span>
+            <IconField icon-position="left">
+              <InputIcon class="pi pi-search" />
+              <InputText v-model="filters.global.value" placeholder="Global Search" />
+            </IconField>
+          </div>
         </div>
       </template>
       <template #empty>
@@ -60,9 +61,9 @@ onMounted(async () => {
       <Column field="price" header="Price" :sortable="true" />
       <Column field="inventoryStatus" header="Status" :sortable="true" />
       <template #footer>
-        <div class='h-12'>
-        <span>{{ tableData ? tableData.length : 0 }} Products</span>
-        <Button class="float-right" icon="pi pi-external-link" label="Export" @click="exportCSV($event)" />
+        <div class="h-12">
+          <span>{{ tableData ? tableData.length : 0 }} Products</span>
+          <Button class="float-right" icon="pi pi-external-link" label="Export" @click="exportCSV($event)" />
         </div>
       </template>
       <template #paginatorRight />
