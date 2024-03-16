@@ -35,6 +35,7 @@ import IconField from 'primevue/iconfield'
 import Image from 'primevue/image'
 import InlineMessage from 'primevue/inlinemessage'
 import Inplace from 'primevue/inplace'
+import InputIcon from 'primevue/inputicon'
 import InputMask from 'primevue/inputmask'
 import InputNumber from 'primevue/inputnumber'
 import InputOtp from 'primevue/inputotp'
@@ -148,6 +149,7 @@ export const install: UserModule = ({ app }) => {
   app.component('Image', Image)
   app.component('InlineMessage', InlineMessage)
   app.component('Inplace', Inplace)
+  app.component('InputIcon', InputIcon)
   app.component('InputMask', InputMask)
   app.component('InputOtp', InputOtp)
   app.component('InputNumber', InputNumber)
