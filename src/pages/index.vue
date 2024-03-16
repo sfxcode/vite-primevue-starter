@@ -35,7 +35,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="PrimeVue 3.49" icon="pi-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 3.50" icon="pi-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme and Layout" icon="pi-check-circle" color="green-600">
@@ -44,7 +44,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Uno CSS" icon="pi-check-circle" color="blue-400">
         The instant on-demand Atomic CSS engine
       </AdvertiseBox>
-      <AdvertiseBox header="Formkit" icon="pi-check-circle" color="green-600">
+      <AdvertiseBox header="Formkit 1.6" icon="pi-check-circle" color="green-600">
         Formkit PrimeVue Example included
       </AdvertiseBox>
       <AdvertiseBox header="VueUse" icon="pi-check-circle" color="green-600">
