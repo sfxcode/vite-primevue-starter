@@ -30,11 +30,14 @@ import Divider from 'primevue/divider'
 import Dropdown from 'primevue/dropdown'
 import Fieldset from 'primevue/fieldset'
 import FileUpload from 'primevue/fileupload'
+import FloatLabel from 'primevue/floatlabel'
+import IconField from 'primevue/iconfield'
 import Image from 'primevue/image'
 import InlineMessage from 'primevue/inlinemessage'
 import Inplace from 'primevue/inplace'
 import InputMask from 'primevue/inputmask'
 import InputNumber from 'primevue/inputnumber'
+import InputOtp from 'primevue/inputotp'
 import InputSwitch from 'primevue/inputswitch'
 import InputText from 'primevue/inputtext'
 import Knob from 'primevue/knob'
@@ -140,10 +143,13 @@ export const install: UserModule = ({ app }) => {
   app.component('Dropdown', Dropdown)
   app.component('Fieldset', Fieldset)
   app.component('FileUpload', FileUpload)
+  app.component('FloatLabel', FloatLabel)
+  app.component('IconField', IconField)
   app.component('Image', Image)
   app.component('InlineMessage', InlineMessage)
   app.component('Inplace', Inplace)
   app.component('InputMask', InputMask)
+  app.component('InputOtp', InputOtp)
   app.component('InputNumber', InputNumber)
   app.component('InputSwitch', InputSwitch)
   app.component('InputText', InputText)
