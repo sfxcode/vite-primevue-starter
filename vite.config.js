@@ -72,7 +72,7 @@ export default defineConfig({
       },
     }),
     vueI18n({
-      include: path.resolve(__dirname, './src/locales/**'),
+      include: path.resolve(__dirname, './src/i18n/locales/**'),
     }),
     Components({
       dts: 'src/components.d.ts',

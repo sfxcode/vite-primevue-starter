@@ -48,6 +48,11 @@ export function useNavigationMenu() {
         icon: 'pi pi-book',
         href: '/markdown',
       },
+      {
+        title: 'Admin',
+        icon: 'pi pi-key',
+        href: '/admin',
+      },
 
     ]
   })
