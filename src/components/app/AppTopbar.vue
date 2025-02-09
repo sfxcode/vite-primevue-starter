@@ -10,6 +10,7 @@ function redirectToGithub() {
       <template #start />
 
       <template #end>
+        <AppColorMode class="ml-6 mr-2" />
         <Button icon="pi pi-github" class="mr-2" @click="redirectToGithub" />
         <Button icon="pi pi-sign-out" severity="danger" />
       </template>

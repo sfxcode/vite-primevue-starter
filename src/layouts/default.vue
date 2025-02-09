@@ -1,7 +1,5 @@
 <script setup lang='ts'>
-import { useStateStore } from '@/store/state'
-
-const { collapsed, isOnMobile } = useStateStore()
+import { stateStore } from '@/store/state'
 </script>
 
 <template>
@@ -9,7 +7,9 @@ const { collapsed, isOnMobile } = useStateStore()
     <ConfirmDialog />
     <Toast />
     <AppSidebar />
-    <div id="workspace" :class="[{ collapsed }, { mobile: isOnMobile }]">
+    <div id="workspace" :class="[{ collapsed: stateStore.collapsed }, { mobile: stateStore.isOnMobile }]">
+      {{ stateStore.collapsed }}
+      {{ stateStore.isOnMobile }}
       <AppTopbar />
       <div class="m-1 mt-4">
         <router-view />

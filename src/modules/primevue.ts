@@ -56,7 +56,7 @@ export const install: UserModule = ({ app }) => {
     theme: {
       preset: Aura,
       options: {
-        darkModeSelector: '.p-dark',
+        darkModeSelector: '.dark',
       },
     },
     ripple: false,

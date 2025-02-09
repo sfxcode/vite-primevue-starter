@@ -1,21 +1,19 @@
 <script setup lang='ts'>
 import { useNavigationMenu } from '@/composables/navigation'
-import { useStateStore } from '@/store/state'
+import { stateStore } from '@/store/state'
 
 const version = ref(import.meta.env.VITE_APP_VERSION)
 
 const { menu } = useNavigationMenu()
 
-const { collapsed, isOnMobile, setCollapsed, setIsOnMobile } = useStateStore()
-
 function onResize() {
   if (window.innerWidth <= 980) {
-    setCollapsed(true)
-    setIsOnMobile(true)
+    stateStore.setCollapsed(true)
+    stateStore.setIsOnMobile(true)
   }
   else {
-    setCollapsed(false)
-    setIsOnMobile(false)
+    stateStore.setCollapsed(false)
+    stateStore.setIsOnMobile(false)
   }
 }
 
@@ -34,7 +32,7 @@ onMounted(() => {
 <template>
   <div>
     <sidebar-menu
-      v-model:collapsed="collapsed"
+      v-model:collapsed="stateStore.collapsed"
       :menu="menu"
       :show-one-child="true"
       width="200px"
@@ -43,7 +41,7 @@ onMounted(() => {
       @item-click="onItemClick"
     >
       <template #header>
-        <div v-if="!collapsed" class="flex">
+        <div v-if="!stateStore.collapsed" class="flex">
           <img class="m-6 w-8" src="/primevue-logo.webp" alt="PrimeVue">
           <img class="m-6 w-8" src="/nuxt-logo.svg" alt="Nuxt">
         </div>
@@ -53,16 +51,16 @@ onMounted(() => {
         </div>
       </template>
       <template #footer>
-        <div class="text-color-primary m-2 text-center text-xs">
-          <span v-if="!collapsed">PrimeVue Vite Starter {{ version }}</span>
-          <span v-if="collapsed">{{ version }}</span>
+        <div class="m-2 text-center text-xs text-color-primary">
+          <span v-if="!stateStore.collapsed">PrimeVue Vite Starter {{ version }}</span>
+          <span v-if="stateStore.collapsed">{{ version }}</span>
         </div>
       </template>
     </sidebar-menu>
     <div
-      v-if="isOnMobile && !collapsed"
+      v-if="stateStore.isOnMobile && !stateStore.collapsed"
       class="sidebar-overlay"
-      @click="collapsed = true"
+      @click="stateStore.collapsed = true"
     />
   </div>
 </template>

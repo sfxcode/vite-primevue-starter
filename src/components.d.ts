@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AdvertiseBox: typeof import('./components/AdvertiseBox.vue')['default']
+    AppColorMode: typeof import('./components/app/AppColorMode.vue')['default']
     AppFooter: typeof import('./components/app/AppFooter.vue')['default']
     AppMenu: typeof import('./components/app/AppMenu.vue')['default']
     AppProfile: typeof import('./components/app/AppProfile.vue')['default']

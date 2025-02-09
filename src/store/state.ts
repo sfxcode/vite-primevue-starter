@@ -1,16 +1,14 @@
-import { defineStore } from 'pinia'
+import { reactive } from 'vue'
 
-export const useStateStore = defineStore('state', () => {
-  const collapsed = ref(false)
-  const isOnMobile = ref(false)
+export const stateStore = reactive({
+  collapsed: false,
+  isOnMobile: false,
 
-  function setCollapsed(value: boolean) {
-    collapsed.value = value
-  }
+  setCollapsed(value: boolean) {
+    this.collapsed = value
+  },
 
-  function setIsOnMobile(value: boolean) {
-    isOnMobile.value = value
-  }
-
-  return { isOnMobile, collapsed, setCollapsed, setIsOnMobile }
+  setIsOnMobile(value: boolean) {
+    this.isOnMobile = value
+  },
 })
