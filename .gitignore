@@ -3,8 +3,6 @@ node_modules
 dist
 dist-ssr
 
-/cypress/videos/
-/cypress/screenshots/
 /instrumented
 /coverage
 .nyc_output

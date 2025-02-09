@@ -12,14 +12,13 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 ## Features
  
 - Vue 3.4 
-- Vite 5
+- Vite 6
 - Vitest (Testing Framework)
-- Testing with cypress (e2e)
 - Composition API
 - Script Setup
 - Routing VitePages / ViteLayout
 - Pina as Store / CachedPiniaStore for effective data caching
-- PrimeVue with Theme: Sakai (Free Admin Template)
+- PrimeVue with Aura Theme
 - Validation, PrimeVue Form elements by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 - Markdown Support (VitePages)
 - TypeScript 5
@@ -48,7 +47,7 @@ Nuxt3 Primevue Starter Template
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
-- PrimeVue 3.40.x
+- PrimeVue 4.2.x
 - Logging
 
 ### vite-primevue-starter-lite
@@ -79,22 +78,10 @@ Run development server:
 pnpm dev
 ```
 
-Open Cypress test runner:
-
-```
-pnpm test:e2e
-```
-
 Component test runner:
 
 ```
 pnpm test:unit
-```
-
-Run Cypress tests in headless mode:
-
-```
-pnpm test:ci
 ```
 
 Build and preview built site locally:
