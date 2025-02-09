@@ -12,7 +12,6 @@ This is {{frontmatter.name}}
 * Part 2
 * Part 3
 
-
 <div class="card">
     <h5>HTML</h5>
 <span>Some HTML Code ...</span>
@@ -21,7 +20,6 @@ This is {{frontmatter.name}}
 ## Source Code
 
 ```markdown
-
 ---
 name: My Cool App
 ---
@@ -40,6 +38,4 @@ This is {{frontmatter.name}}
     <h5>HTML</h5>
 <span>Some HTML Code ...</span>
 </div>
-
 ```
-

@@ -209,7 +209,7 @@ onBeforeUnmount(() => {
         />
       </template>
     </Toolbar>
-    <EditorContent :editor="editor" class="p-tiptap p-inputtext" />
+    <EditorContent :editor="editor" class="p-inputtext p-tiptap" />
   </div>
 </template>
 

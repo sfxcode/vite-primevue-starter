@@ -3,8 +3,9 @@ import unocss from '@unocss/eslint-plugin'
 
 export default antfu(
   {
-    // Configures for antfu's config
+    ignores: ['*/shims-vue.d.ts'],
   },
+
   unocss.configs.flat,
   {
     rules: {
