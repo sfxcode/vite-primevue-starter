@@ -1,6 +1,4 @@
-
-@import "sass/layout";
-@import "sass/markdown";
-@import "sass/nprogress";
-@import "src/sass/main";
+@use "assets/sass/sidebar";
+@use "assets/sass/form";
+@use "assets/sass/main";
 
