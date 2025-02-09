@@ -37,8 +37,6 @@ pnpm-debug.log*
 *.local
 LOCAL_NOTES.md
 
-public/assets/fonts/*
-
 *.log
 
 .gitconfig
