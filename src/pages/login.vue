@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/store'
+import { useRouter } from 'vue-router'
 
 const auth = useAuthStore()
 
@@ -13,21 +13,22 @@ const schema = reactive(
   [
     {
       $el: 'h3',
-      children: 'Login Area'
+      children: 'Login Area',
     },
     {
       $formkit: 'primeInputText',
       name: 'userId',
       label: 'Email / User ID',
-      validation: 'required|email'
+      validation: 'required|email',
     },
     {
       $formkit: 'primeInputText',
       name: 'password',
       label: 'Password',
-      validation: 'required|length:3'
-    }
-  ])
+      validation: 'required|length:3',
+    },
+  ],
+)
 
 function actionLogin() {
   auth.login(data.value.password)
@@ -44,10 +45,10 @@ function actionLogin() {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen op80">
-    <div class="card md:1/2 md:ml-80 w-100">
+  <div class="mx-auto flex flex-col items-center justify-center px-6 py-8 op80 md:h-screen">
+    <div class="card md:1/2 w-100 md:ml-80">
       <div class="flex justify-center">
-        <img class="w-8/12 mt-4" src="/assets/logo.png" alt="Logo">
+        <img class="mt-4 w-8/12" src="/assets/logo.png" alt="Logo">
       </div>
       <FormKit
         id="newRoleForm"
@@ -59,7 +60,7 @@ function actionLogin() {
       >
         <FormKitSchema :schema="schema" :data="data" />
       </FormKit>
-      <div v-if="errorMessage.length > 0" class="mt-2 m-4 text-2xl font-medium p-error">
+      <div v-if="errorMessage.length > 0" class="p-error m-4 mt-2 text-2xl font-medium">
         {{ errorMessage }}
       </div>
     </div>

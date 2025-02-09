@@ -41,17 +41,12 @@ export function useNavigationMenu() {
         icon: 'pi pi-server',
         child: [
           { href: '/data/stores', title: 'Stores' },
-          { href: '/data/i18n', title: 'Localization' },
-          { href: '/data/server', title: 'Server' },
         ],
       },
       {
-        title: 'Content',
+        title: 'Markdown',
         icon: 'pi pi-book',
-        child: [
-          { href: '/cms/markdown', title: 'Markdown' },
-          { href: '/cms/component', title: 'Component' },
-        ],
+        href: '/markdown',
       },
 
     ]
