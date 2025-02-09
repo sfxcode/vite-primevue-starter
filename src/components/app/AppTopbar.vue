@@ -1,6 +1,6 @@
 <script setup lang="ts">
 function redirectToGithub() {
-  window.open('https://github.com/sfxcode/nuxt3-primevue-starter', '_blank')
+  window.open('https://github.com/sfxcode/vite-primevue-starter', '_blank')
 }
 </script>
 
