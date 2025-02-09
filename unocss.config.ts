@@ -1,3 +1,4 @@
+import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local'
 // uno.config.ts
 import {
   defineConfig,
@@ -5,6 +6,7 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
+  presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -58,6 +60,24 @@ export default defineConfig({
   },
   presets: [
     presetUno(),
+    presetWebFonts({
+      fonts: {
+        sans: 'Inter',
+        mono: 'DM Mono',
+        condensed: 'Roboto Condensed',
+      },
+      // This will download the fonts and serve them locally
+      processors: createLocalFontProcessor({
+        // Directory to cache the fonts
+        cacheDir: 'node_modules/.cache/unocss/fonts',
+
+        // Directory to save the fonts assets
+        fontAssetsDir: 'public/assets/fonts',
+
+        // Base URL to serve the fonts from the client
+        fontServeBaseUrl: '/assets/fonts',
+      }),
+    }),
     presetAttributify(),
     presetIcons(),
     presetTypography(),

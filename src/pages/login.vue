@@ -48,7 +48,7 @@ function actionLogin() {
   <div class="mx-auto flex flex-col items-center justify-center px-6 py-8 op80 md:h-screen">
     <div class="card md:1/2 w-100 md:ml-80">
       <div class="flex justify-center">
-        <img class="mt-4 w-8/12" src="/assets/logo.png" alt="Logo">
+        <img class="mt-4 w-8/12" src="/vue-logo.png" alt="Logo">
       </div>
       <FormKit
         id="newRoleForm"

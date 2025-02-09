@@ -8,8 +8,6 @@ import { stateStore } from '@/store/state'
     <Toast />
     <AppSidebar />
     <div id="workspace" :class="[{ collapsed: stateStore.collapsed }, { mobile: stateStore.isOnMobile }]">
-      {{ stateStore.collapsed }}
-      {{ stateStore.isOnMobile }}
       <AppTopbar />
       <div class="m-1 mt-4">
         <router-view />

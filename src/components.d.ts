@@ -10,14 +10,13 @@ declare module 'vue' {
     AdvertiseBox: typeof import('./components/AdvertiseBox.vue')['default']
     AppColorMode: typeof import('./components/app/AppColorMode.vue')['default']
     AppFooter: typeof import('./components/app/AppFooter.vue')['default']
-    AppMenu: typeof import('./components/app/AppMenu.vue')['default']
     AppProfile: typeof import('./components/app/AppProfile.vue')['default']
     AppSidebar: typeof import('./components/app/AppSidebar.vue')['default']
-    AppSubmenu: typeof import('./components/app/AppSubmenu.vue')['default']
     AppTopbar: typeof import('./components/app/AppTopbar.vue')['default']
     Foo: typeof import('./components/basic/Foo.vue')['default']
     Hello: typeof import('./components/basic/Hello.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TipTap: typeof import('./components/tiptap/TipTap.vue')['default']
   }
 }
