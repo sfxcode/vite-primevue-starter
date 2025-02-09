@@ -22,7 +22,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Pinia Store 2" icon="pi-check-circle" color="green-600">
         Replacement / Alternative for VUEX Store
       </AdvertiseBox>
-      <AdvertiseBox header="Vite 5" icon="pi-check-circle" color="blue-600">
+      <AdvertiseBox header="Vite 6" icon="pi-check-circle" color="blue-600">
         Vite Plugins like ViteIcons, PurgeIcons, ... and Vitest
       </AdvertiseBox>
       <AdvertiseBox header="Vite Pages" icon="pi-check-circle" color="blue-600">
@@ -35,7 +35,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="PrimeVue 3.50" icon="pi-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 4.2.x" icon="pi-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme and Layout" icon="pi-check-circle" color="green-600">

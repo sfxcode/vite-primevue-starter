@@ -12,6 +12,9 @@ export default () => {
   }
 
   return {
-    tableData, filters, dataTableRef, exportCSV,
+    tableData,
+    filters,
+    dataTableRef,
+    exportCSV,
   }
 }

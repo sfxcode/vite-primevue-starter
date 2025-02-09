@@ -1,36 +1,25 @@
-import consola from 'consola'
-import { defineCachedStore } from 'pinia-cached-store'
+import { consola } from 'consola'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 
-export const useDataStore = defineCachedStore({
-  id: 'data',
+const version = ref(import.meta.env.VITE_APP_VERSION)
 
+export const useDataStore = defineStore('data', {
   state: () => ({
-    appVersion: import.meta.env.VITE_APP_VERSION as string | undefined,
-    customers: [],
+    appVersion: version,
     products: [],
   }),
-
-  async refresh({ name }: { name: string }) {
-    consola.debug(`${name} fetching data ...`)
-
-    await fetch('/data/customers-medium.json')
-      .then(res => res.json())
-      .then((d) => {
-        this.customers = d.data
-      })
-      .catch(error => consola.error(error))
-
-    await fetch('/data/products.json')
-      .then(res => res.json())
-      .then((d) => {
-        this.products = d.data
-      })
-      .catch(error => consola.error(error))
+  actions: {
+    async initData() {
+      if (this.products.length === 0) {
+        consola.debug('fetching data ...')
+        await fetch('/data/customers-medium.json').then(res => res.json()).then((d) => {
+          this.products = d.data
+        }).catch(error => consola.error(error))
+      }
+    },
   },
 
-  caching: {
-    // force reload on new version
-    checkValidity: state =>
-      (state.appVersion ?? '') === import.meta.env.VITE_APP_VERSION,
-  },
 })
+
+if (import.meta.hot)
+  import.meta.hot.accept(acceptHMRUpdate(useDataStore, import.meta.hot))

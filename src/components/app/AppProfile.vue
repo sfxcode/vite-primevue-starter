@@ -10,7 +10,7 @@ function onClick(event: any) {
 <template>
   <div class="layout-profile">
     <div />
-    <button class="p-link layout-profile-link" @click="onClick">
+    <button class="layout-profile-link p-link" @click="onClick">
       <span class="username">Claire Williams</span>
       <i class="pi pi-fw pi-cog" />
     </button>

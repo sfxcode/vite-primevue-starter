@@ -1,11 +1,11 @@
+import type { UserModule } from '@/types'
+import { setupLayouts } from 'virtual:generated-layouts'
+import generatedRoutes from 'virtual:generated-pages'
 // register vue composition api globally
 import { ViteSSG } from 'vite-ssg'
-import generatedRoutes from 'virtual:generated-pages'
-import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
 import 'uno.css'
 import '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
-import type { UserModule } from '@/types'
 
 const routes = setupLayouts(generatedRoutes)
 
