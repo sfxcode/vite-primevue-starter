@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.2
+
+[compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.1...v2.0.2)
+
+### 💅 Refactors
+
+- **dependencies:** Update all ([886f08d](https://github.com/sfxcode/vite-primevue-starter/commit/886f08d))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.0.1
 
 [compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/0.9.0...v2.0.1)
