@@ -8,7 +8,6 @@ const props = defineProps({
   modelValue: {
     type: String,
     default: '',
-    required: true,
   },
   editable: {
     type: Boolean,

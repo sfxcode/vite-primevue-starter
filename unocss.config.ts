@@ -5,8 +5,8 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -59,7 +59,7 @@ export default defineConfig({
 
   },
   presets: [
-    presetUno(),
+    presetWind4(),
     presetWebFonts({
       fonts: {
         sans: 'Inter',
