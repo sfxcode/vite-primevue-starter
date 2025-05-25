@@ -139,7 +139,7 @@ async function submitHandler() {
     </div>
     <div class="basis-1/2 md:basis-1/3">
       <h2>Formkit-PrimeVue</h2>
-      <div class="mt-12 text-xl">
+      <div class="text-xl mt-12">
         <h4>GitHub</h4>
         <a href="https://github.com/sfxcode/formkit-primevue">formkit-primevue</a>
         <h4>More examples</h4>

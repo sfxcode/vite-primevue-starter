@@ -13,26 +13,26 @@ onMounted(async () => {
 <template>
   <div class="card">
     <h2>Store Settings</h2>
-    <h5 class="mb-4 text-2xl font-bold">
+    <h5 class="text-2xl font-bold mb-4">
       Primevue Theme Store
     </h5>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="gap-4 grid grid-cols-2">
       <div>Theme Name</div>
       <div>{{ themeStore.themeName }}</div>
       <div>Theme Color</div>
       <div>{{ themeStore.themeColor }}</div>
     </div>
 
-    <h5 class="mb-4 text-2xl font-bold">
+    <h5 class="text-2xl font-bold mb-4">
       Data Store (Option Store)
     </h5>
     <span class="text-xs">Example of a Data Store</span>
-    <div class="grid grid-cols-2 mt-6 gap-4">
+    <div class="mt-6 gap-4 grid grid-cols-2">
       <div>Products</div>
       <div>{{ dataStore.products.length }}</div>
     </div>
 
-    <h5 class="mb-4 text-2xl font-bold">
+    <h5 class="text-2xl font-bold mb-4">
       Counter Store (Setup Store)
     </h5>
     <span class="text-xs">Example of a Data Store</span>

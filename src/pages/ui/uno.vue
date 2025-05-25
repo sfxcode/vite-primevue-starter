@@ -5,15 +5,15 @@ const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
 <template>
   <div class="card">
     <h5>UnoCSS</h5>
-    <div h-full flex select-none text-center all:transition-400>
+    <div text-center flex h-full select-none all:transition-400>
       <div ma>
-        <div animate-5s animate-bounce-alt animate-count-infinite text-5xl fw100>
+        <div animate-5s text-5xl fw100 animate-bounce-alt animate-count-infinite>
           unocss
         </div>
-        <div m1 text-lg fw300 op30>
+        <div text-lg fw300 m1 op30>
           The instant on-demand Atomic CSS engine.
         </div>
-        <div m2 flex justify-center text-2xl op30 hover="op80">
+        <div text-2xl m2 op30 flex justify-center hover="op80">
           <a
             i-mdi-github-circle
             text-inherit
@@ -23,7 +23,7 @@ const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
         </div>
       </div>
     </div>
-    <div bottom-5 left-0 right-0 text-center fw300 op30>
+    <div fw300 text-center op30 bottom-5 left-0 right-0>
       on-demand · instant · fully customizable
     </div>
 
@@ -37,7 +37,7 @@ const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
       <a href="../__unocss" target="_blank">
         <div class="i-mdi-information text-green-600-500-500 text-4xl" />
       </a>
-      <article class="pt-4 text-base prose prose-truegray xl:text-xl">
+      <article class="prose-truegray text-base pt-4 prose xl:text-xl">
         View, play and analyse rules and setup ...
       </article>
     </div>

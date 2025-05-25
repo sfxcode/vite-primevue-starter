@@ -1,5 +1,5 @@
-import { useMessages } from '@/composables/messages'
 import { useConfirm } from 'primevue/useconfirm'
+import { useMessages } from '@/composables/messages'
 
 export function useConfirmation() {
   const confirm = useConfirm()

@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-import { useAuthStore } from '@/store'
 import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/store'
 
 const auth = useAuthStore()
 
@@ -45,7 +45,7 @@ function actionLogin() {
 </script>
 
 <template>
-  <div class="mx-auto flex flex-col items-center justify-center px-6 py-8 op80 md:h-screen">
+  <div class="mx-auto px-6 py-8 op80 flex flex-col items-center justify-center md:h-screen">
     <div class="card md:1/2 w-100 md:ml-80">
       <div class="flex justify-center">
         <img class="mt-4 w-8/12" src="/vue-logo.png" alt="Logo">
@@ -60,7 +60,7 @@ function actionLogin() {
       >
         <FormKitSchema :schema="schema" :data="data" />
       </FormKit>
-      <div v-if="errorMessage.length > 0" class="p-error m-4 mt-2 text-2xl font-medium">
+      <div v-if="errorMessage.length > 0" class="p-error text-2xl font-medium m-4 mt-2">
         {{ errorMessage }}
       </div>
     </div>

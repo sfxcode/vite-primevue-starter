@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-import { useAuthStore } from '@/store'
 import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/store'
 
 const auth = useAuthStore()
 const router = useRouter()
@@ -12,7 +12,7 @@ function logout() {
 </script>
 
 <template>
-  <div class="min-h-screen flex items-center justify-center px-4 py-12 lg:px-8 sm:px-6">
+  <div class="px-4 py-12 flex min-h-screen items-center justify-center lg:px-8 sm:px-6">
     <div class="max-w-md w-full space-y-8">
       <h5>Restricted Admin Area</h5>
       <p>Some restricted content ....</p>

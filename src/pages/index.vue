@@ -4,15 +4,15 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
 
 <template>
   <div class="surface-0 text-center">
-    <div class="mb-3 text-4xl font-bold">
+    <div class="text-4xl font-bold mb-3">
       <span class="text-green-600">PrimeVue </span>
       <span class="text-blue-400"> & TypeScript</span>
       <span class="text-blue-600"> & Vite</span>
     </div>
-    <h2 class="pb-6 text-2xl">
+    <h2 class="text-2xl pb-6">
       Starter for Vue.js Development.
     </h2>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="gap-4 grid grid-cols-3">
       <AdvertiseBox header="VUE 3.4" icon="pi-check-circle" color="green-600">
         Composition Api
       </AdvertiseBox>

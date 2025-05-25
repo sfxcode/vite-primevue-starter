@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useMessages } from '@/composables/messages'
 import { useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
+import { useMessages } from '@/composables/messages'
 
 const { addElement } = useFormKitSchema()
 const { t } = useI18n()
