@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.0.4
+
+[compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.3...v2.0.4)
+
+### 💅 Refactors
+
+- **dependencies:** Update all - remove quill dependency because it is not used in this demo ([b99034e](https://github.com/sfxcode/vite-primevue-starter/commit/b99034e))
+
+### 🎨 Styles
+
+- **linting:** Fix Lint errors ([5f0fcf0](https://github.com/sfxcode/vite-primevue-starter/commit/5f0fcf0))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.0.3
 
 [compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.2...v2.0.3)
