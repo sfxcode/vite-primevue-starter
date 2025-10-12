@@ -11,14 +11,14 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 
 ## Features
  
-- Vue 3.4 
-- Vite 6
+- Vue 3.5 
+- Vite 7
 - Vitest (Testing Framework)
 - Composition API
 - Script Setup
 - Routing VitePages / ViteLayout
 - Pina as Store / CachedPiniaStore for effective data caching
-- PrimeVue with Aura Theme
+- PrimeVue 4.4.x with Aura Theme
 - Validation, PrimeVue Form elements by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 - Markdown Support (VitePages)
 - TypeScript 5
