@@ -36,18 +36,18 @@ THX to [antfu / Vitesse](https://github.com/antfu/vitesse) for starter code
 
 ### nuxt3-primevue-starter
 
-Nuxt3 Primevue Starter Template
+Nuxt 4 Primevue Starter Template
 
 [Github Repository](https://github.com/sfxcode/nuxt3-primevue-starter)
 
 [App on Netlify](https://nuxt3-primevue-starter.netlify.app/)
 
-- [Nuxt 3](https://nuxt.com) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+- [Nuxt 4](https://nuxt.com) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 - Vite - Instant HMR
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
-- PrimeVue 4.2.x
+- PrimeVue 4.4.x
 - Logging
 
 ### vite-primevue-starter-lite
