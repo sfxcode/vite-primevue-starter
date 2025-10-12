@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.0.5
+
+[compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.4...v2.0.5)
+
+### 🩹 Fixes
+
+- **index.vue:** Update version numbers for Vue, Vite, and PrimeVue components ([2eca468](https://github.com/sfxcode/vite-primevue-starter/commit/2eca468))
+
+### 💅 Refactors
+
+- **dependencies:** Update dependencies and add missing types for Vue ([03c1052](https://github.com/sfxcode/vite-primevue-starter/commit/03c1052))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.0.4
 
 [compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.3...v2.0.4)
