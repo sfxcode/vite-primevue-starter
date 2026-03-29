@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v2.0.6
+
+[compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.5...v2.0.6)
+
+### 🩹 Fixes
+
+- **README.md:** Update Vue and Vite version numbers ([c814f88](https://github.com/sfxcode/vite-primevue-starter/commit/c814f88))
+- **README.md:** Update Nuxt and PrimeVue version numbers ([941ff6c](https://github.com/sfxcode/vite-primevue-starter/commit/941ff6c))
+- **dependencies:** Update various package versions and improve type definitions ([10be5af](https://github.com/sfxcode/vite-primevue-starter/commit/10be5af))
+- **eslint.config.js:** Remove 'vue/no-mutating-props' rule configuration ([797447f](https://github.com/sfxcode/vite-primevue-starter/commit/797447f))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.0.5
 
 [compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.4...v2.0.5)
