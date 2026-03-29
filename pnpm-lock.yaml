@@ -30,8 +30,8 @@ importers:
         specifier: ^4.5.4
         version: 4.5.4
       '@sfxcode/formkit-primevue':
-        specifier: ^3.3.7
-        version: 3.3.7(vue@3.5.31(typescript@5.9.3))
+        specifier: ^3.3.8
+        version: 3.3.8(vue@3.5.31(typescript@5.9.3))
       '@tiptap/extension-highlight':
         specifier: ^3.21.0
         version: 3.21.0(@tiptap/core@3.21.0(@tiptap/pm@3.21.0))
@@ -2104,8 +2104,8 @@ packages:
     resolution: {integrity: sha512-zaYmoH0NWWtvnJjC9/CBseXMtKHm/tm40sz3YfJRxeQjyzRqNQPgivpd9R/oDJCYj999mzdW382p/qi2ypjLww==}
     engines: {node: '>=6'}
 
-  '@sfxcode/formkit-primevue@3.3.7':
-    resolution: {integrity: sha512-Y5e38xZCVVjDu32gnPCqeQ5IjcvZIMna6zUuxbzWF0mKgZwIKqlhHyZ1/KHnN72/q0z73Y7/wXCkZpnoNT2H3A==}
+  '@sfxcode/formkit-primevue@3.3.8':
+    resolution: {integrity: sha512-YuGZxV0fop0Gu2lOJ20JOXBWdV7ibYfcOSpQXNrNn6W2itsjw3pd+EWsQQo3Na0QZ6tUDgJrUYNaAbm/Ph8Xpg==}
     peerDependencies:
       vue: ^3.4.0
 
@@ -7937,7 +7937,7 @@ snapshots:
       '@sentry/types': 5.30.0
       tslib: 1.14.1
 
-  '@sfxcode/formkit-primevue@3.3.7(vue@3.5.31(typescript@5.9.3))':
+  '@sfxcode/formkit-primevue@3.3.8(vue@3.5.31(typescript@5.9.3))':
     dependencies:
       '@formkit/addons': 1.7.2
       '@formkit/core': 1.7.2
