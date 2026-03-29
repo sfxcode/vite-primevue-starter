@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.0.7
+
+[compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.6...v2.0.7)
+
+### 🩹 Fixes
+
+- **dependencies:** Update @sfxcode/formkit-primevue to version 3.3.7 ([4d998bd](https://github.com/sfxcode/vite-primevue-starter/commit/4d998bd))
+- **dependencies:** Update @sfxcode/formkit-primevue to version 3.3.8 ([2526c0e](https://github.com/sfxcode/vite-primevue-starter/commit/2526c0e))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.0.6
 
 [compare changes](https://github.com/sfxcode/vite-primevue-starter/compare/v2.0.5...v2.0.6)
