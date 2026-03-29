@@ -24,7 +24,7 @@
     "@iconify-json/twemoji": "^1.2.5",
     "@intlify/unplugin-vue-i18n": "^11.0.7",
     "@primevue/themes": "^4.5.4",
-    "@sfxcode/formkit-primevue": "^3.3.3",
+    "@sfxcode/formkit-primevue": "^3.3.7",
     "@tiptap/extension-highlight": "^3.21.0",
     "@tiptap/extension-text-align": "^3.21.0",
     "@tiptap/extension-text-style": "^3.21.0",
