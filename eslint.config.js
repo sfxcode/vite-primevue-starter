@@ -9,9 +9,6 @@ export default antfu(
   unocss.configs.flat,
   {
     rules: {
-      'vue/no-mutating-props': ['error', {
-        shallowOnly: true,
-      }],
     },
   },
 )
